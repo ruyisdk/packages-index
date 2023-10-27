@@ -1,6 +1,6 @@
 {
   "kind": ["binary", "toolchain"],
-  "name": "RuyiSDK Toolchain 20231026 (maintained by PLCT)",
+  "name": "RuyiSDK RISC-V Linux Toolchain 20231026 (maintained by PLCT)",
   "vendor": {
     "name": "PLCT",
     "eula": null
