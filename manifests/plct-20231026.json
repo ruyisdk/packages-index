@@ -1,4 +1,5 @@
 {
+  "slug": "plct-20231026",
   "kind": ["binary", "toolchain"],
   "name": "RuyiSDK RISC-V Linux Toolchain 20231026 (maintained by PLCT)",
   "vendor": {
@@ -34,7 +35,6 @@
     }
   },
   "toolchain": {
-    "slug": "plct-20231026",
     "target": "riscv64-plct-linux-gnu",
     "flavors": [],
     "components": [
