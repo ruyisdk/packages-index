@@ -24,7 +24,7 @@
       }
     }
   ],
-  "binary": {
+  "binary": [
     {
       "host": "riscv64",
       "distfiles": ["RuyiSDK-20231026-HOST-riscv64-linux-gnu-riscv64-plct-linux-gnu.tar.xz"]
@@ -33,7 +33,7 @@
       "host": "x86_64",
       "distfiles": ["RuyiSDK-20231026-riscv64-plct-linux-gnu.tar.xz"]
     }
-  },
+  ],
   "toolchain": {
     "target": "riscv64-plct-linux-gnu",
     "flavors": [],
