@@ -1,0 +1,48 @@
+{
+  "slug": "plct-20231110",
+  "kind": ["binary", "toolchain"],
+  "desc": "RuyiSDK RISC-V Linux Toolchain 20231110 (maintained by PLCT)",
+  "vendor": {
+    "name": "PLCT",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "RuyiSDK-20231110-PLCT-Sources-HOST-riscv64-linux-gnu-riscv64-plct-linux-gnu.tar.xz",
+      "size": 162965476,
+      "checksums": {
+        "sha256": "3d5bcb254bfa4a0990ae6e5592047ba362da03c8a34e204574f614d99293b489",
+        "sha512": "dd912bde84f543f2d0e1189a310b041449d01021e62a20dacc0af5a7ef6456e992a68adfe18f02ea88829ac17ca2d2a5a0c1754f0f08a0cee040d556e74ce2fd"
+      }
+    },
+    {
+      "name": "RuyiSDK-20231110-PLCT-Sources-riscv64-plct-linux-gnu.tar.xz",
+      "size": 172317864,
+      "checksums": {
+        "sha256": "e4f52c7a0b5660ae3430fd634b40ade24f79d14f3ba429e31fc2e24cfcb97953",
+        "sha512": "5cb2647ffa37ec0221605dcd8de79c9ed62b5ef3b6436b247034fe53c6ee7ef2b315bd5276beee782bd3d03445679cba488b822e648fb097c8ad53d2e2344400"
+      }
+    }
+  ],
+  "binary": [
+    {
+      "host": "riscv64",
+      "distfiles": ["RuyiSDK-20231110-PLCT-Sources-HOST-riscv64-linux-gnu-riscv64-plct-linux-gnu.tar.xz"]
+    },
+    {
+      "host": "x86_64",
+      "distfiles": ["RuyiSDK-20231110-PLCT-Sources-riscv64-plct-linux-gnu.tar.xz"]
+    }
+  ],
+  "toolchain": {
+    "target": "riscv64-plct-linux-gnu",
+    "flavors": [],
+    "components": [
+      {"name": "binutils", "version": "2.40"},
+      {"name": "gcc", "version": "13.1.0"},
+      {"name": "gdb", "version": "13.1"},
+      {"name": "glibc", "version": "2.38"},
+      {"name": "linux-headers", "version": "6.4"}
+    ]
+  }
+}
