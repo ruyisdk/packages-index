@@ -1,0 +1,48 @@
+{
+  "slug": "upstream-20231110",
+  "kind": ["binary", "toolchain"],
+  "desc": "RuyiSDK RISC-V Linux Toolchain 20231110 (Upstream sources)",
+  "vendor": {
+    "name": "PLCT",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "RuyiSDK-20231110-Upstream-Sources-riscv64-unknown-linux-gnu.tar.xz",
+      "size": 172082804,
+      "checksums": {
+        "sha256": "0f2a21f6bfcb84096b32da3abc671cc1d26dedf319f344502928dcf65a98f0bd",
+        "sha512": "5986b72c8bb950e8f3b27b4ea2a94dd4fd1b282efe2f5be07e67144ddd595af8f1c7313fcb90a8e3a66d8892bfbdc9b37988711d35b2d59795889c53e0976e5e"
+      }
+    },
+    {
+      "name": "RuyiSDK-20231110-Upstream-Sources-HOST-riscv64-linux-gnu-riscv64-unknown-linux-gnu.tar.xz",
+      "size": 162755160,
+      "checksums": {
+        "sha256": "33cd7d5cee609e674112f70386de2301ec9ecd3625e9bd4efff7a153f2dde6a3",
+        "sha512": "27309b5b8434e7fa0344cd21aee099a18156b99fb0117cfe996089cd153af90a8d23d3cab3521a75e4ae954fdbcf99758f3857fe67e4b06986371ba9c2ed8574"
+      }
+    }
+  ],
+  "binary": [
+    {
+      "host": "riscv64",
+      "distfiles": ["RuyiSDK-20231110-Upstream-Sources-HOST-riscv64-linux-gnu-riscv64-unknown-linux-gnu.tar.xz"]
+    },
+    {
+      "host": "x86_64",
+      "distfiles": ["RuyiSDK-20231110-Upstream-Sources-riscv64-unknown-linux-gnu.tar.xz"]
+    }
+  ],
+  "toolchain": {
+    "target": "riscv64-unknown-linux-gnu",
+    "flavors": [],
+    "components": [
+      {"name": "binutils", "version": "2.40"},
+      {"name": "gcc", "version": "13.2.0"},
+      {"name": "gdb", "version": "13.2"},
+      {"name": "glibc", "version": "2.38"},
+      {"name": "linux-headers", "version": "6.4"}
+    ]
+  }
+}
