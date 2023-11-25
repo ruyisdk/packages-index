@@ -1,7 +1,7 @@
 {
-  "slug": "upstream-20231118",
+  "slug": "gnu-upstream-20231118",
   "kind": ["binary", "toolchain"],
-  "desc": "RuyiSDK RISC-V Linux Toolchain 20231118 (Upstream sources, built by PLCT)",
+  "desc": "RuyiSDK RISC-V Linux GNU Toolchain 20231118 (Upstream sources, built by PLCT)",
   "vendor": {
     "name": "PLCT",
     "eula": null
