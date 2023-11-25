@@ -13,7 +13,8 @@
       "checksums": {
         "sha512": "a471768d1c0a21993388f26bddbbe8b427a689241ff8b99c6407bd343f6fbd1593200f41dd508d4371d504b7ccca999a434e6f7da19616a623e042628963f540",
         "sha256": "d8c4b766dc2f17496d48c432d64ae54522341d99dd3da6f389070024bc2ccd18"
-      }
+      },
+      "strip_components": 2
     }
   ],
   "binary": [

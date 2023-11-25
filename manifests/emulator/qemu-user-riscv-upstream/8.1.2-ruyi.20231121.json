@@ -12,7 +12,8 @@
       "checksums": {
         "sha512": "73ac9c82b4386b5d8cb3d5e6654f600e38a7af6043bd546c7a0ec2940add29382a08f6a769bf1d5db150966dd18224789362add691c89c4e89ea31ae24436bd2",
         "sha256": "24b477630c5f9a01f8a2188e6b1a33bc24723d5217d34285a3bb3509f5a0948a"
-      }
+      },
+      "strip_components": 2
     }
   ],
   "binary": [
