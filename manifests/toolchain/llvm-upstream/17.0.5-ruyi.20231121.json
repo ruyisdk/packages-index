@@ -1,5 +1,5 @@
 {
-  "slug": "llvm-upstream-17.0.5-ruyi.20231121",
+  "slug": "llvm-upstream-20231121",
   "kind": ["binary", "toolchain"],
   "desc": "RuyiSDK LLVM & Clang Toolchain (Upstream 17.0.5, built by PLCT)",
   "vendor": {

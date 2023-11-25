@@ -1,5 +1,4 @@
 {
-  "slug": "qemu-user-riscv-upstream-8.1.2-ruyi.20231121",
   "kind": ["binary", "emulator-linux-user"],
   "desc": "RuyiSDK QEMU linux-user Build (Upstream 8.1.2, built by PLCT)",
   "vendor": {
