@@ -21,5 +21,24 @@
       "thead-c906": "c906",
       "thead-c910": "c910"
     }
+  },
+  "emulator_presets": {
+    "qemu-linux-user": {
+      "generic": {
+        "env": {
+          "QEMU_CPU": "rv64"
+        }
+      },
+      "thead-c906": {
+        "env": {
+          "QEMU_CPU": "thead-c906"
+        }
+      },
+      "thead-c910": {
+        "env": {
+          "QEMU_CPU": "thead-c906"
+        }
+      }
+    }
   }
 }
