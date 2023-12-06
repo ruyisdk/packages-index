@@ -39,8 +39,9 @@
     },
     "thead-c910": {
       "qemu-linux-user": {
+        "need_flavor": ["xthead"],
         "env": {
-          "QEMU_CPU": "thead-c906"
+          "QEMU_CPU": "c910v"
         }
       }
     }
