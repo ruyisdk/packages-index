@@ -1,0 +1,24 @@
+{
+  "kind": ["blob"],
+  "desc": "U-Boot image for LicheePi 4A (16G RAM) 20231210",
+  "vendor": {
+    "name": "PLCT",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "u-boot-with-spl-lpi4a-16g.20231210.bin",
+      "urls": [
+        "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20231210/u-boot-with-spl-lpi4a-16g.bin"
+      ],
+      "size": 963384,
+      "checksums": {
+        "sha512": "bd71fef979b86787101f14c149b5cb4a43d7f721743598ef1e170dd5258448a844472af5c7a2848d54753f5f135b5ecd1654d08e52d218b3a4d59cb03890763e",
+        "sha256": "52f99ea3a5e68db81aa3cca0e30f82a1148d40873caac6d3e8c44553a4800eef"
+      }
+    }
+  ],
+  "blob": {
+      "distfiles": ["u-boot-with-spl-lpi4a-16g.20231210.bin"]
+  }
+}
