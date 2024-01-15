@@ -1,0 +1,25 @@
+{
+  "kind": ["blob"],
+  "desc": "U-Boot image for LicheePi 4A (16G RAM) and openEuler RISC-V 23.09 v1",
+  "vendor": {
+    "name": "PLCT",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "u-boot-with-spl-lpi4a-16g.2309.v1.bin",
+      "urls": [
+        "https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/preview/openEuler-23.09-V1-riscv64/lpi4a/u-boot-with-spl-lpi4a-16g.bin"
+      ],
+      "restrict": ["mirror"],
+      "size": 963048,
+      "checksums": {
+        "sha256": "1219a8468644f8cb23cb10790747589e9073a74ffd4021bd5b63afc90a7d5728",
+        "sha512": "d1d104b8093d21ee867101bf396f298f3ccc47c073fbe9418f6309deae0e1749fb15d46f4d2a22554139070191d67ef0f2a8b5e0751c219214bc20e7c2c1dc53"
+      }
+    }
+  ],
+  "blob": {
+      "distfiles": ["u-boot-with-spl-lpi4a-16g.2309.v1.bin"]
+  }
+}
