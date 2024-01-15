@@ -1,6 +1,6 @@
 {
   "kind": ["blob"],
-  "desc": "Official Buildroot SDK image for Milk-V Duo (original rev) v1.0.7-2023-1223",
+  "desc": "Official Buildroot SDK image for Milk-V Duo (64M RAM) v1.0.7-2023-1223",
   "vendor": {
     "name": "Milk-V",
     "eula": null
