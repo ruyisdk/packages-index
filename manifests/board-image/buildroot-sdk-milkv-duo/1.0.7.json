@@ -1,0 +1,25 @@
+{
+  "kind": ["blob"],
+  "desc": "Official Buildroot SDK image for Milk-V Duo (original rev) v1.0.7-2023-1223",
+  "vendor": {
+    "name": "Milk-V",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "milkv-duo-v1.0.7-2023-1223.img.zip",
+      "urls": [
+        "https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.0.7/milkv-duo-v1.0.7-2023-1223.img.zip"
+      ],
+      "restrict": ["mirror"],
+      "size": 31653399,
+      "checksums": {
+        "sha512": "76ec3efa640742eb3ca7928758ee371ddf9da1d1d9b6884e71fe866672d8aaf6c46ffa8de1360388e0cea4dd766afd3096f12b50533014afe9c3b97e70871ace",
+        "sha256": "b6c21cc7e3ef0567adec77e47d66fccdb58f883d45316ec909d7e48a151dbbb3"
+      }
+    }
+  ],
+  "blob": {
+    "distfiles": ["milkv-duo-v1.0.7-2023-1223.img.zip"]
+  }
+}
