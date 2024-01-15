@@ -1,6 +1,6 @@
 {
   "kind": ["blob"],
-  "desc": "U-Boot image for LicheePi 4A (16G RAM) 20231210",
+  "desc": "U-Boot image for LicheePi 4A (16G RAM) and RevyOS 20231210",
   "vendor": {
     "name": "PLCT",
     "eula": null
