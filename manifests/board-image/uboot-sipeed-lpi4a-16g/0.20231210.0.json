@@ -11,6 +11,7 @@
       "urls": [
         "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20231210/u-boot-with-spl-lpi4a-16g.bin"
       ],
+      "restrict": ["mirror"],
       "size": 963384,
       "checksums": {
         "sha512": "bd71fef979b86787101f14c149b5cb4a43d7f721743598ef1e170dd5258448a844472af5c7a2848d54753f5f135b5ecd1654d08e52d218b3a4d59cb03890763e",
