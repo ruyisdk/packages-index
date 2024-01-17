@@ -1,5 +1,5 @@
 {
-  "kind": ["blob"],
+  "kind": ["blob", "provisionable"],
   "desc": "U-Boot image for LicheePi 4A (8G RAM) and RevyOS 20231210",
   "vendor": {
     "name": "PLCT",
@@ -21,5 +21,10 @@
   ],
   "blob": {
       "distfiles": ["u-boot-with-spl-lpi4a-8g.20231210.bin"]
+  },
+  "provisionable": {
+    "partition_map": {
+      "uboot": "u-boot-with-spl-lpi4a-8g.20231210.bin"
+    }
   }
 }

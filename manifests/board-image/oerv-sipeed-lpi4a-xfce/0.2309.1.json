@@ -1,5 +1,5 @@
 {
-  "kind": ["blob"],
+  "kind": ["blob", "provisionable"],
   "desc": "openEuler 23.09 v1 XFCE image for Sipeed LicheePi 4A",
   "vendor": {
     "name": "PLCT",
@@ -36,5 +36,11 @@
       "boot-20231130-224942.ext4.zst",
       "root-20231130-224942.ext4.zst"
     ]
+  },
+  "provisionable": {
+    "partition_map": {
+      "boot": "boot-20231130-224942.ext4",
+      "root": "root-20231130-224942.ext4"
+    }
   }
 }

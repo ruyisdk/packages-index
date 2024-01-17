@@ -1,5 +1,5 @@
 {
-  "kind": ["blob"],
+  "kind": ["blob", "provisionable"],
   "desc": "openEuler 23.09 v1 headless image for Milk-V Pioneer with SG2042",
   "vendor": {
     "name": "PLCT",
@@ -23,5 +23,10 @@
     "distfiles": [
       "openEuler-23.09-V1-base-sg2042-preview-refreshed.img.zst"
     ]
+  },
+  "provisionable": {
+    "partition_map": {
+      "disk": "openEuler-23.09-V1-base-sg2042-preview-refreshed.img"
+    }
   }
 }

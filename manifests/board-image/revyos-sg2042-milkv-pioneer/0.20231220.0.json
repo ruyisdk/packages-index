@@ -1,5 +1,5 @@
 {
-  "kind": ["blob"],
+  "kind": ["blob", "provisionable"],
   "desc": "RevyOS 20231220 image for Milk-V Pioneer Box with SG2042",
   "vendor": {
     "name": "PLCT",
@@ -21,5 +21,10 @@
   ],
   "blob": {
     "distfiles": ["revyos-pioneer-20231220-005807.img.zst"]
+  },
+  "provisionable": {
+    "partition_map": {
+      "disk": "revyos-pioneer-20231220-005807.img"
+    }
   }
 }
