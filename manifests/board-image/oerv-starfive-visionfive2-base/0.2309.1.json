@@ -9,6 +9,7 @@
     {
       "name": "openEuler-23.09-V1-base-visionfive2-preview.img.zst",
       "size": 1075562933,
+      "restrict": ["mirror"],
       "checksums": {
         "sha512": "0c97471672c0d18c72c3ae7a5467c2791d6f081746e4d465a8343173d907fe7aecd95766ecab87f15ac661014b49ddca3eeda2715c7a4d3772eda61cfe330d52",
         "sha256": "4eb10a7a1cf2c14c0b9048aba578b113e82f8ef1f21d34939209ad341f791362"

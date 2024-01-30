@@ -9,6 +9,7 @@
     {
       "name": "openEuler-23.09-V1-xfce-visionfive2-preview.img.zst",
       "size": 1749694866,
+      "restrict": ["mirror"],
       "checksums": {
         "sha256": "3f26389b49b46c1add888ce013ceea5070a4f885bb2ae99863f4e59acd61c5b8",
         "sha512": "cc9e47cdac80fa4defe1feb9621f3303dd8c2bc9c2afa6ce711f1cea02eba451285a50d94b514948854c011eff975186939513d96faeb4ff173ef3a99a7c95b7"
