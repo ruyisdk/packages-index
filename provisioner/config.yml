@@ -1,4 +1,4 @@
-ruyi-provisioner-config: v1
+ruyi_provisioner_config: v1
 
 postinst_messages:
   oerv-milkv-pioneer-nvme: |
