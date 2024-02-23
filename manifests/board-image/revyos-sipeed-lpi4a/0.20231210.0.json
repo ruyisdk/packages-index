@@ -41,6 +41,7 @@
     "partition_map": {
       "boot": "boot-lpi4a-20231210_134926.ext4",
       "root": "root-lpi4a-20231210_134926.ext4"
-    }
+    },
+    "strategy": "fastboot-v1"
   }
 }

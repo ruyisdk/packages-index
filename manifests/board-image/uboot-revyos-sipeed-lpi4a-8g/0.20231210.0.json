@@ -25,6 +25,7 @@
   "provisionable": {
     "partition_map": {
       "uboot": "u-boot-with-spl-lpi4a-8g.20231210.bin"
-    }
+    },
+    "strategy": "fastboot-v1(lpi4a-uboot)"
   }
 }

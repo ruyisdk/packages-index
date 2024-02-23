@@ -41,6 +41,7 @@
     "partition_map": {
       "boot": "boot-20231130-224203.ext4",
       "root": "root-20231130-224203.ext4"
-    }
+    },
+    "strategy": "fastboot-v1"
   }
 }

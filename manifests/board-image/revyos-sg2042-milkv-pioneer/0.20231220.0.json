@@ -25,6 +25,7 @@
   "provisionable": {
     "partition_map": {
       "disk": "revyos-pioneer-20231220-005807.img"
-    }
+    },
+    "strategy": "dd-v1"
   }
 }

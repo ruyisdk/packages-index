@@ -27,6 +27,7 @@
   "provisionable": {
     "partition_map": {
       "disk": "openEuler-23.03-V1-xfce-d1-preview.img"
-    }
+    },
+    "strategy": "dd-v1"
   }
 }
