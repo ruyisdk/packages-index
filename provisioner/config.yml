@@ -1,0 +1,208 @@
+ruyi-provisioner-config: v1
+
+postinst_messages:
+  oerv-milkv-pioneer-nvme: |
+    [bold green]NOTE[/bold green]: You will need to tweak the rootfs parameter for openEuler to properly
+    boot on Milk-V Pioneer v1.2 and later models, whose rootfs resides on NVMe
+    drive instead of TF card.
+
+    Since [yellow]ruyi[/yellow] does not run as [yellow]root[/yellow], you will have to perform the following
+    actions yourself before booting the target device:
+
+    * mount the target device's [green]/boot[/green] partition,
+    * check the file [cyan]/extlinux/extlinux.conf[/cyan] in the partition,
+    * replace [yellow]mmcblk1p3[/yellow] with [yellow]nvme0n1p3[/yellow] as needed.
+
+#
+# Supported combos
+#
+
+image_combos:
+  - id: buildroot-sdk-milkv-duo
+    display_name: "Milk-V Duo Official buildroot SDK (64M RAM)"
+    packages:
+      - board-image/buildroot-sdk-milkv-duo
+  - id: buildroot-sdk-milkv-duo-python
+    display_name: "Milk-V Duo Official buildroot SDK (64M RAM, with Python)"
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-python
+  - id: buildroot-sdk-milkv-duo256m
+    display_name: "Milk-V Duo Official buildroot SDK (256M RAM)"
+    packages:
+      - board-image/buildroot-sdk-milkv-duo256m
+  - id: buildroot-sdk-milkv-duo256m-python
+    display_name: "Milk-V Duo Official buildroot SDK (256M RAM, with Python)"
+    packages:
+      - board-image/buildroot-sdk-milkv-duo256m-python
+  - id: oerv-milkv-pioneer-base
+    display_name: "openEuler RISC-V (base system) for Milk-V Pioneer"
+    packages:
+      - board-image/oerv-sg2042-milkv-pioneer-base
+  - id: oerv-milkv-pioneer-xfce
+    display_name: "openEuler RISC-V (XFCE) for Milk-V Pioneer"
+    packages:
+      - board-image/oerv-sg2042-milkv-pioneer-xfce
+  - id: oerv-milkv-pioneer-base-nvme
+    display_name: "openEuler RISC-V (base system) for Milk-V Pioneer (rootfs on NVMe)"
+    packages:
+      - board-image/oerv-sg2042-milkv-pioneer-base
+    postinst_msgid: oerv-milkv-pioneer-nvme
+  - id: oerv-milkv-pioneer-xfce-nvme
+    display_name: "openEuler RISC-V (XFCE) for Milk-V Pioneer (rootfs on NVMe)"
+    packages:
+      - board-image/oerv-sg2042-milkv-pioneer-xfce
+    postinst_msgid: oerv-milkv-pioneer-nvme
+  - id: oerv-awol-d1-base
+    display_name: "openEuler RISC-V (base system) for Allwinner D1"
+    packages:
+      - board-image/oerv-awol-d1-base
+  - id: oerv-awol-d1-xfce
+    display_name: "openEuler RISC-V (XFCE) for Allwinner D1"
+    packages:
+      - board-image/oerv-awol-d1-xfce
+  - id: oerv-starfive-visionfive-base
+    display_name: "openEuler RISC-V (base system) for StarFive VisionFive"
+    packages:
+      - board-image/oerv-starfive-visionfive-base
+  - id: oerv-starfive-visionfive-xfce
+    display_name: "openEuler RISC-V (XFCE) for StarFive VisionFive"
+    packages:
+      - board-image/oerv-starfive-visionfive-xfce
+  - id: oerv-starfive-visionfive2-base
+    display_name: "openEuler RISC-V (base system) for StarFive VisionFive2"
+    packages:
+      - board-image/oerv-starfive-visionfive2-base
+  - id: oerv-starfive-visionfive2-xfce
+    display_name: "openEuler RISC-V (XFCE) for StarFive VisionFive2"
+    packages:
+      - board-image/oerv-starfive-visionfive2-xfce
+  - id: oerv-sipeed-lpi4a-8g-headless
+    display_name: "openEuler RISC-V (headless) for Sipeed LicheePi 4A (8G RAM)"
+    packages:
+      - board-image/oerv-sipeed-lpi4a-headless
+      - board-image/uboot-oerv-sipeed-lpi4a-8g
+  - id: oerv-sipeed-lpi4a-8g-xfce
+    display_name: "openEuler RISC-V (XFCE) for Sipeed LicheePi 4A (8G RAM)"
+    packages:
+      - board-image/oerv-sipeed-lpi4a-xfce
+      - board-image/uboot-oerv-sipeed-lpi4a-8g
+  - id: oerv-sipeed-lpi4a-16g-headless
+    display_name: "openEuler RISC-V (headless) for Sipeed LicheePi 4A (16G RAM)"
+    packages:
+      - board-image/oerv-sipeed-lpi4a-headless
+      - board-image/uboot-oerv-sipeed-lpi4a-16g
+  - id: oerv-sipeed-lpi4a-16g-xfce
+    display_name: "openEuler RISC-V (XFCE) for Sipeed LicheePi 4A (16G RAM)"
+    packages:
+      - board-image/oerv-sipeed-lpi4a-xfce
+      - board-image/uboot-oerv-sipeed-lpi4a-16g
+  - id: revyos-milkv-pioneer
+    display_name: "RevyOS for Milk-V Pioneer"
+    packages:
+      - board-image/revyos-sg2042-milkv-pioneer
+  - id: revyos-sipeed-lpi4a-8g"
+    display_name: "RevyOS for Sipeed LicheePi 4A (8G RAM)"
+    packages:
+      - board-image/revyos-sipeed-lpi4a
+      - board-image/uboot-revyos-sipeed-lpi4a-8g
+  - id: revyos-sipeed-lpi4a-16g
+    display_name: "RevyOS for Sipeed LicheePi 4A (16G RAM)"
+    packages:
+      - board-image/revyos-sipeed-lpi4a
+      - board-image/uboot-revyos-sipeed-lpi4a-16g
+
+#
+# Supported devices
+#
+
+devices:
+  - id: awol-d1dev
+    display_name: "Allwinner Nezha D1"
+    variants:
+      - id: generic
+        display_name: "Allwinner Nezha D1 (generic variant)"
+        supported_combos:
+          - oerv-awol-d1-base
+          - oerv-awol-d1-xfce
+
+  - id: milkv-duo
+    display_name: "Milk-V Duo"
+    variants:
+      - id: 64m
+        display_name: "Milk-V Duo (64M RAM)"
+        supported_combos:
+          - buildroot-sdk-milkv-duo
+          - buildroot-sdk-milkv-duo-python
+      - id: 256m
+        display_name: "Milk-V Duo (256M RAM)"
+        supported_combos:
+          - buildroot-sdk-milkv-duo256m
+          - buildroot-sdk-milkv-duo256m-python
+
+  - id: milkv-pioneer
+    display_name: "Milk-V Pioneer Box"
+    variants:
+      - id: v1.3
+        display_name: "Milk-V Pioneer Box (v1.3)"
+        supported_combos:
+          # - fedora-milkv-pioneer-v1.2  # cannot download from Google Drive
+          - oerv-milkv-pioneer-base-nvme
+          - oerv-milkv-pioneer-xfce-nvme
+          - revyos-milkv-pioneer
+      - id: v1.2
+        display_name: "Milk-V Pioneer Box (v1.2)"
+        supported_combos:
+          # - fedora-milkv-pioneer-v1.2  # cannot download from Google Drive
+          - oerv-milkv-pioneer-base-nvme
+          - oerv-milkv-pioneer-xfce-nvme
+          # - revyos-milkv-pioneer  # not indicated by PM
+      - id: v1.1
+        display_name: "Milk-V Pioneer Box (v1.1)"
+        supported_combos:
+          # - fedora-milkv-pioneer-v1.1  # cannot download from Google Drive
+          - oerv-milkv-pioneer-base
+          - oerv-milkv-pioneer-xfce
+          # - revyos-milkv-pioneer  # not indicated by PM
+
+  - id: sipeed-licheerv
+    display_name: "Sipeed Lichee RV"
+    variants:
+      - id: generic
+        display_name: "Sipeed Lichee RV (generic variant)"
+        supported_combos:
+          - oerv-awol-d1-base
+          - oerv-awol-d1-xfce
+
+  - id: sipeed-lpi4a
+    display_name: "Sipeed LicheePi 4A"
+    variants:
+      - id: 8g
+        display_name: "Sipeed LicheePi 4A (8G RAM)"
+        supported_combos:
+          - oerv-sipeed-lpi4a-8g-headless
+          - oerv-sipeed-lpi4a-8g-xfce
+          - revyos-sipeed-lpi4a-8g
+      - id: 16g
+        display_name: "Sipeed LicheePi 4A (16G RAM)"
+        supported_combos:
+          - oerv-sipeed-lpi4a-16g-headless
+          - oerv-sipeed-lpi4a-16g-xfce
+          - revyos-sipeed-lpi4a-16g
+
+  - id: starfive-visionfive
+    display_name: "StarFive VisionFive"
+    variants:
+      - id: generic
+        display_name: "StarFive VisionFive (generic variant)"
+        supported_combos:
+          - oerv-starfive-visionfive-base
+          - oerv-starfive-visionfive-xfce
+
+  - id: starfive-visionfive2
+    display_name: "StarFive VisionFive2"
+    variants:
+      - id: generic
+        display_name: "StarFive VisionFive2 (generic variant)"
+        supported_combos:
+          - oerv-starfive-visionfive2-base
+          - oerv-starfive-visionfive2-xfce
