@@ -38,6 +38,10 @@ image_combos:
     display_name: "Canaan Kendryte K230 Official CanMV Debian SDK"
     packages:
       - board-image/canmv-debian-sdk-canaan-k230
+  - id: canmv-ubuntu-sdk-canaan-k230
+    display_name: "Canaan Kendryte K230 Official CanMV Ubuntu SDK"
+    packages:
+      - board-image/canmv-ubuntu-sdk-canaan-k230
   - id: oerv-milkv-pioneer-base
     display_name: "openEuler RISC-V (base system) for Milk-V Pioneer"
     packages:
@@ -136,6 +140,7 @@ devices:
         display_name: "Canaan Kendryte K230 (generic variant)"
         supported_combos:
           - canmv-debian-sdk-canaan-k230
+          - canmv-ubuntu-sdk-canaan-k230
 
   - id: milkv-duo
     display_name: "Milk-V Duo"
