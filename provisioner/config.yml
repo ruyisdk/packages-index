@@ -104,6 +104,10 @@ image_combos:
     packages:
       - board-image/oerv-sipeed-lpi4a-xfce
       - board-image/uboot-oerv-sipeed-lpi4a-16g
+  - id: openwrt-sifive-unmatched
+    display_name: "OpenWrt for SiFive Unmatched"
+    packages:
+      - board-image/openwrt-sifive-unmatched
   - id: revyos-milkv-pioneer
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
@@ -180,6 +184,14 @@ devices:
           - oerv-milkv-pioneer-base
           - oerv-milkv-pioneer-xfce
           # - revyos-milkv-pioneer  # not indicated by PM
+
+  - id: sifive-unmatched
+    display_name: "SiFive Unmatched"
+    variants:
+      - id: generic
+        display_name: "SiFive Unmatched (generic variant)"
+        supported_combos:
+          - openwrt-sifive-unmatched
 
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
