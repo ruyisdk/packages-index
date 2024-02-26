@@ -7,6 +7,11 @@
   },
   "profiles": [
     {
+      "name": "baremetal-rv64ilp32",
+      "need_flavor": ["rv64ilp32"],
+      "mabi": "ilp32d"
+    },
+    {
       "name": "sipeed-lpi4a",
       "need_flavor": ["xthead"],
       "mcpu": "thead-c910"
