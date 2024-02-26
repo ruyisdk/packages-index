@@ -34,6 +34,10 @@ image_combos:
     display_name: "Milk-V Duo Official buildroot SDK (256M RAM, with Python)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m-python
+  - id: canmv-debian-sdk-canaan-k230
+    display_name: "Canaan Kendryte K230 Official CanMV Debian SDK"
+    packages:
+      - board-image/canmv-debian-sdk-canaan-k230
   - id: oerv-milkv-pioneer-base
     display_name: "openEuler RISC-V (base system) for Milk-V Pioneer"
     packages:
@@ -124,6 +128,14 @@ devices:
         supported_combos:
           - oerv-awol-d1-base
           - oerv-awol-d1-xfce
+
+  - id: canaan-k230
+    display_name: "Canaan Kendryte K230"
+    variants:
+      - id: generic
+        display_name: "Canaan Kendryte K230 (generic variant)"
+        supported_combos:
+          - canmv-debian-sdk-canaan-k230
 
   - id: milkv-duo
     display_name: "Milk-V Duo"
