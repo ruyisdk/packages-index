@@ -13,6 +13,12 @@ postinst_messages:
     * check the file [cyan]/extlinux/extlinux.conf[/cyan] in the partition,
     * replace [yellow]mmcblk1p3[/yellow] with [yellow]nvme0n1p3[/yellow] as needed.
 
+  oerv-sifive-unmatched-readme: |
+    [bold green]NOTE[/bold green]: Please also see the README provided by the openEuler devs for
+    further instructions on image usage.
+
+    Link: https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/preview/openEuler-23.09-V1-riscv64/Unmatched/README.unmatched.txt
+
 #
 # Supported combos
 #
@@ -68,6 +74,16 @@ image_combos:
     display_name: "openEuler RISC-V (XFCE) for Allwinner D1"
     packages:
       - board-image/oerv-awol-d1-xfce
+  - id: oerv-sifive-unmatched-base
+    display_name: "openEuler RISC-V (base system) for SiFive HiFive Unmatched"
+    packages:
+      - board-image/oerv-sifive-unmatched-base
+    postinst_msgid: oerv-sifive-unmatched-readme
+  - id: oerv-sifive-unmatched-xfce
+    display_name: "openEuler RISC-V (XFCE) for SiFive HiFive Unmatched"
+    packages:
+      - board-image/oerv-sifive-unmatched-xfce
+    postinst_msgid: oerv-sifive-unmatched-readme
   - id: oerv-starfive-visionfive-base
     display_name: "openEuler RISC-V (base system) for StarFive VisionFive"
     packages:
@@ -105,7 +121,7 @@ image_combos:
       - board-image/oerv-sipeed-lpi4a-xfce
       - board-image/uboot-oerv-sipeed-lpi4a-16g
   - id: openwrt-sifive-unmatched
-    display_name: "OpenWrt for SiFive Unmatched"
+    display_name: "OpenWrt for SiFive HiFive Unmatched"
     packages:
       - board-image/openwrt-sifive-unmatched
   - id: revyos-milkv-pioneer
@@ -186,11 +202,13 @@ devices:
           # - revyos-milkv-pioneer  # not indicated by PM
 
   - id: sifive-unmatched
-    display_name: "SiFive Unmatched"
+    display_name: "SiFive HiFive Unmatched"
     variants:
       - id: generic
-        display_name: "SiFive Unmatched (generic variant)"
+        display_name: "SiFive HiFive Unmatched (generic variant)"
         supported_combos:
+          - oerv-sifive-unmatched-base
+          - oerv-sifive-unmatched-xfce
           - openwrt-sifive-unmatched
 
   - id: sipeed-licheerv
