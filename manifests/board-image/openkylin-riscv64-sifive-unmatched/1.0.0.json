@@ -10,6 +10,7 @@
       "name": "openKylin-1.0-hifive-unmatched-riscv64.img.xz",
       "size": 2470855220,
       "urls": [
+        "https://mirror.sjtu.edu.cn/openkylin-cdimage/1.0/openKylin-1.0-hifive-unmatched-riscv64.img.xz",
         "https://releases.openkylin.top/1.0/openKylin-1.0-hifive-unmatched-riscv64.img.xz"
       ],
       "restrict": ["mirror"],
