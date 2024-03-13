@@ -138,6 +138,10 @@ image_combos:
     packages:
       - board-image/revyos-sipeed-lpi4a
       - board-image/uboot-revyos-sipeed-lpi4a-16g
+  - id: ubuntu-server-sifive-unmatched
+    display_name: "Ubuntu Server for SiFive HiFive Unmatched"
+    packages:
+      - board-image/ubuntu-server-riscv64-sifive-unmatched
 
 #
 # Supported devices
@@ -210,6 +214,7 @@ devices:
           - oerv-sifive-unmatched-base
           - oerv-sifive-unmatched-xfce
           - openwrt-sifive-unmatched
+          - ubuntu-server-sifive-unmatched
 
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
