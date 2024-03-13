@@ -1,0 +1,31 @@
+{
+  "kind": ["blob", "provisionable"],
+  "desc": "Official openKylin 1.0 image for SiFive HiFive Unmatched",
+  "vendor": {
+    "name": "openKylin",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "openKylin-1.0-hifive-unmatched-riscv64.img.xz",
+      "size": 2470855220,
+      "urls": [
+        "https://releases.openkylin.top/1.0/openKylin-1.0-hifive-unmatched-riscv64.img.xz"
+      ],
+      "restrict": ["mirror"],
+      "checksums": {
+        "sha512": "655f08141070ee76baf18d319addd5cfb468fe7b75869c6ae8d23371fe71d68c644fcf951a257743e5e57425f16833c64691dd5a053880d3a7cc4ec38b7ee22e",
+        "sha256": "4dd70e039c152c22a01cd7147525c3c124990ba8600cca0394e94ccda0ade495"
+      }
+    }
+  ],
+  "blob": {
+    "distfiles": ["openKylin-1.0-hifive-unmatched-riscv64.img.xz"]
+  },
+  "provisionable": {
+    "partition_map": {
+      "disk": "openKylin-1.0-hifive-unmatched-riscv64.img"
+    },
+    "strategy": "dd-v1"
+  }
+}
