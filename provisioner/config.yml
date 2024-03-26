@@ -44,6 +44,14 @@ image_combos:
     display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, on SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duos-sd
+  - id: debian-desktop-sdk-milkv-mars-sdcard
+    display_name: "Milk-V Mars Official Debian Desktop SDK (on SD card)"
+    packages:
+      - board-image/debian-desktop-sdk-milkv-mars-sd
+  - id: debian-desktop-sdk-milkv-mars-cm-sdcard
+    display_name: "Milk-V Mars CM Official Debian Desktop SDK (on SD card)"
+    packages:
+      - board-image/debian-desktop-sdk-milkv-mars-cm-sd
   - id: canmv-debian-sdk-canaan-k230
     display_name: "Canaan Kendryte K230 Official CanMV Debian SDK"
     packages:
@@ -195,6 +203,22 @@ devices:
         display_name: "Milk-V Duo S (generic variant)"
         supported_combos:
           - buildroot-sdk-milkv-duos-freertos-sdcard
+
+  - id: milkv-mars
+    display_name: "Milk-V Mars"
+    variants:
+      - id: generic
+        display_name: "Milk-V Mars (generic variant)"
+        supported_combos:
+          - debian-desktop-sdk-milkv-mars-sdcard
+
+  - id: milkv-mars-cm
+    display_name: "Milk-V Mars CM"
+    variants:
+      - id: generic
+        display_name: "Milk-V Mars CM (generic variant)"
+        supported_combos:
+          - debian-desktop-sdk-milkv-mars-cm-sdcard
 
   - id: milkv-pioneer
     display_name: "Milk-V Pioneer Box"
