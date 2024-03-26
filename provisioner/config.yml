@@ -40,6 +40,10 @@ image_combos:
     display_name: "Milk-V Duo Official buildroot SDK (256M RAM, with Python)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m-python
+  - id: buildroot-sdk-milkv-duos-freertos-sdcard
+    display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, on SD card)"
+    packages:
+      - board-image/buildroot-sdk-milkv-duos-sd
   - id: canmv-debian-sdk-canaan-k230
     display_name: "Canaan Kendryte K230 Official CanMV Debian SDK"
     packages:
@@ -183,6 +187,14 @@ devices:
         supported_combos:
           - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
+
+  - id: milkv-duos
+    display_name: "Milk-V Duo S"
+    variants:
+      - id: generic
+        display_name: "Milk-V Duo S (generic variant)"
+        supported_combos:
+          - buildroot-sdk-milkv-duos-freertos-sdcard
 
   - id: milkv-pioneer
     display_name: "Milk-V Pioneer Box"
