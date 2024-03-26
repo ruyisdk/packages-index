@@ -1,0 +1,31 @@
+{
+  "kind": ["blob", "provisionable"],
+  "desc": "Official Debian Desktop SDK v3.6.1 image for Milk-V Mars v1.0.6 (SD card)",
+  "vendor": {
+    "name": "Milk-V",
+    "eula": null
+  },
+  "distfiles": [
+    {
+      "name": "mars_debian-desktop_sdk-v3.6.1_sdcard_v1.0.6.img.zip",
+      "size": 1371671992,
+      "urls": [
+        "https://github.com/milkv-mars/mars-buildroot-sdk/releases/download/V1.0.6/mars_debian-desktop_sdk-v3.6.1_sdcard_v1.0.6.img.zip"
+      ],
+      "restrict": ["mirror"],
+      "checksums": {
+        "sha512": "d6ed7244f87f10ad816ce577a7051ca580b48417ed554d2580353d25296fc2f93cf79170b9a1d111c092fc53e32da563fe095d5f269ad3305273bbe8a261fc8e",
+        "sha256": "9af1e666d9dd85fa12ddcaac1d655ce0b4d1b52587a1fc4a591349fac51956b2"
+      }
+    }
+  ],
+  "blob": {
+    "distfiles": ["mars_debian-desktop_sdk-v3.6.1_sdcard_v1.0.6.img.zip"]
+  },
+  "provisionable": {
+    "partition_map": {
+      "disk": "mars_debian-desktop_sdk-v3.6.1_sdcard_v1.0.6.img"
+    },
+    "strategy": "dd-v1"
+  }
+}
