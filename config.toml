@@ -1,0 +1,10 @@
+ruyi-repo = "v1"
+
+[repo]
+doc_uri = "https://ruyisdk.github.io/docs/"
+
+[[mirrors]]
+id = "ruyi-dist"
+urls = [
+  "https://mirror.iscas.ac.cn/ruyisdk/dist/",
+]
