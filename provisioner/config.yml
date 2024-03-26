@@ -60,6 +60,14 @@ image_combos:
     display_name: "Canaan Kendryte K230 Official CanMV Ubuntu SDK"
     packages:
       - board-image/canmv-ubuntu-sdk-canaan-k230
+  - id: freebsd-riscv64
+    display_name: "FreeBSD riscv64"
+    packages:
+      - board-image/freebsd-riscv64-mini-live
+  - id: openbsd-riscv64
+    display_name: "OpenBSD riscv64"
+    packages:
+      - board-image/openbsd-riscv64-live
   - id: oerv-milkv-pioneer-base
     display_name: "openEuler RISC-V (base system) for Milk-V Pioneer"
     packages:
@@ -251,6 +259,8 @@ devices:
       - id: generic
         display_name: "SiFive HiFive Unmatched (generic variant)"
         supported_combos:
+          - freebsd-riscv64
+          - openbsd-riscv64
           - oerv-sifive-unmatched-base
           - oerv-sifive-unmatched-xfce
           - openkylin-sifive-unmatched
