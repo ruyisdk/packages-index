@@ -13,8 +13,7 @@
     },
     {
       "name": "xiangshan-nanhu",
-      "march": "rv64imafdc_zba_zbb_zbc_zbs_zbkb_zbkc_zbkx_zknd_zkne_zknh_zksed_zksh_zicbom_zicboz",
-      "mcpu": "xiangshan-nanhu"
+      "march": "rv64imafdc_zba_zbb_zbc_zbs_zbkb_zbkc_zbkx_zknd_zkne_zknh_zksed_zksh_zicbom_zicboz"
     },
     {
       "name": "sipeed-lpi4a",
