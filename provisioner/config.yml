@@ -170,6 +170,16 @@ image_combos:
     packages:
       - board-image/revyos-sipeed-lpi4a
       - board-image/uboot-revyos-sipeed-lpi4a-16g
+  - id: revyos-milkv-meles-4g
+    display_name: "RevyOS for Milk-V Meles (4G RAM)"
+    packages:
+      - board-image/revyos-milkv-meles
+      - board-image/uboot-revyos-milkv-meles-4g
+  - id: revyos-milkv-meles-8g
+    display_name: "RevyOS for Milk-V Meles (8G RAM)"
+    packages:
+      - board-image/revyos-milkv-meles
+      - board-image/uboot-revyos-milkv-meles-8g
   - id: ubuntu-server-sifive-unmatched
     display_name: "Ubuntu Server for SiFive HiFive Unmatched"
     packages:
@@ -241,6 +251,18 @@ devices:
         display_name: "Milk-V Mars CM (generic variant)"
         supported_combos:
           - debian-desktop-sdk-milkv-mars-cm-sdcard
+
+  - id: milkv-meles
+    display_name: "Milk-V Meles"
+    variants:
+      - id: 4g
+        display_name: "Milk-V Meles (4G RAM)"
+        supported_combos:
+          - revyos-milkv-meles-4g
+      - id: 8g
+        display_name: "Milk-V Meles (8G RAM)"
+        supported_combos:
+          - revyos-milkv-meles-8g
 
   - id: milkv-pioneer
     display_name: "Milk-V Pioneer Box"
