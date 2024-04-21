@@ -27,6 +27,14 @@ postinst_messages:
     Link: https://milkv.io/zh/docs/vega/getting-started/buildroot-sdk
     Link: https://github.com/ruyisdk/support-matrix/blob/main/Vega/BuildRoot/README.md
 
+  doc-buildroot-sdk-canaan-k510: |
+    [bold green]NOTE[/]: You have to consult the official documentation for
+    instructions on how to build the SDK, as upstream does not provide pre-built
+    images right now. The RuyiSDK Support Matrix record may be of use too.
+
+    Link: https://github.com/kendryte/k510_buildroot
+    Link: https://github.com/ruyisdk/support-matrix/blob/main/K510/BuildRoot/README.md
+
 #
 # Supported combos
 #
@@ -186,6 +194,10 @@ image_combos:
       - board-image/ubuntu-server-riscv64-sifive-unmatched
 
   # Placeholder combos for providing documentation only
+  - id: placeholder-buildroot-sdk-canaan-k510
+    display_name: "Canaan Kendryte K510 Official Buildroot SDK (documentation-only)"
+    packages: []
+    postinst_msgid: doc-buildroot-sdk-canaan-k510
   - id: placeholder-buildroot-sdk-milkv-vega
     display_name: "Milk-V Vega Official Buildroot SDK (documentation-only)"
     packages: []
@@ -213,6 +225,14 @@ devices:
         supported_combos:
           - canmv-debian-sdk-canaan-k230
           - canmv-ubuntu-sdk-canaan-k230
+
+  - id: canaan-k510
+    display_name: "Canaan Kendryte K510"
+    variants:
+      - id: generic
+        display_name: "Canaan Kendryte K510 (generic variant)"
+        supported_combos:
+          - placeholder-buildroot-sdk-canaan-k510
 
   - id: milkv-duo
     display_name: "Milk-V Duo"
