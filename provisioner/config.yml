@@ -2,19 +2,19 @@ ruyi_provisioner_config: v1
 
 postinst_messages:
   oerv-milkv-pioneer-nvme: |
-    [bold green]NOTE[/bold green]: You will need to tweak the rootfs parameter for openEuler to properly
+    [bold green]NOTE[/]: You will need to tweak the rootfs parameter for openEuler to properly
     boot on Milk-V Pioneer v1.2 and later models, whose rootfs resides on NVMe
     drive instead of TF card.
 
-    Since [yellow]ruyi[/yellow] does not run as [yellow]root[/yellow], you will have to perform the following
+    Since [yellow]ruyi[/] does not run as [yellow]root[/], you will have to perform the following
     actions yourself before booting the target device:
 
-    * mount the target device's [green]/boot[/green] partition,
-    * check the file [cyan]/extlinux/extlinux.conf[/cyan] in the partition,
-    * replace [yellow]mmcblk1p3[/yellow] with [yellow]nvme0n1p3[/yellow] as needed.
+    * mount the target device's [green]/boot[/] partition,
+    * check the file [cyan]/extlinux/extlinux.conf[/] in the partition,
+    * replace [yellow]mmcblk1p3[/] with [yellow]nvme0n1p3[/] as needed.
 
   oerv-sifive-unmatched-readme: |
-    [bold green]NOTE[/bold green]: Please also see the README provided by the openEuler devs for
+    [bold green]NOTE[/]: Please also see the README provided by the openEuler devs for
     further instructions on image usage.
 
     Link: https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/preview/openEuler-23.09-V1-riscv64/Unmatched/README.unmatched.txt
