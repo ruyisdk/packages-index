@@ -35,6 +35,14 @@ postinst_messages:
     Link: https://github.com/kendryte/k510_buildroot
     Link: https://github.com/ruyisdk/support-matrix/blob/main/K510/BuildRoot/README.md
 
+  doc-freertos-sipeed-maix1: |
+    [bold green]NOTE[/]: You have to consult the official documentation for
+    instructions on how to build the SDK, as upstream does not provide pre-built
+    images right now. The RuyiSDK Support Matrix record may be of use too.
+
+    Link: https://github.com/kendryte/kendryte-freertos-sdk
+    Link: https://github.com/ruyisdk/support-matrix/blob/main/Maix-I_K210/FreeRTOS/README.md
+
 #
 # Supported combos
 #
@@ -229,6 +237,10 @@ image_combos:
     display_name: "Milk-V Vega Official Buildroot SDK (documentation-only)"
     packages: []
     postinst_msgid: doc-buildroot-sdk-milkv-vega
+  - id: placeholder-freertos-sipeed-maix1
+    display_name: "Sipeed Maix-I Official FreeRTOS SDK (documentation-only)"
+    packages: []
+    postinst_msgid: doc-freertos-sipeed-maix1
 
 #
 # Supported devices
@@ -402,6 +414,14 @@ devices:
           - oerv-sipeed-lpi4a-16g-headless
           - oerv-sipeed-lpi4a-16g-xfce
           - revyos-sipeed-lpi4a-16g
+
+  - id: sipeed-maix1
+    display_name: "Sipeed Maix-I"
+    variants:
+      - id: generic
+        display_name: "Sipeed Maix-I (generic variant)"
+        supported_combos:
+          - placeholder-freertos-sipeed-maix1
 
   - id: starfive-visionfive
     display_name: "StarFive VisionFive"
