@@ -211,6 +211,16 @@ image_combos:
     packages:
       - board-image/revyos-sipeed-lc4a
       - board-image/uboot-revyos-sipeed-lc4a-16g
+  - id: revyos-sipeed-lcon4a-8g
+    display_name: "RevyOS for Sipeed Lichee Console 4A (8G RAM)"
+    packages:
+      - board-image/revyos-sipeed-lcon4a
+      - board-image/uboot-revyos-sipeed-lcon4a-8g
+  - id: revyos-sipeed-lcon4a-16g
+    display_name: "RevyOS for Sipeed Lichee Console 4A (16G RAM)"
+    packages:
+      - board-image/revyos-sipeed-lcon4a
+      - board-image/uboot-revyos-sipeed-lcon4a-16g
   - id: revyos-sipeed-lpi4a-8g
     display_name: "RevyOS for Sipeed LicheePi 4A (8G RAM)"
     packages:
@@ -385,6 +395,18 @@ devices:
         display_name: "Sipeed Lichee Cluster 4A (16G RAM)"
         supported_combos:
           - revyos-sipeed-lc4a-16g
+
+  - id: sipeed-lcon4a
+    display_name: "Sipeed Lichee Console 4A"
+    variants:
+      - id: 8g
+        display_name: "Sipeed Lichee Console 4A (8G RAM)"
+        supported_combos:
+          - revyos-sipeed-lcon4a-8g
+      - id: 16g
+        display_name: "Sipeed Lichee Console 4A (16G RAM)"
+        supported_combos:
+          - revyos-sipeed-lcon4a-16g
 
   - id: sipeed-lpi4a
     display_name: "Sipeed LicheePi 4A"
