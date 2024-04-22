@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "U-Boot image for Sipeed Lichee Cluster 4A (16G RAM) and RevyOS 20240127"
+vendor = { name = "PLCT", eula = "" }
+
+[[distfiles]]
+name = "u-boot-with-spl-lc4a-16g-main.bin"
+unpack = "raw"
+size = 968944
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4amain/20240127/u-boot-with-spl-lc4a-16g-main.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "f4a72fa87f807e359a3eac1f3f89229bf646f3e996b39ce79bdf862cb16183ca"
+sha512 = "8983b69dd4e5e14af3058c4795efc3e0bda8f1830930b9b72ff55ae991fe8a7603dfea6438334a3419becf818a077f4dc5586e413b457f8af20a5551085f9106"
+
+[blob]
+distfiles = [
+  "u-boot-with-spl-lc4a-16g-main.bin",
+]
+
+[provisionable]
+strategy = "fastboot-v1(lpi4a-uboot)"
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lc4a-16g-main.bin"
