@@ -95,6 +95,10 @@ image_combos:
     display_name: "Ubuntu Server for SiFive HiFive Unmatched"
     packages:
       - board-image/ubuntu-server-riscv64-sifive-unmatched
+  - id: debian-fishwaldo-sipeed-licheervnano
+    display_name: "Debian for Sipeed LicheeRV Nano (from https://github.com/Fishwaldo)"
+    packages:
+      - board-image/debian-fishwaldo-sg200x-sipeed-licheervnano
 
   # BSDs
   - id: freebsd-riscv64
@@ -414,6 +418,7 @@ devices:
         display_name: "Sipeed LicheeRV Nano (generic variant)"
         supported_combos:
           - buildroot-sdk-sipeed-licheervnano-linux-freertos
+          - debian-fishwaldo-sipeed-licheervnano
 
   - id: sipeed-maix1
     display_name: "Sipeed Maix-I"
