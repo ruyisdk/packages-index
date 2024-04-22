@@ -31,24 +31,23 @@ void check_sizes(void)
 
 使用相应的工具链包与 profile，我们将可编译出符合 RV64ILP32 ABI 的目标代码：
 
-```sh
-ruyi update
-ruyi install gnu-plct-rv64ilp32-elf
-ruyi venv -t gnu-plct-rv64ilp32-elf --without-sysroot baremetal-rv64ilp32 /tmp/venv
-source /tmp/venv/bin/ruyi-activate
-
-/tmp/venv11/bin/riscv64-plct-elf-gcc -O2 -c -o test.o test.c
+```shell-session
+$ ruyi update
+$ ruyi install gnu-plct-rv64ilp32-elf
+$ ruyi venv -t gnu-plct-rv64ilp32-elf --without-sysroot baremetal-rv64ilp32 /tmp/venv
+$ source /tmp/venv/bin/ruyi-activate
+$ /tmp/venv11/bin/riscv64-plct-elf-gcc -O2 -c -o test.o test.c
 ```
 
 检查目标代码是否符合预期：
 
-```
+```shell-session
 $ riscv64-plct-elf-readelf -h test.o | grep 32
   Class:                             ELF32
   Flags:                             0x25, RVC, X32, double-float ABI
 ```
 
-```
+```shell-session
 $ riscv64-plct-elf-objdump -dw test.o
 
 test.o:     file format elf32-littleriscv
