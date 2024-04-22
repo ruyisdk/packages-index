@@ -43,6 +43,28 @@ postinst_messages:
     Link: https://github.com/kendryte/kendryte-freertos-sdk
     Link: https://github.com/ruyisdk/support-matrix/blob/main/Maix-I_K210/FreeRTOS/README.md
 
+  doc-freertos-sipeed-tangmega138kpro: |
+    [bold green]NOTE[/]: You have to consult the official documentation for
+    instructions on how to build the SDK, as upstream does not provide pre-built
+    images right now. You also need a Windows system for running the FPGA
+    programmer, which is proprietary and Windows-only.
+
+    The RuyiSDK Support Matrix record may be of use too.
+
+    Link: https://github.com/sipeed/TangMega-138KPro-example
+    Link: https://github.com/ruyisdk/support-matrix/blob/main/Tang_Mega_138K/FreeRTOS/README.md
+
+  doc-rtthread-sipeed-tangmega138kpro: |
+    [bold green]NOTE[/]: You have to consult the official documentation for
+    instructions on how to build the SDK, as upstream does not provide pre-built
+    images right now. You also need a Windows system for running the FPGA
+    programmer, which is proprietary and Windows-only.
+
+    The RuyiSDK Support Matrix record may be of use too.
+
+    Link: https://github.com/sipeed/TangMega-138KPro-example
+    Link: https://github.com/ruyisdk/support-matrix/blob/main/Tang_Mega_138K/RT-Thread/README.md
+
 #
 # Supported combos
 #
@@ -255,6 +277,14 @@ image_combos:
     display_name: "Sipeed Maix-I Official FreeRTOS SDK (documentation-only)"
     packages: []
     postinst_msgid: doc-freertos-sipeed-maix1
+  - id: placeholder-freertos-sipeed-tangmega138kpro
+    display_name: "Sipeed Tang Mega 138K Pro FPGA & FreeRTOS SDK (documentation-only)"
+    packages: []
+    postinst_msgid: doc-freertos-sipeed-tangmega138kpro
+  - id: placeholder-rtthread-sipeed-tangmega138kpro
+    display_name: "Sipeed Tang Mega 138K Pro FPGA & RT-Thread SDK (documentation-only)"
+    packages: []
+    postinst_msgid: doc-rtthread-sipeed-tangmega138kpro
 
 #
 # Supported devices
@@ -449,6 +479,15 @@ devices:
         display_name: "Sipeed Maix-I (generic variant)"
         supported_combos:
           - placeholder-freertos-sipeed-maix1
+
+  - id: sipeed-tangmega138kpro
+    display_name: "Sipeed Tang Mega 138K Pro"
+    variants:
+      - id: generic
+        display_name: "Sipeed Tang Mega 138K Pro (generic variant)"
+        supported_combos:
+          - placeholder-freertos-sipeed-tangmega138kpro
+          - placeholder-rtthread-sipeed-tangmega138kpro
 
   - id: starfive-visionfive
     display_name: "StarFive VisionFive"
