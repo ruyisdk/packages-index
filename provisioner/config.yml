@@ -198,12 +198,12 @@ image_combos:
     packages:
       - board-image/revyos-sg2042-milkv-pioneer
   - id: revyos-sipeed-lc4a-8g
-    display_name: "RevyOS for Sipeed Lichee Console 4A (8G RAM)"
+    display_name: "RevyOS for Sipeed Lichee Cluster 4A (8G RAM)"
     packages:
       - board-image/revyos-sipeed-lc4a
       - board-image/uboot-revyos-sipeed-lc4a-8g
   - id: revyos-sipeed-lc4a-16g
-    display_name: "RevyOS for Sipeed Lichee Console 4A (16G RAM)"
+    display_name: "RevyOS for Sipeed Lichee Cluster 4A (16G RAM)"
     packages:
       - board-image/revyos-sipeed-lc4a
       - board-image/uboot-revyos-sipeed-lc4a-16g
@@ -371,16 +371,32 @@ devices:
           - ubuntu-server-sifive-unmatched
 
   - id: sipeed-lc4a
-    display_name: "Sipeed Lichee Console 4A"
+    display_name: "Sipeed Lichee Cluster 4A"
     variants:
       - id: 8g
-        display_name: "Sipeed Lichee Console 4A (8G RAM)"
+        display_name: "Sipeed Lichee Cluster 4A (8G RAM)"
         supported_combos:
           - revyos-sipeed-lc4a-8g
       - id: 16g
-        display_name: "Sipeed Lichee Console 4A (16G RAM)"
+        display_name: "Sipeed Lichee Cluster 4A (16G RAM)"
         supported_combos:
           - revyos-sipeed-lc4a-16g
+
+  - id: sipeed-lpi4a
+    display_name: "Sipeed LicheePi 4A"
+    variants:
+      - id: 8g
+        display_name: "Sipeed LicheePi 4A (8G RAM)"
+        supported_combos:
+          - oerv-sipeed-lpi4a-8g-headless
+          - oerv-sipeed-lpi4a-8g-xfce
+          - revyos-sipeed-lpi4a-8g
+      - id: 16g
+        display_name: "Sipeed LicheePi 4A (16G RAM)"
+        supported_combos:
+          - oerv-sipeed-lpi4a-16g-headless
+          - oerv-sipeed-lpi4a-16g-xfce
+          - revyos-sipeed-lpi4a-16g
 
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
@@ -398,22 +414,6 @@ devices:
         display_name: "Sipeed LicheeRV Nano (generic variant)"
         supported_combos:
           - buildroot-sdk-sipeed-licheervnano-linux-freertos
-
-  - id: sipeed-lpi4a
-    display_name: "Sipeed LicheePi 4A"
-    variants:
-      - id: 8g
-        display_name: "Sipeed LicheePi 4A (8G RAM)"
-        supported_combos:
-          - oerv-sipeed-lpi4a-8g-headless
-          - oerv-sipeed-lpi4a-8g-xfce
-          - revyos-sipeed-lpi4a-8g
-      - id: 16g
-        display_name: "Sipeed LicheePi 4A (16G RAM)"
-        supported_combos:
-          - oerv-sipeed-lpi4a-16g-headless
-          - oerv-sipeed-lpi4a-16g-xfce
-          - revyos-sipeed-lpi4a-16g
 
   - id: sipeed-maix1
     display_name: "Sipeed Maix-I"
