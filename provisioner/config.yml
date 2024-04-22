@@ -40,6 +40,7 @@ postinst_messages:
 #
 
 image_combos:
+  # Buildroot SDKs
   - id: buildroot-sdk-milkv-duo
     display_name: "Milk-V Duo Official buildroot SDK (64M RAM)"
     packages:
@@ -60,6 +61,8 @@ image_combos:
     display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, on SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duos-sd
+
+  # Debian & derivatives
   - id: debian-desktop-sdk-milkv-mars-sdcard
     display_name: "Milk-V Mars Official Debian Desktop SDK (on SD card)"
     packages:
@@ -76,6 +79,12 @@ image_combos:
     display_name: "Canaan Kendryte K230 Official CanMV Ubuntu SDK"
     packages:
       - board-image/canmv-ubuntu-sdk-canaan-k230
+  - id: ubuntu-server-sifive-unmatched
+    display_name: "Ubuntu Server for SiFive HiFive Unmatched"
+    packages:
+      - board-image/ubuntu-server-riscv64-sifive-unmatched
+
+  # BSDs
   - id: freebsd-riscv64
     display_name: "FreeBSD riscv64"
     packages:
@@ -84,6 +93,8 @@ image_combos:
     display_name: "OpenBSD riscv64"
     packages:
       - board-image/openbsd-riscv64-live
+
+  # oERV
   - id: oerv-milkv-pioneer-base
     display_name: "openEuler RISC-V (base system) for Milk-V Pioneer"
     packages:
@@ -156,14 +167,20 @@ image_combos:
     packages:
       - board-image/oerv-sipeed-lpi4a-xfce
       - board-image/uboot-oerv-sipeed-lpi4a-16g
+
+  # openKylin
   - id: openkylin-sifive-unmatched
     display_name: "openKylin for SiFive HiFive Unmatched"
     packages:
       - board-image/openkylin-riscv64-sifive-unmatched
+
+  # OpenWrt
   - id: openwrt-sifive-unmatched
     display_name: "OpenWrt for SiFive HiFive Unmatched"
     packages:
       - board-image/openwrt-sifive-unmatched
+
+  # RevyOS
   - id: revyos-milkv-pioneer
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
@@ -188,10 +205,6 @@ image_combos:
     packages:
       - board-image/revyos-milkv-meles
       - board-image/uboot-revyos-milkv-meles-8g
-  - id: ubuntu-server-sifive-unmatched
-    display_name: "Ubuntu Server for SiFive HiFive Unmatched"
-    packages:
-      - board-image/ubuntu-server-riscv64-sifive-unmatched
 
   # Placeholder combos for providing documentation only
   - id: placeholder-buildroot-sdk-canaan-k510
