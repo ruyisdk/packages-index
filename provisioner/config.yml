@@ -61,6 +61,10 @@ image_combos:
     display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, on SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duos-sd
+  - id: buildroot-sdk-sipeed-licheervnano-linux-freertos
+    display_name: "Sipeed LicheeRV Nano Official buildroot SDK (Linux & FreeRTOS)"
+    packages:
+      - board-image/buildroot-sdk-sipeed-licheervnano
 
   # Debian & derivatives
   - id: debian-desktop-sdk-milkv-mars-sdcard
@@ -352,6 +356,14 @@ devices:
         supported_combos:
           - oerv-awol-d1-base
           - oerv-awol-d1-xfce
+
+  - id: sipeed-licheervnano
+    display_name: "Sipeed LicheeRV Nano"
+    variants:
+      - id: generic
+        display_name: "Sipeed LicheeRV Nano (generic variant)"
+        supported_combos:
+          - buildroot-sdk-sipeed-licheervnano-linux-freertos
 
   - id: sipeed-lpi4a
     display_name: "Sipeed LicheePi 4A"
