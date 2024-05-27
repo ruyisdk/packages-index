@@ -233,6 +233,10 @@ image_combos:
       - board-image/buildroot-sdk-sipeed-licheervnano
 
   # Debian & derivatives
+  - id: armbian-pine64-star64
+    display_name: "Armbian for Pine64 Star64"
+    packages:
+      - board-image/armbian-pine64-star64
   - id: debian-desktop-sdk-milkv-mars-sdcard
     display_name: "Milk-V Mars Official Debian Desktop SDK (on SD card)"
     packages:
@@ -603,6 +607,14 @@ devices:
         display_name: "Milk-V Vega (generic variant)"
         supported_combos:
           - placeholder-buildroot-sdk-milkv-vega
+
+  - id: pine64-star64
+    display_name: "Pine64 Star64"
+    variants:
+      - id: generic
+        display_name: "Pine64 Star64 (generic variant)"
+        supported_combos:
+          - armbian-pine64-star64
 
   - id: sifive-unmatched
     display_name: "SiFive HiFive Unmatched"
