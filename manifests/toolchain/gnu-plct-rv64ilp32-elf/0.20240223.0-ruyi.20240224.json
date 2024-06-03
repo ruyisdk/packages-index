@@ -51,9 +51,7 @@
     "components": [
       {"name": "binutils", "version": "2.42"},
       {"name": "gcc", "version": "13.2.0"},
-      {"name": "gdb", "version": "14.1"},
-      {"name": "glibc", "version": "2.38"},
-      {"name": "linux-headers", "version": "6.4"}
+      {"name": "gdb", "version": "14.1"}
     ]
   }
 }
