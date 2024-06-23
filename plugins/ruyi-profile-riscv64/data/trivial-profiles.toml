@@ -1,0 +1,23 @@
+[[profiles]]
+id = "generic"
+march = "rv64gc"
+mabi = "lp64d"
+mcpu = ""
+
+[[profiles]]
+id = "baremetal-rv64ilp32"
+needed_flavors = ["rv64ilp32"]
+mabi = "ilp32d"
+
+[[profiles]]
+id = "xiangshan-nanhu"
+march = "rv64imafdc_zba_zbb_zbc_zbs_zbkb_zbkc_zbkx_zknd_zkne_zknh_zksed_zksh_zicbom_zicboz"
+
+[[profiles]]
+id = "sipeed-lpi4a"
+needed_flavors = ["xthead"]
+mcpu = "thead-c910"
+
+[[profiles]]
+id = "milkv-duo"
+mcpu = "thead-c906"

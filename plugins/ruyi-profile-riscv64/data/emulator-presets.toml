@@ -1,0 +1,9 @@
+[generic.qemu-linux-user]
+env = { QEMU_CPU = "rv64" }
+
+[thead-c906.qemu-linux-user]
+env = { QEMU_CPU = "thead-c906" }
+
+[thead-c910.qemu-linux-user]
+need_flavor = ["xthead"]
+env = { QEMU_CPU = "c910v" }
