@@ -7,6 +7,7 @@ vendor = { name = "PLCT", eula = "" }
 [[distfiles]]
 name = "box64-upstream-0.2.9-pre.ruyi.20240702+git.4b0b3fc9.arm64.tar.zst"
 size = 8089938
+strip_components = 2
 
 [distfiles.checksums]
 sha256 = "308491fe33e4804ea4add4dedb35b4c40e5943308a1194584224734b9b81b0b1"
@@ -15,6 +16,7 @@ sha512 = "9f4b6be1e436592f02a91d032d952b51a3825654fe6882c8e2c66bef40ff680aeafeb5
 [[distfiles]]
 name = "box64-upstream-0.2.9-pre.ruyi.20240702+git.4b0b3fc9.riscv64.tar.zst"
 size = 7622166
+strip_components = 2
 
 [distfiles.checksums]
 sha256 = "a171d3c31bd1d1e3285d358338357b377862d3b484aeb5381e8a545d75c7efc9"
