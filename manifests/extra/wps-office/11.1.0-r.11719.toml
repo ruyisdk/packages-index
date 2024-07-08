@@ -1,0 +1,41 @@
+format = "v1"
+
+[metadata]
+desc = "Kingsoft WPS Office 11.1.0.11719"
+vendor = { name = "Kingsoft", eula = "" }  # TODO: there is EULA but no link
+
+[[distfiles]]
+name = "wps-office_11.1.0.11719_amd64.deb"
+size = 410044220
+urls = []
+restrict = ["fetch", "mirror"]
+
+[distfiles.fetch_restriction]
+msgid = "extras/wps-office"
+params = { version = "11.1.0.11719", arch = "amd64", arch_humanized = "X64" }
+
+[distfiles.checksums]
+sha256 = "0581d344f18d7f8aa128615cd527c607d3c059544bdbf76b709247ab05bc4ce4"
+sha512 = "b62da339e1c27d2d26ad2e094f66910e7bfb97cce550d1609332e3abd4b9dabc4def80e18cfb02cce96a02a202bbd85c46f9e07834496968e4d2c4b11f0cfc80"
+
+[[distfiles]]
+name = "wps-office_11.1.0.11719_arm64.deb"
+size = 362817038
+urls = []
+restrict = ["fetch", "mirror"]
+
+[distfiles.fetch_restriction]
+msgid = "extras/wps-office"
+params = { version = "11.1.0.11719", arch = "arm64", arch_humanized = "ARM" }
+
+[distfiles.checksums]
+sha256 = "60bf443615ea838e7fdb3b4986a5e05fcdf4150bfdfc245c017798451339b3f2"
+sha512 = "cc468aaf9769a3dfa3e897329241d4493e49e6cf70d440fc259e6dc56f5d83b6f9c2f25e0e0551b1c70ab744909b29688ee80abf96bd4e74b373f2512f680889"
+
+[[binary]]
+host = "aarch64"
+distfiles = ["wps-office_11.1.0.11719_arm64.deb"]
+
+[[binary]]
+host = "x86_64"
+distfiles = ["wps-office_11.1.0.11719_amd64.deb"]

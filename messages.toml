@@ -1,0 +1,24 @@
+ruyi-repo-messages = "v1"
+
+["extras/wps-office"]
+en_US = """
+You need to download the package manually from the WPS Office download page:
+
+* Go to [yellow]https://linux.wps.cn[/]
+* Click "[yellow]立即下载[/]"
+* Ensure the version number shown below the "[yellow]64位 Deb格式[/]" column is [green]{{ version }}[/]
+* Click "[yellow]For {{ arch_humanized }}[/]" in that column to start downloading
+
+Place the downloaded file at [green]{{ dest_path }}[/] and re-run the install command.
+"""
+
+zh_CN = """
+您需要从 WPS Office 下载页面手工下载该软件包：
+
+* 访问 [yellow]https://linux.wps.cn[/]
+* 单击“[yellow]立即下载[/]”
+* 确保“[yellow]64位 Deb格式[/]”一列下显示的软件版本号为 [green]{{ version }}[/]
+* 单击该列中的“[yellow]For {{ arch_humanized }}[/]”以开始下载
+
+将下载完成的文件置于 [green]{{ dest_path }}[/] 并重新执行安装命令。
+"""
