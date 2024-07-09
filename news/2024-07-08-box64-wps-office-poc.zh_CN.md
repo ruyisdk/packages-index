@@ -70,6 +70,10 @@ sudo systemctl restart systemd-binfmt
 cat /proc/sys/fs/binfmt_misc/box64
 ```
 
+请注意：如果您在做这些操作之前，已经配置过 QEMU linux-user 等其他的 x86
+模拟机制，您需要禁用它们才能在后续的步骤中成功利用 Box64。如果您决定这么做，
+请不要忘记在使用结束之后恢复先前的配置。
+
 ### 安装 x86 sysroot
 
 由于 Box64 主要面向游戏等软件的模拟，而这些软件基本都自带所有依赖，所以 Box64
@@ -114,6 +118,9 @@ pushd /home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11719
 # 当前工作目录路径中应当不含特殊字符。
 # 如果含有，请自行适当调整 sed 命令的参数
 sed -i "s@gInstallPath=/@gInstallPath=$(pwd)/@" ./usr/bin/*
+
+# 可选: 使 WPS 与 Box64 的日志信息能够被看到
+sed -i "s@ > /dev/null 2>&1@@" ./usr/bin/*
 
 popd
 ```
