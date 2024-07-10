@@ -1,0 +1,28 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 24.8.0-trunk.314 image for Pine64 Star64"
+vendor = { name = "Armbian", eula = "" }
+
+[[distfiles]]
+name = "Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz"
+size = 213362100
+urls = [
+  "https://github.com/armbian/community/releases/download/24.8.0-trunk.314/Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz"
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "c5c7d091af27ede581113560c0e133da7b9c54a4a2529756ceb04e5407f87296"
+sha512 = "0234becd82e36672afe48eab9714f8372733c940cbb622770193ff7e4d07936dd875d3d1adc2d0c9562343b7827945cd14149b029130f088ed2cfa2bdc56f9c2"
+
+[blob]
+distfiles = [
+  "Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img"
