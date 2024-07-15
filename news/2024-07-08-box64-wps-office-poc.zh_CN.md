@@ -90,7 +90,7 @@ wget https://mirror.iscas.ac.cn/ruyisdk/dist/temp/debian-bookworm.gui.20240705.a
 # 假设安装到 /opt/debian-bookworm.amd64
 sudo mkdir /opt/debian-bookworm.amd64
 pushd /opt/debian-bookworm.amd64
-tar -xf ~/Downloads/debian-bookworm.gui.20240705.amd64.tar.zst
+sudo tar -xf ~/Downloads/debian-bookworm.gui.20240705.amd64.tar.zst
 popd
 ```
 
