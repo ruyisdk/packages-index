@@ -20,7 +20,7 @@ sha512 = "bdd8cd1fe14f94460188c3f0e18e053b788c4d13f00281101e1447ba4032812ddb5569
 
 [[distfiles]]
 name = "wps-office_11.1.0.11720_arm64.deb"
-size = 0
+size = 367187922
 urls = []
 restrict = ["fetch", "mirror"]
 
@@ -29,8 +29,8 @@ msgid = "extras/wps-office"
 params = { version = "11.1.0.11720", arch = "arm64", arch_humanized = "ARM" }
 
 [distfiles.checksums]
-sha256 = "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-sha512 = "cf83e1357eefb8bdf1542850d66d8007d620e4050b5715dc83f4a921d36ce9ce47d0d13c5d85f2b0ff8318d2877eec2f63b931bd47417a81a538327af927da3e"
+sha256 = "172d8bcf3e3bc756994ae5adf66f63f22691e1ab0d18986c50bb6b6ab7f62948"
+sha512 = "549cc27d9d5d5c1ada93e09d9238b72194aabcd0c2ab88e3f6517583f14c0f7a79b865d52e1bf58382a76e9fa0d46a1c342bcd894f4a2cccc5bb7a7e99d8db3e"
 
 [[binary]]
 host = "aarch64"
