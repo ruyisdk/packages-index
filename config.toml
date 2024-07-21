@@ -8,3 +8,9 @@ id = "ruyi-dist"
 urls = [
   "https://mirror.iscas.ac.cn/ruyisdk/dist/",
 ]
+
+[[mirrors]]
+id = "ruyi-3rdparty-canaan"
+urls = [
+  "https://mirror.iscas.ac.cn/ruyisdk/3rdparty/canaan/",
+]
