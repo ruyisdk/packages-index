@@ -24,11 +24,11 @@ sha512 = "b75d3a6b41e8145bdad8b65f3270be2a6324cbb8d833f3d38459f68272b34e29d07522
 
 [[binary]]
 host = "aarch64"
-distfiles = ["box64-upstream-0.3.0.ruyi-20240718.arm64.tar.zst"]
+distfiles = ["box64-upstream-0.3.0-ruyi.20240718.arm64.tar.zst"]
 
 [[binary]]
 host = "riscv64"
-distfiles = ["box64-upstream-0.3.0.ruyi-20240718.riscv64.tar.zst"]
+distfiles = ["box64-upstream-0.3.0-ruyi.20240718.riscv64.tar.zst"]
 
 [emulator]
 
