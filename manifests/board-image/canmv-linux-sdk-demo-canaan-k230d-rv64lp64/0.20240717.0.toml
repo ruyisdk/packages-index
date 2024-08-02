@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "CanMV Linux SDK image for Canaan Kendryte K230D, built by PLCT, LP64 ABI, with demos"
+desc = "CanMV Linux SDK image for Canaan Kendryte K230D, built by PLCT, RV64LP64 ABI, with demos"
 vendor = { name = "PLCT", eula = "" }
 
 [[distfiles]]

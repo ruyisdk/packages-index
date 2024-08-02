@@ -231,10 +231,10 @@ image_combos:
     display_name: "Sipeed LicheeRV Nano Official buildroot SDK (Linux & FreeRTOS)"
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
-  - id: canmv-linux-sdk-demo-canaan-k230d-lp64
-    display_name: "Canaan Kendryte K230D CanMV Linux SDK demo, LP64 ABI"
+  - id: canmv-linux-sdk-demo-canaan-k230d-rv64lp64
+    display_name: "Canaan Kendryte K230D CanMV Linux SDK demo, RV64LP64 ABI"
     packages:
-      - board-image/canmv-linux-sdk-demo-canaan-k230d-lp64
+      - board-image/canmv-linux-sdk-demo-canaan-k230d-rv64lp64
   - id: canmv-linux-sdk-demo-canaan-k230d-rv64ilp32
     display_name: "Canaan Kendryte K230D CanMV Linux SDK demo, RV64ILP32 ABI"
     packages:
@@ -531,8 +531,8 @@ devices:
       - id: generic
         display_name: "Canaan Kendryte K230D (generic variant)"
         supported_combos:
-          - canmv-linux-sdk-demo-canaan-k230d-lp64
           - canmv-linux-sdk-demo-canaan-k230d-rv64ilp32
+          - canmv-linux-sdk-demo-canaan-k230d-rv64lp64
 
   - id: canaan-k510
     display_name: "Canaan Kendryte K510"
