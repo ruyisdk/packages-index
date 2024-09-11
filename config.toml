@@ -14,3 +14,9 @@ id = "ruyi-3rdparty-canaan"
 urls = [
   "https://mirror.iscas.ac.cn/ruyisdk/3rdparty/canaan/",
 ]
+
+[[mirrors]]
+id = "ruyi-3rdparty-milkv"
+urls = [
+  "https://mirror.iscas.ac.cn/ruyisdk/3rdparty/milkv/",
+]
