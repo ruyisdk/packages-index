@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "Official Milk-V Duo examples",
+desc = "Official Milk-V Duo examples"
 vendor = { name = "Milk-V", eula = "" }
 
 [[distfiles]]
