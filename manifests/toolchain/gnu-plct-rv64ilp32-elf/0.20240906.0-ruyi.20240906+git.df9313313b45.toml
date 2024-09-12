@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "RuyiSDK RISC-V Bare-metal RV64ILP32 GNU Toolchain (maintained by PLCT)"
-"vendor": { name = "PLCT", eula = "" }
+vendor = { name = "PLCT", eula = "" }
 
 [[distfiles]]
 name = "RuyiSDK-20240906-PLCT-Sources-RV64ILP32-gdf9313313b45-HOST-aarch64-linux-gnu-riscv64-plct-elf.tar.xz"
