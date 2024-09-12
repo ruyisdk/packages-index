@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "RuyiSDK RISC-V Bare-metal RV64ILP32 GNU Toolchain (maintained by PLCT)",
+desc = "RuyiSDK RISC-V Bare-metal RV64ILP32 GNU Toolchain (maintained by PLCT)"
 "vendor": { name = "PLCT", eula = "" }
 
 [[distfiles]]
