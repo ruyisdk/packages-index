@@ -16,9 +16,15 @@ def list_needed_flavors_v1(profile_id):
 
 def get_common_flags_v1(profile_id):
     p = _profiles[profile_id]
+    args = []
     if p["mcpu"]:
-        return "-mcpu=" + p["mcpu"] + " -mabi=" + p["mabi"]
-    return "-march=" + p["march"] + " -mabi=" + p["mabi"]
+        args.append("-mcpu=" + p["mcpu"])
+    if p["march"]:
+        # Sometimes we want to explicitly override the march string implied
+        # by the mcpu option.
+        args.append("-march=" + p["march"])
+    args.append("-mabi=" + p["mabi"])
+    return " ".join(args)
 
 
 def get_needed_emulator_pkg_flavors_v1(profile_id, emu_flavor):
