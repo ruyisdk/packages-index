@@ -1,0 +1,28 @@
+format = "v1"
+
+[metadata]
+desc = "Official Buildroot SDK image for Milk-V Duo S (SD card)"
+vendor = { name = "Milk-V", eula = "" }
+
+[[distfiles]]
+name = "milkv-duos-sd-v1.1.2-2024-0801.ruyi1.img.zst"
+size = 53033212
+urls = [
+  "mirror://ruyi-3rdparty-milkv/repacks/milkv-duos-sd-v1.1.2-2024-0801.ruyi1.img.zst",
+]
+restrict = "mirror"
+
+[distfiles.checksums]
+sha256 = "7b90513b9a586379dc0a3000e3e535ed684a0b21fd0e611f89da896731813827"
+sha512 = "dd856f4c35fc55c2d3bb5ac4972dfd74101e0a19a3a60b0017a7ccac11bddc63277435b295c272c57e9fdebd375849e195b59c750c3ab037426ede11e2c3a128"
+
+[blob]
+distfiles = [
+  "milkv-duos-sd-v1.1.2-2024-0801.ruyi1.img.zst",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "milkv-duos-sd-v1.1.2-2024-0801.ruyi1.img"
