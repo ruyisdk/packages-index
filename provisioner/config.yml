@@ -206,6 +206,15 @@ postinst_messages:
 #
 
 image_combos:
+  # Arduino SDKs
+  - id: arduino-milkv-duo-sd
+    display_name: "Milk-V Duo Official Arduino SDK (64M RAM, SD card)"
+    packages:
+      - board-image/arduino-milkv-duo-sd
+  - id: arduino-milkv-duo256m-sd
+    display_name: "Milk-V Duo Official Arduino SDK (256M RAM, SD card)"
+    packages:
+      - board-image/arduino-milkv-duo256m-sd
   # Buildroot SDKs
   - id: buildroot-sdk-milkv-duo
     display_name: "Milk-V Duo Official buildroot SDK (64M RAM, SD card)"
@@ -548,11 +557,13 @@ devices:
       - id: 64m
         display_name: "Milk-V Duo (64M RAM)"
         supported_combos:
+          - arduino-milkv-duo-sd
           - buildroot-sdk-milkv-duo
           - buildroot-sdk-milkv-duo-python
       - id: 256m
         display_name: "Milk-V Duo (256M RAM)"
         supported_combos:
+          - arduino-milkv-duo256m-sd
           - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
 
