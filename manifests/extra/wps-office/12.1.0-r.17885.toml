@@ -12,7 +12,11 @@ restrict = ["fetch", "mirror"]
 
 [distfiles.fetch_restriction]
 msgid = "extras/wps-office"
-params = { version = "12.1.0.17885", arch = "amd64", arch_humanized = "X64" }
+
+[distfiles.fetch_restriction.params]
+arch = "amd64"
+arch_humanized = "X64"
+version = "12.1.0.17885"
 
 [distfiles.checksums]
 sha256 = "b427df85ebf1067a4d8a7d6a041d8f4f238fa46bcf2e5234a962c20b2925b625"
