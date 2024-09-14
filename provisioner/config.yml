@@ -208,23 +208,23 @@ postinst_messages:
 image_combos:
   # Buildroot SDKs
   - id: buildroot-sdk-milkv-duo
-    display_name: "Milk-V Duo Official buildroot SDK (64M RAM)"
+    display_name: "Milk-V Duo Official buildroot SDK (64M RAM, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo
   - id: buildroot-sdk-milkv-duo-python
-    display_name: "Milk-V Duo Official buildroot SDK (64M RAM, with Python)"
+    display_name: "Milk-V Duo Official buildroot SDK (64M RAM, Lite, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo-python
   - id: buildroot-sdk-milkv-duo256m
-    display_name: "Milk-V Duo Official buildroot SDK (256M RAM)"
+    display_name: "Milk-V Duo Official buildroot SDK (256M RAM, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m
   - id: buildroot-sdk-milkv-duo256m-python
-    display_name: "Milk-V Duo Official buildroot SDK (256M RAM, with Python)"
+    display_name: "Milk-V Duo Official buildroot SDK (256M RAM, Lite, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m-python
   - id: buildroot-sdk-milkv-duos-freertos-sdcard
-    display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, on SD card)"
+    display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duos-sd
   - id: buildroot-sdk-sipeed-licheervnano-linux-freertos
@@ -246,11 +246,11 @@ image_combos:
     packages:
       - board-image/armbian-pine64-star64
   - id: debian-desktop-sdk-milkv-mars-sdcard
-    display_name: "Milk-V Mars Official Debian Desktop SDK (on SD card)"
+    display_name: "Milk-V Mars Official Debian Desktop SDK (SD card)"
     packages:
       - board-image/debian-desktop-sdk-milkv-mars-sd
   - id: debian-desktop-sdk-milkv-mars-cm-sdcard
-    display_name: "Milk-V Mars CM Official Debian Desktop SDK (on SD card)"
+    display_name: "Milk-V Mars CM Official Debian Desktop SDK (SD card)"
     packages:
       - board-image/debian-desktop-sdk-milkv-mars-cm-sd
   - id: canmv-debian-sdk-canaan-k230
