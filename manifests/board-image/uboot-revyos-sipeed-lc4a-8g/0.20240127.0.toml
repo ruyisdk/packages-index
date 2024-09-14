@@ -4,7 +4,6 @@ format = "v1"
 desc = "U-Boot image for Sipeed Lichee Cluster 4A (8G RAM) and RevyOS 20240127"
 vendor = { name = "PLCT", eula = "" }
 
-
 [[distfiles]]
 name = "u-boot-with-spl-lc4a-main.bin"
 unpack = "raw"

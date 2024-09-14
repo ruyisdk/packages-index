@@ -8,7 +8,7 @@ vendor = { name = "github:Fishwaldo", eula = "" }
 name = "licheervnano_sd.img.lz4"
 size = 191286551
 urls = [
-  "https://github.com/Fishwaldo/sophgo-sg200x-debian/releases/download/v1.0.0/licheervnano_sd.img.lz4"
+  "https://github.com/Fishwaldo/sophgo-sg200x-debian/releases/download/v1.0.0/licheervnano_sd.img.lz4",
 ]
 restrict = ["mirror"]
 

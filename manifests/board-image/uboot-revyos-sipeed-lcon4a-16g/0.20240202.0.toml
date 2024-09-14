@@ -6,11 +6,11 @@ vendor = { name = "Sipeed", eula = "" }
 
 [[distfiles]]
 name = "u-boot-with-spl-console16g.bin"
+unpack = "raw"
 size = 1008216
 urls = [
   "https://github.com/0x754C/sipeed-th1520-laptop-extra/releases/download/20240319/u-boot-with-spl-console16g.bin",
 ]
-unpack = "raw"
 restrict = ["mirror"]
 
 [distfiles.checksums]

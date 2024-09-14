@@ -8,7 +8,7 @@ vendor = { name = "Armbian", eula = "" }
 name = "Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz"
 size = 213362100
 urls = [
-  "https://github.com/armbian/community/releases/download/24.8.0-trunk.314/Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz"
+  "https://github.com/armbian/community/releases/download/24.8.0-trunk.314/Armbian_community_24.8.0-trunk.314_Star64_noble_edge_5.15.0_minimal.img.xz",
 ]
 restrict = ["mirror"]
 

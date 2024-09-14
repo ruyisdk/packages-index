@@ -7,10 +7,10 @@ vendor = { name = "Milk-V", eula = "" }
 [[distfiles]]
 name = "u-boot-with-spl-milkv-meles-singlerank-1.0.0.bin"
 unpack = "raw"
+size = 751568
 urls = [
   "https://github.com/milkv-meles/meles-images/releases/download/v1.0.0/u-boot-with-spl-singlerank.bin",
 ]
-size = 751568
 restrict = ["mirror"]
 
 [distfiles.checksums]
