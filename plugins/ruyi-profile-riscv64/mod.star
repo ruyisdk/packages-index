@@ -7,7 +7,10 @@ load("./data.star", _profiles="profiles")
 #
 
 def list_all_profile_ids_v1():
-    return _profiles.keys()
+    # NOTE: the explicit list() cast is for compatibility with both Starlark
+    # and Python semantics, as Ruyi >= 0.20.0 have removed the Starlark
+    # sandbox in favor of direct unsandboxed execution.
+    return list(_profiles.keys())
 
 
 def list_needed_flavors_v1(profile_id):
