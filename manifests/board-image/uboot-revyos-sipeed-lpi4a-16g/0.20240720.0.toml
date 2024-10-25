@@ -1,0 +1,28 @@
+format = "v1"
+
+[metadata]
+desc = "U-Boot image for LicheePi 4A (16G RAM) and RevyOS 20240720"
+vendor = { name = "PLCT", eula = "" }
+
+[[distfiles]]
+name = "u-boot-with-spl-lpi4a-16g.bin"
+size = 992696
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20240720/u-boot-with-spl-lpi4a-16g.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "d3d173513290289ac8a4c9ef2ec2943ca6e23f1eebbc806a13f6ced91c22b093"
+sha512 = "d5ed8199d6804d1740faae1458e0f20aa14400d39267ab3dc97b1bdb16512b3e44b3e01493f5bee2864e5c9ee7d92585d4a494e5efac0b2d86fe2e760909de1b"
+
+[blob]
+distfiles = [
+  "u-boot-with-spl-lpi4a-16g.bin",
+]
+
+[provisionable]
+strategy = "fastboot-v1(lpi4a-uboot)"
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lpi4a-16g.bin"
