@@ -1,0 +1,28 @@
+format = "v1"
+[[distfiles]]
+name = "Armbian_community_25.2.0-trunk.86_Star64_noble_edge_5.15.0_xfce_desktop.img.xz"
+size = 54521856
+urls = [ "https://github.com/armbian/community/releases/download/25.2.0-trunk.86/Armbian_community_25.2.0-trunk.86_Star64_noble_edge_5.15.0_xfce_desktop.img.xz",]
+
+[distfiles.checksums]
+sha256 = "02f66ec9f04e47fd350dc924b5a11d3f430575050b02d2fe20e2b705ee14c768"
+sha512 = "3c422f49b3e4f70435c926ce04716a5272c3ecb0aa80c715ad21146912f9f7de44d6cdc2d2905fd5229c2393a76186c482db736d34e91c3bf4e5b4d23a431443"
+
+[metadata]
+desc = "Armbian 25.2.0-trunk.86 image for Pine64 Star64"
+
+[blob]
+distfiles = [ "Armbian_community_25.2.0-trunk.86_Star64_noble_edge_5.15.0_xfce_desktop.img.xz",]
+
+[provisionable]
+strategy = "dd-v1"
+
+[metadata.vendor]
+name = "Armbian"
+eula = ""
+
+[provisionable.partition_map]
+disk = "Armbian_community_25.2.0-trunk.86_Star64_noble_edge_5.15.0_xfce_desktop.img"
+
+# This file is created by program renew_ruyi_index in support-matrix
+# Run: In local
