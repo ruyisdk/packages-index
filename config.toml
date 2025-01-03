@@ -3,6 +3,11 @@ ruyi-repo = "v1"
 [repo]
 doc_uri = "https://ruyisdk.github.io/docs/"
 
+[[telemetry]]
+id = "ruyisdk-hq-pm"
+scope = "pm"
+url = "https://api.ruyisdk.cn/telemetry/pm/"
+
 [[mirrors]]
 id = "ruyi-dist"
 urls = [
