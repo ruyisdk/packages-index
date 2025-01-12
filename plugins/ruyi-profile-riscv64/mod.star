@@ -1,6 +1,6 @@
 RUYI = ruyi_plugin_rev(1)
 
-load("./data.star", _profiles="profiles")
+load("./data.star", _map_mcpu="map_mcpu", _profiles="profiles")
 
 #
 # Arch Profile Plugin Interface
@@ -22,6 +22,20 @@ def get_common_flags_v1(profile_id):
     args = []
     if p["mcpu"]:
         args.append("-mcpu=" + p["mcpu"])
+    if p["march"]:
+        # Sometimes we want to explicitly override the march string implied
+        # by the mcpu option.
+        args.append("-march=" + p["march"])
+    args.append("-mabi=" + p["mabi"])
+    return " ".join(args)
+
+
+def get_common_flags_v2(profile_id, toolchain_flavors):
+    p = _profiles[profile_id]
+    args = []
+    if p["mcpu"]:
+        mapped_mcpu = _map_mcpu(p["mcpu"], toolchain_flavors)
+        args.append("-mcpu=" + mapped_mcpu)
     if p["march"]:
         # Sometimes we want to explicitly override the march string implied
         # by the mcpu option.
