@@ -1,0 +1,38 @@
+format = "v1"
+[[distfiles]]
+name = "root-lpi4a-20250110_151339.ext4.zst"
+size = 1334957695
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/root-lpi4a-20250110_151339.ext4.zst",]
+
+[distfiles.checksums]
+sha256 = "748ffbedd944d4507d51c58d589bdc1c6f59d2e22638fe18ba32145a365598ab"
+sha512 = "a5ebc3b22b455c25312dde0877b367d8af7d843602f37a786a90c4da44a99dd3aa4a5c4eee54a34d29ef29589189747db24318fc7c379a77a1bd707e38d3de90"
+[[distfiles]]
+name = "u-boot-with-spl-lpi4a-main_8gemmc.bin"
+size = 1032312
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+
+[distfiles.checksums]
+sha256 = "d5f46ed3324e8cc8d3cf41d167ac677ca399f1b10e2a430afcf79c4cec729417"
+sha512 = "bb1de9739e9b4cc9b88f0f4562ba222596328239a1a1e420624ea7598ae4bad50b1e60c9c62f658afa28e42d8eef44f67d8118728ea2e7b09066dec4a10c745b"
+
+[metadata]
+desc = "RevyOS 20250110 image for Sipeed LicheePi 4A"
+
+[blob]
+distfiles = [ "root-lpi4a-20250110_151339.ext4.zst", "u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "PLCT"
+eula = ""
+
+[provisionable.partition_map]
+boot = "u-boot-with-spl-lpi4a-main_8gemmc"
+root = "root-lpi4a-20250110_151339.ext4"
+
+# This file is created by CI Sync Package Index inside support-matrix
+# Run ID: 12745127192
+# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12745127192
