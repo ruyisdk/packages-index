@@ -3,6 +3,7 @@ format = "v1"
 name = "licheervnano_sd.img.lz4"
 size = 198977811
 urls = [ "https://github.com/Fishwaldo/sophgo-sg200x-debian/releases/download/v1.4.0/licheervnano_sd.img.lz4",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "ca76556c7546f1424fd524b7edc83bc9d3f9255a4122535f75bac5ba85acd3bb"
@@ -26,3 +27,5 @@ disk = "licheervnano_sd.img"
 
 # This file is created by program renew_ruyi_index in support-matrix
 # Run: In local
+
+# Manually fixed restrict

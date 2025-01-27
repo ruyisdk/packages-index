@@ -3,6 +3,7 @@ format = "v1"
 name = "root-lpi4a-20250110_151339.ext4.zst"
 size = 1334957695
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/root-lpi4a-20250110_151339.ext4.zst",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "748ffbedd944d4507d51c58d589bdc1c6f59d2e22638fe18ba32145a365598ab"
@@ -11,6 +12,7 @@ sha512 = "a5ebc3b22b455c25312dde0877b367d8af7d843602f37a786a90c4da44a99dd3aa4a5c
 name = "u-boot-with-spl-lpi4a-main_8gemmc.bin"
 size = 1032312
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "d5f46ed3324e8cc8d3cf41d167ac677ca399f1b10e2a430afcf79c4cec729417"
@@ -36,3 +38,5 @@ root = "root-lpi4a-20250110_151339.ext4"
 # This file is created by CI Sync Package Index inside support-matrix
 # Run ID: 12745127192
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12745127192
+
+# Manually fixed restrict

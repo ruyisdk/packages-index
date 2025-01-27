@@ -3,6 +3,7 @@ format = "v1"
 name = "u-boot-with-spl-lpi4a-8g.20240720.bin"
 size = 1032280
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20240720/u-boot-with-spl-lpi4a.bin",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "d3d173513290289ac8a4c9ef2ec2943ca6e23f1eebbc806a13f6ced91c22b093"
@@ -27,3 +28,5 @@ uboot = "u-boot-with-spl-lpi4a-8g.20240720.bin"
 # This file is created by CI Sync Package Index inside support-matrix
 # Run ID: 12135888972
 # Run URL: https://github.com/wychlw/support-matrix/actions/runs/12135888972
+
+# Manually fixed restrict
