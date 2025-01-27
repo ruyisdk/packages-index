@@ -3,6 +3,7 @@ format = "v1"
 name = "milkv-duo-sd-v1.1.3-2024-0930.img.zip"
 size = 70646903
 urls = [ "https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.3/milkv-duo-sd-v1.1.3-2024-0930.img.zip",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "48e3acf4a64a34f87cb1328c205c238a495ac5e9be3054516ca0748d0d77f05b"
@@ -26,3 +27,5 @@ disk = "milkv-duo-sd-v1.1.3-2024-0930.img"
 
 # This file is created by program renew_ruyi_index in support-matrix
 # Run: In local
+
+# Manually fixed restrict

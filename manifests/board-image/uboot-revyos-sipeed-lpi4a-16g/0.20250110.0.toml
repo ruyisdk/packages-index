@@ -3,6 +3,7 @@ format = "v1"
 name = "u-boot-with-spl-lpi4a-16g-main.20250110.bin"
 size = 992728
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-16g-main.bin",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "946ef12ac79f59a6f43c63c534477776d2b07d7ce8919f4c7d05ed29ddfad30d"
@@ -27,3 +28,5 @@ uboot = "u-boot-with-spl-lpi4a-16g-main.20250110.bin"
 # This file is created by CI Sync Package Index inside support-matrix
 # Run ID: 12910390785
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12910390785
+
+# Manually fixed restrict

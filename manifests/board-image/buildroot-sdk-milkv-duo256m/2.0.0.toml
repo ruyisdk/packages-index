@@ -3,6 +3,7 @@ format = "v1"
 name = "milkv-duo256m-musl-riscv64-sd_v2.0.0.img.zip"
 size = 63544801
 urls = [ "https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/v2.0.0/milkv-duo256m-musl-riscv64-sd_v2.0.0.img.zip",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
 sha256 = "baaf8fc9e7de40c4dc2d7c6c9d5d8f16a3c871ce98c0c0451733ffdd7efc3fec"
@@ -27,3 +28,5 @@ disk = "milkv-duo256m-musl-riscv64-sd_v2.0.0.img"
 # This file is created by CI Sync Package Index inside support-matrix
 # Run ID: 12910390785
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12910390785
+
+# Manually fixed restrict
