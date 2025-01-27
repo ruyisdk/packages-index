@@ -1,20 +1,22 @@
 format = "v1"
 [[distfiles]]
 name = "root-lpi4a-20250110_151339.ext4.zst"
-size = 1334957695
+size = 219054080
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/root-lpi4a-20250110_151339.ext4.zst",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
-sha256 = "748ffbedd944d4507d51c58d589bdc1c6f59d2e22638fe18ba32145a365598ab"
-sha512 = "a5ebc3b22b455c25312dde0877b367d8af7d843602f37a786a90c4da44a99dd3aa4a5c4eee54a34d29ef29589189747db24318fc7c379a77a1bd707e38d3de90"
+sha256 = "211b97c0a1904ea8645efc8c15b9899729ad7697c3864e708b8a4704a39b6f77"
+sha512 = "08661287834e7b57c740116a95f895ef18409b541d3653d35b39a3d70bcbb0cb9709969adc47e58e82f10ed3fc2bbafc818272f3dd5271bfbbf9744efb163f1f"
 [[distfiles]]
 name = "u-boot-with-spl-lpi4a-main_8gemmc.bin"
-size = 1032312
+size = 1033904
 urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+restrict = [ "mirror",]
 
 [distfiles.checksums]
-sha256 = "d5f46ed3324e8cc8d3cf41d167ac677ca399f1b10e2a430afcf79c4cec729417"
-sha512 = "bb1de9739e9b4cc9b88f0f4562ba222596328239a1a1e420624ea7598ae4bad50b1e60c9c62f658afa28e42d8eef44f67d8118728ea2e7b09066dec4a10c745b"
+sha256 = "48ce29fe00933c82d3840142b659873fe37abb3a65574ad3d280408675922a38"
+sha512 = "f4a893597336f5de74fdf1a4e0f05e498e2f31ad9ea777ce3c224f7010309d7608c6eb21e6f8de3eda9901bffb4a5c8045cb0c83d07eea0863d48faa86d75da7"
 
 [metadata]
 desc = "RevyOS 20250110 image for Sipeed LicheePi 4A"
@@ -33,6 +35,5 @@ eula = ""
 boot = "u-boot-with-spl-lpi4a-main_8gemmc"
 root = "root-lpi4a-20250110_151339.ext4"
 
-# This file is created by CI Sync Package Index inside support-matrix
-# Run ID: 12745127192
-# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12745127192
+# This file is created by program renew_ruyi_index in support-matrix
+# Run: In local
