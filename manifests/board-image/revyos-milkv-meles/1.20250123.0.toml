@@ -1,0 +1,40 @@
+format = "v1"
+[[distfiles]]
+name = "root-meles-20250123_071145.ext4.zst"
+size = 1328646012
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250123/root-meles-20250123_071145.ext4.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "940109ee4caa06a8547f7b8d6c0d27b0226a3962868fb12f3c275f4d9997b473"
+sha512 = "23615dc96010819a57698e05cc2d5e02195f39221050a0a13165a1089c950f354e9e9b0616885c8ba6b556f7ff84d47c2fd45517f0ab8e6ecb6bfcd28103a481"
+[[distfiles]]
+name = "u-boot-with-spl-meles.bin"
+size = 780480
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250123/u-boot-with-spl-meles.bin",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "545ae6dc3e8da91c11dc7aba149d65900d24ba406d20c84eba4d11504d8863a8"
+sha512 = "8ebe649fd4b1ad22c851585c680ce1ca587d2999d90dc418917e0284dcc9aec725c5e90bfa11c49aa221973fd372e48ac172b1be95ed948157102a2d424e2a5d"
+
+[metadata]
+desc = "RevyOS 20250123 image for Milk-V Meles (vendor release v1.0.0)"
+
+[blob]
+distfiles = [ "root-meles-20250123_071145.ext4.zst", "u-boot-with-spl-meles.bin",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "Milk-V"
+eula = ""
+
+[provisionable.partition_map]
+boot = "u-boot-with-spl-meles"
+root = "root-meles-20250123_071145.ext4"
+
+# This file is created by CI Sync Package Index inside support-matrix
+# Run ID: 13330760367
+# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13330760367
