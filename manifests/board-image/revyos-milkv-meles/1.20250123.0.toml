@@ -6,7 +6,6 @@ vendor = { name = "Milk-V", eula = "" }
 
 [[distfiles]]
 name = "boot-meles-20250123_071145.ext4.zst"
-unpack = "raw"
 size = 74341376
 urls = [
   "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250123/boot-meles-20250123_071145.ext4.zst",
