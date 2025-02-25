@@ -1,0 +1,30 @@
+format = "v1"
+[[distfiles]]
+name = "openKylin-Embedded-V2.0-SP1-spacemit-k1-riscv64...>"
+size = 2761034244
+urls = [ "https://mirrors.hust.edu.cn/openkylin-cdimage/2.0-SP1/openKylin-Embedded-V2.0-SP1-spacemit-k1-riscv64.img.xz",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "4b3a2e5b7427d6aa4ae39d756f60317e35a4dba0b8831aef071e991431c22c0c"
+sha512 = "5db8da55c389dd2102aab768d58bfaa85986783d0af8a9cde06db7f193112b432cef80e46d7ccac2a1f38711468ef5be2ecc73d95bfa30b47bec20351054ee6a"
+
+[metadata]
+desc = "Official OpenKylin Embedded image for Banana Pi F3 version 2.0-SP1"
+
+[blob]
+distfiles = [ "openKylin-Embedded-V2.0-SP1-spacemit-k1-riscv64...>",]
+
+[provisionable]
+strategy = "dd-v1"
+
+[metadata.vendor]
+name = "bpi_f3"
+eula = ""
+
+[provisionable.partition_map]
+disk = "openKylin-Embedded-V2.0-SP1-spacemit-k1-riscv64.."
+
+# This file is created by CI Sync Package Index inside support-matrix
+# Run ID: 13516827996
+# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13516827996
