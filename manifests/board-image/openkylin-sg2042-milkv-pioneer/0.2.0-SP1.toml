@@ -1,0 +1,30 @@
+format = "v1"
+[[distfiles]]
+name = "openKylin-Embedded-V2.0-SP1-milk-v-pioneer-riscv..>"
+size = 3709246244
+urls = [ "https://mirrors.hust.edu.cn/openkylin-cdimage/2.0-SP1/openKylin-Embedded-V2.0-SP1-milk-v-pioneer-riscv64.img.xz",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "cb3a86c4a3df28c41ee514456eeaf4ba87d366230f5720c37320a0535f8b429c"
+sha512 = "d426d93dc4febec316c71ec6b1b70b7f4f9590f214ab8728e35cfadc226b79d8629cec1115c9aa9bcef92453091061a0ab8d0377863287a0c595d4a2cab523bb"
+
+[metadata]
+desc = "Official OpenKylin Embedded image for Milk-V Pioneer Box with SG2042 version 2.0-SP1"
+
+[blob]
+distfiles = [ "openKylin-Embedded-V2.0-SP1-milk-v-pioneer-riscv..>",]
+
+[provisionable]
+strategy = "dd-v1"
+
+[metadata.vendor]
+name = "milkv_pioneer"
+eula = ""
+
+[provisionable.partition_map]
+disk = "openKylin-Embedded-V2.0-SP1-milk-v-pioneer-riscv."
+
+# This file is created by CI Sync Package Index inside support-matrix
+# Run ID: 13692040276
+# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13692040276
