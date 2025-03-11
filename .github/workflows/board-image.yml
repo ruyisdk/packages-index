@@ -1,0 +1,58 @@
+name: board-image pr checks
+
+on:
+  push:
+    paths:
+      - '.github/**'
+      - 'manifests/board-image/**'
+      - 'provisioner/**'
+  pull_request:
+    paths:
+      - '.github/**'
+      - 'manifests/board-image/**'
+      - 'provisioner/**'
+
+jobs:
+  board-image_test:
+    name: 'board-image test'
+    runs-on: 'ubuntu-latest'
+    steps:
+      - uses: actions/checkout@v4
+        name: fetch ruyi source
+        with:
+          fetch-depth: 0
+          repository: 'ruyisdk/ruyi'
+
+      - uses: actions/checkout@v4
+        name: fetch test scripts
+        with:
+          repository: ${{ github.repository }}
+          path: ./test_scripts
+          sparse-checkout: |
+            .github/workflows/scripts/test_board-image_data.py
+          sparse-checkout-cone-mode: false
+
+      - name: setup python venv
+        run: |
+          python3 -m venv test_venv
+          source ./test_venv/bin/activate
+          pip install build poetry-core
+
+          python3 -m build --wheel --skip-dependency-check --no-isolation
+          pip install dist/*.whl
+
+      - name: run test scripts
+        run: |
+          if [ "${{ github.event_name }}" = "push" ]; then
+            BRANCH="${{ github.ref_name }}"
+          elif [ "${{ github.event_name }}" = "pull_request" ]; then
+            BRANCH="${{ github.event.pull_request.head.ref }}"
+          else
+            false
+          fi
+
+          source ./test_venv/bin/activate
+
+          ./test_scripts/.github/workflows/scripts/test_board-image_data.py \
+                  "${{ github.repository }}" "$BRANCH"
+
