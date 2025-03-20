@@ -9,20 +9,20 @@ restrict = [ "mirror",]
 sha256 = "f1bbf88fe44a8042a53235d0b02c830842b85b51d98d20e721b3e106f6587157"
 sha512 = "dc766ab6b492da7c2c187632157742a6ead5dea4334052b976af4c5f00926cc5be986683cb0938b0d28da72ae98882282a503e3707d047bf49806c19aad7c63e"
 [[distfiles]]
-name = "u-boot-with-spl-lpi4a-main_8gemmc.bin"
-size = 1033904
-urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20241229/u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+name = "boot-lpi4a-20241229_032148.ext4.zst"
+size = 74334555
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20241229/boot-lpi4a-20241229_032148.ext4.zst",]
 restrict = [ "mirror",]
 
 [distfiles.checksums]
-sha256 = "48ce29fe00933c82d3840142b659873fe37abb3a65574ad3d280408675922a38"
-sha512 = "f4a893597336f5de74fdf1a4e0f05e498e2f31ad9ea777ce3c224f7010309d7608c6eb21e6f8de3eda9901bffb4a5c8045cb0c83d07eea0863d48faa86d75da7"
+sha256 = "0bcd85b7c507a9543046580e95081e600a070e9da9c7fad753b251159f84d9de"
+sha512 = "2ffb66810779936fff28cc487599015656695fddecad7eed49a77ed69655bac69e7b09bb7ea2b6f943f68016eca3892b739194c3a7e4fc467ee29acf5496ec5f"
 
 [metadata]
 desc = "RevyOS 20241229 image for Sipeed LicheePi 4A"
 
 [blob]
-distfiles = [ "root-lpi4a-20241229_032148.ext4.zst", "u-boot-with-spl-lpi4a-main_8gemmc.bin",]
+distfiles = [ "root-lpi4a-20241229_032148.ext4.zst", "boot-lpi4a-20241229_032148.ext4.zst",]
 
 [provisionable]
 strategy = "fastboot-v1"
@@ -32,7 +32,7 @@ name = "PLCT"
 eula = ""
 
 [provisionable.partition_map]
-boot = "u-boot-with-spl-lpi4a-main_8gemmc"
+boot = "boot-lpi4a-20241229_032148.ext4"
 root = "root-lpi4a-20241229_032148.ext4"
 
 # This file is created by CI Sync Package Index inside support-matrix
