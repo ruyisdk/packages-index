@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+[uarch]
+id = "sifive-e20"
+display_name = "SiFive E20"
+arch = "riscv32"
+
+[uarch.riscv]
+isa = "rv32imc"
