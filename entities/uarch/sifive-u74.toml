@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+[uarch]
+id = "sifive-u74"
+display_name = "SiFive U74"
+arch = "riscv64"
+
+[uarch.riscv]
+isa = "rv64imafdc"
