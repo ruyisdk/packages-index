@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+[uarch]
+id = "sifive-p450"
+display_name = "SiFive P450"
+arch = "riscv64"
+
+[uarch.riscv]
+isa = "rv64imafdc_za64rs_zic64b_zicbom_zicbop_zicboz_ziccamoa_ziccif_zicclsm_ziccrse_zicsr_zifencei_zihintntl_zihintpause_zihpm_zfhmin_zba_zbb_zbs"
