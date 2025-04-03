@@ -216,30 +216,30 @@ image_combos:
     packages:
       - board-image/arduino-milkv-duo256m-sd
   # Buildroot SDKs
-  - id: buildroot-sdk-milkv-duo
+  - id: buildroot-milkv-duo
     display_name: "Milk-V Duo Official buildroot SDK (64M RAM, SD card)"
     packages:
-      - board-image/buildroot-sdk-milkv-duo
+      - board-image/buildroot-milkv-duo
   - id: buildroot-sdk-milkv-duo-python
     display_name: "Milk-V Duo Official buildroot SDK (64M RAM, Lite, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo-python
-  - id: buildroot-sdk-milkv-duo256m
+  - id: buildroot-milkv-duo256m
     display_name: "Milk-V Duo Official buildroot SDK (256M RAM, SD card)"
     packages:
-      - board-image/buildroot-sdk-milkv-duo256m
+      - board-image/buildroot-milkv-duo256m
   - id: buildroot-sdk-milkv-duo256m-python
     display_name: "Milk-V Duo Official buildroot SDK (256M RAM, Lite, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m-python
-  - id: buildroot-sdk-milkv-duos-freertos-sdcard
+  - id: buildroot-milkv-duos-sd
     display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, SD card)"
     packages:
-      - board-image/buildroot-sdk-milkv-duos-sd
-  - id: buildroot-sdk-sipeed-licheervnano-linux-freertos
+      - board-image/buildroot-milkv-duos-sd
+  - id: buildroot-sipeed-licheervnano
     display_name: "Sipeed LicheeRV Nano Official buildroot SDK (Linux & FreeRTOS)"
     packages:
-      - board-image/buildroot-sdk-sipeed-licheervnano
+      - board-image/buildroot-sipeed-licheervnano
   - id: canmv-linux-sdk-demo-canaan-k230d-rv64lp64
     display_name: "Canaan Kendryte K230D CanMV Linux SDK demo, RV64LP64 ABI"
     packages:
@@ -274,10 +274,10 @@ image_combos:
     display_name: "Ubuntu Server for SiFive HiFive Unmatched"
     packages:
       - board-image/ubuntu-server-riscv64-sifive-unmatched
-  - id: debian-fishwaldo-sipeed-licheervnano
+  - id: debian-sipeed-licheervnano
     display_name: "Debian for Sipeed LicheeRV Nano (from https://github.com/Fishwaldo)"
     packages:
-      - board-image/debian-fishwaldo-sg200x-sipeed-licheervnano
+      - board-image/debian-sipeed-licheervnano
 
   # BSDs
   - id: freebsd-riscv64
@@ -379,7 +379,7 @@ image_combos:
   - id: revyos-milkv-pioneer
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
-      - board-image/revyos-sg2042-milkv-pioneer
+      - board-image/revyos-milkv-pioneer
   - id: revyos-sipeed-lc4a-8g
     display_name: "RevyOS for Sipeed Lichee Cluster 4A (8G RAM)"
     packages:
@@ -515,6 +515,10 @@ image_combos:
 # Supported devices
 #
 
+  - id: bianbu-bpi-f3
+    display_name: bianbu  for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -558,13 +562,13 @@ devices:
         display_name: "Milk-V Duo (64M RAM)"
         supported_combos:
           - arduino-milkv-duo-sd
-          - buildroot-sdk-milkv-duo
+          - buildroot-milkv-duo
           - buildroot-sdk-milkv-duo-python
       - id: 256m
         display_name: "Milk-V Duo (256M RAM)"
         supported_combos:
           - arduino-milkv-duo256m-sd
-          - buildroot-sdk-milkv-duo256m
+          - buildroot-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
 
   - id: milkv-duos
@@ -573,7 +577,7 @@ devices:
       - id: generic
         display_name: "Milk-V Duo S (generic variant)"
         supported_combos:
-          - buildroot-sdk-milkv-duos-freertos-sdcard
+          - buildroot-milkv-duos-sd
 
   - id: milkv-mars
     display_name: "Milk-V Mars"
@@ -713,8 +717,8 @@ devices:
       - id: generic
         display_name: "Sipeed LicheeRV Nano (generic variant)"
         supported_combos:
-          - buildroot-sdk-sipeed-licheervnano-linux-freertos
-          - debian-fishwaldo-sipeed-licheervnano
+          - buildroot-sipeed-licheervnano
+          - debian-sipeed-licheervnano
 
   - id: sipeed-maix1
     display_name: "Sipeed Maix-I"
@@ -941,3 +945,10 @@ devices:
         supported_combos:
           - placeholder-freertos-wch-ch592x-evb
           - placeholder-rtthread-wch-ch592x-evb
+  - id: bpi-f3
+    display_name: BananaPi BPI-F3
+    variants:
+      - id: generic
+        display_name: BananaPi BPI-F3 (generic)
+        supported_combos:
+          - bianbu-bpi-f3
