@@ -16,20 +16,6 @@ Office 等常见 x86 二进制软件已成为可能。RuyiSDK 正在开展此方
 为叙述方便，设您的 `$HOME` 为 `/home/foo`，架构（`uname -m` 输出）为
 `riscv64`，使用 `sudo` 提权。
 
-### 允许安装预发布版本的软件包
-
-由于 Box64 RISC-V 支持进展迅速，目前（2024 年 7 月初）很多功能改进没有在
-其最新稳定版本得到体现。我们打包了 Box64 的开发快照版本；为了能够安装此版本，
-您需要配置 `ruyi` 以使其在安装软件包时考虑预发布版本。
-
-* 如果 `~/.config/ruyi` 目录不存在，则创建之。
-* 编辑 `~/.config/ruyi/config.toml`。
-
-```toml
-[packages]
-prereleases = true
-```
-
 ### 安装 Box64
 
 按照 RuyiSDK 软件包的命名习惯，从 Box64 的上游（而非 PLCT 或某些厂商的 fork）
@@ -38,7 +24,7 @@ prereleases = true
 ```sh
 ruyi install box64-upstream
 # ...
-# info: package box64-upstream-0.2.8-ruyi.20240702 installed to /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.2.8-ruyi.20240702
+# info: package box64-upstream-0.3.0-ruyi.20240718 installed to /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.3.0-ruyi.20240718
 ```
 
 记下安装路径。
@@ -55,15 +41,15 @@ ruyi install box64-upstream
 
 ```sh
 # 确认 Box64 可执行文件的位置
-ls /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.2.8-ruyi.20240702/bin/box64
+ls /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.3.0-ruyi.20240718/bin/box64
 
 # 调整 Box64 `binfmt.d` 配置文件的路径
 # 假设您使用 nano 编辑器
-nano /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.2.8-ruyi.20240702/etc/binfmt.d/box64.conf
+nano /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.3.0-ruyi.20240718/etc/binfmt.d/box64.conf
 # 将行尾的 //bin/box64 改为先前验证过的绝对路径
 
 # 将其部署到系统
-sudo cp /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.2.8-ruyi.20240702/etc/binfmt.d/box64.conf /etc/binfmt.d/box64.conf
+sudo cp /home/foo/.local/share/ruyi/binaries/riscv64/box64-upstream-0.3.0-ruyi.20240718/etc/binfmt.d/box64.conf /etc/binfmt.d/box64.conf
 sudo systemctl restart systemd-binfmt
 
 # 检查部署结果
@@ -85,12 +71,12 @@ x86 环境。
 # 下载预制的 x86 sysroot
 # 此为临时性的链接。后续待本功能迭代稳定之后，操作方式将改变，此链接也将失效
 # 假设此文件放在了 ~/Downloads 目录下
-wget https://mirror.iscas.ac.cn/ruyisdk/dist/temp/debian-bookworm.gui.20240705.amd64.tar.zst
+wget https://mirror.iscas.ac.cn/ruyisdk/dist/temp/debian-buster.gui.20240721.amd64.tar.zst
 
-# 假设安装到 /opt/debian-bookworm.amd64
-sudo mkdir /opt/debian-bookworm.amd64
-pushd /opt/debian-bookworm.amd64
-tar -xf ~/Downloads/debian-bookworm.gui.20240705.amd64.tar.zst
+# 假设安装到 /opt/debian-buster.amd64
+sudo mkdir /opt/debian-buster.amd64
+pushd /opt/debian-buster.amd64
+tar -xf ~/Downloads/debian-buster.gui.20240721.amd64.tar.zst
 popd
 ```
 
@@ -101,7 +87,7 @@ popd
 ```sh
 ruyi install --host x86_64 wps-office
 # ...
-# info: package wps-office-11.1.0-r.11719 installed to /home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11719
+# info: package wps-office-11.1.0-r.11720 installed to /home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11720
 ```
 
 由于 WPS Office 官方下载页面的限制，`ruyi` 无法自动下载安装包。
@@ -113,7 +99,7 @@ ruyi install --host x86_64 wps-office
 为 `/opt/kingsoft/wps-office`，需要为它们打补丁。
 
 ```sh
-pushd /home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11719
+pushd /home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11720
 
 # 当前工作目录路径中应当不含特殊字符。
 # 如果含有，请自行适当调整 sed 命令的参数
@@ -133,10 +119,10 @@ popd
 # 此动态链接库的原生转发仍有些问题，因此强制以模拟方式执行
 export BOX64_EMULATED_LIBS=libsqlite3.so.0
 # 配置 Box64 库搜索路径
-export BOX64_LD_LIBRARY_PATH=/opt/debian-bookworm.amd64/usr/lib/x86_64-linux-gnu
+export BOX64_LD_LIBRARY_PATH=/opt/debian-buster.amd64/usr/lib/x86_64-linux-gnu
 
 # 现在可以执行了！
-/home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11719/usr/bin/wps
+/home/foo/.local/share/ruyi/binaries/x86_64/wps-office-11.1.0-r.11720/usr/bin/wps
 ```
 
 ## 结语
