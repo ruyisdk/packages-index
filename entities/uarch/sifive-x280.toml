@@ -1,5 +1,7 @@
 ruyi-entity = "v0"
 
+related = ["arch:riscv64"]
+
 [uarch]
 id = "sifive-x280"
 display_name = "SiFive X280"

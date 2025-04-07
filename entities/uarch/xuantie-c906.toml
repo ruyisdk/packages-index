@@ -1,5 +1,7 @@
 ruyi-entity = "v0"
 
+related = ["arch:riscv64"]
+
 [uarch]
 id = "xuantie-c906"
 display_name = "Xuantie C906"

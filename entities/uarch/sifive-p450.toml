@@ -1,5 +1,7 @@
 ruyi-entity = "v0"
 
+related = ["arch:riscv64"]
+
 [uarch]
 id = "sifive-p450"
 display_name = "SiFive P450"
