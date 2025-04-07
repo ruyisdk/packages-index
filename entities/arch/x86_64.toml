@@ -1,0 +1,5 @@
+ruyi-entity = "v0"
+
+[arch]
+id = "x86_64"
+display_name = "x86-64"

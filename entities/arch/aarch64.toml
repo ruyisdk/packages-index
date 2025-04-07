@@ -1,0 +1,5 @@
+ruyi-entity = "v0"
+
+[arch]
+id = "aarch64"
+display_name = "AArch64"
