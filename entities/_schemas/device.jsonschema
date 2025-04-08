@@ -49,6 +49,10 @@
         "type": "string",
         "pattern": "^.+:.+"
       }
+    },
+    "unique_among_type_during_traversal": {
+      "type": "boolean",
+      "description": "Whether this entity should be unique among all entities of the same type during traversal"
     }
   }
 }

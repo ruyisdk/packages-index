@@ -1,5 +1,7 @@
 ruyi-entity = "v0"
 
+unique_among_type_during_traversal = true
+
 [arch]
 id = "aarch64"
 display_name = "AArch64"

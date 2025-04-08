@@ -1,6 +1,7 @@
 ruyi-entity = "v0"
 
 related = ["uarch:xuantie-c910"]
+unique_among_type_during_traversal = true
 
 [cpu]
 id = "xuantie-th1520"

@@ -1,6 +1,7 @@
 ruyi-entity = "v0"
 
 related = ["cpu:xuantie-th1520"]
+unique_among_type_during_traversal = true
 
 [device]
 id = "sipeed-lc4a"
