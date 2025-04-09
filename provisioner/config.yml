@@ -510,11 +510,6 @@ image_combos:
     display_name: "WCH CH592X EVB RT-Thread SDK (documentation-only)"
     packages: []
     postinst_msgid: doc-rtthread-wch-ch592x-evb
-
-#
-# Supported devices
-#
-
   - id: bianbu-bpi-f3
     display_name: bianbu  for BananaPi BPI-F3
     packages:
@@ -539,10 +534,19 @@ image_combos:
     display_name: buildroot v1 for Milk-V Duo (256M)
     packages:
       - board-image/buildroot-sdk-milkv-duo-256m-v1
+  - id: debian-milkv-duos-sd
+    display_name: debian sd for Milk-V Duo S
+    packages:
+      - board-image/debian-milkv-duos-sd
   - id: debian-milkv-duo-256m
     display_name: debian  for Milk-V Duo (256M)
     packages:
-      - board-image/debian-milkv-duo-256m
+      - board-image/debian-milkv-duo-256m      
+
+#
+# Supported devices
+#
+
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -604,6 +608,7 @@ devices:
         display_name: "Milk-V Duo S (generic variant)"
         supported_combos:
           - buildroot-sdk-milkv-duos-sd-v2
+          - debian-milkv-duos-sd
   - id: milkv-mars
     display_name: "Milk-V Mars"
     variants:
