@@ -1,0 +1,12 @@
+ruyi-entity = "v0"
+
+related = ["arch:riscv64"]
+unique_among_type_during_traversal = true
+
+[uarch]
+id = "generic-rv64gc"
+display_name = "Generic RV64GC-compatible core"
+arch = "riscv64"
+
+[uarch.riscv]
+isa = "rv64imafdc"

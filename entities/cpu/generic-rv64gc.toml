@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["uarch:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[cpu]
+id = "generic-rv64gc"
+display_name = "Generic RV64GC-compatible CPU"
