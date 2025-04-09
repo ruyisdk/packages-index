@@ -541,12 +541,16 @@ image_combos:
   - id: debian-milkv-duo-256m
     display_name: debian  for Milk-V Duo (256M)
     packages:
-      - board-image/debian-milkv-duo-256m      
+      - board-image/debian-milkv-duo-256m
 
 #
 # Supported devices
 #
 
+  - id: bianbu-bpi-f3-minimal
+    display_name: bianbu minimal for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3-minimal
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -982,3 +986,4 @@ devices:
         display_name: BananaPi BPI-F3 (generic)
         supported_combos:
           - bianbu-bpi-f3
+          - bianbu-bpi-f3-minimal
