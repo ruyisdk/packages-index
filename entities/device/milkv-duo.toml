@@ -1,0 +1,17 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "milkv-duo"
+display_name = "Milk-V Duo"
+
+[[device.variants]]
+id = "64m"
+display_name = "Milk-V Duo (64M RAM)"
+
+[[device.variants]]
+id = "256m"
+display_name = "Milk-V Duo (256M RAM)"

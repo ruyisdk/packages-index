@@ -1,0 +1,21 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "milkv-pioneer"
+display_name = "Milk-V Pioneer Box"
+
+[[device.variants]]
+id = "v1.3"
+display_name = "Milk-V Pioneer Box (v1.3)"
+
+[[device.variants]]
+id = "v1.2"
+display_name = "Milk-V Pioneer Box (v1.2)"
+
+[[device.variants]]
+id = "v1.1"
+display_name = "Milk-V Pioneer Box (v1.1)"

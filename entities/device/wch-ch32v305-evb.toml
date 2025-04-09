@@ -1,0 +1,21 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "wch-ch32v305-evb"
+display_name = "WCH CH32V305 EVB"
+
+[[device.variants]]
+id = "fbp6"
+display_name = "WCH CH32V305 EVB (CH32V305FBP6)"
+
+[[device.variants]]
+id = "gbu6"
+display_name = "WCH CH32V305 EVB (CH32V305GBU6)"
+
+[[device.variants]]
+id = "rbt6"
+display_name = "WCH CH32V305 EVB (CH32V305RBT6)"

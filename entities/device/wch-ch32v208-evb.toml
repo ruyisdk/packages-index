@@ -1,0 +1,25 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "wch-ch32v208-evb"
+display_name = "WCH CH32V208 EVB"
+
+[[device.variants]]
+id = "cbu6"
+display_name = "WCH CH32V208 EVB (CH32V208CBU6)"
+
+[[device.variants]]
+id = "gbu6"
+display_name = "WCH CH32V208 EVB (CH32V208GBU6)"
+
+[[device.variants]]
+id = "rbt6"
+display_name = "WCH CH32V208 EVB (CH32V208RBT6)"
+
+[[device.variants]]
+id = "wbu6"
+display_name = "WCH CH32V208 EVB (CH32V208WBU6)"

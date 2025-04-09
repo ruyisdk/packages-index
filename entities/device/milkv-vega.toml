@@ -1,0 +1,13 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "milkv-vega"
+display_name = "Milk-V Vega"
+
+[[device.variants]]
+id = "generic"
+display_name = "Milk-V Vega (generic variant)"

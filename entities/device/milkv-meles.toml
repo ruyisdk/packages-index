@@ -1,0 +1,17 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "milkv-meles"
+display_name = "Milk-V Meles"
+
+[[device.variants]]
+id = "4g"
+display_name = "Milk-V Meles (4G RAM)"
+
+[[device.variants]]
+id = "8g"
+display_name = "Milk-V Meles (8G RAM)"

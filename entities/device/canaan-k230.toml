@@ -1,0 +1,13 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "canaan-k230"
+display_name = "Canaan Kendryte K230"
+
+[[device.variants]]
+id = "generic"
+display_name = "Canaan Kendryte K230 (generic variant)"
