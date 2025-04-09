@@ -547,6 +547,10 @@ image_combos:
 # Supported devices
 #
 
+  - id: bianbu-bpi-f3-desktop
+    display_name: bianbu desktop for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3-desktop
   - id: bianbu-bpi-f3-minimal
     display_name: bianbu minimal for BananaPi BPI-F3
     packages:
@@ -985,5 +989,5 @@ devices:
       - id: generic
         display_name: BananaPi BPI-F3 (generic)
         supported_combos:
-          - bianbu-bpi-f3
+          - bianbu-bpi-f3-desktop
           - bianbu-bpi-f3-minimal
