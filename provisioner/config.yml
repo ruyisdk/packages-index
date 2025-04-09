@@ -519,6 +519,10 @@ image_combos:
     display_name: bianbu  for BananaPi BPI-F3
     packages:
       - board-image/bianbu-bpi-f3
+  - id: buildroot-sdk-milkv-duo-256m-v2
+    display_name: buildroot v2 for Milk-V Duo (256M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-256m-v2
   - id: buildroot-sdk-milkv-duo-256m-v1
     display_name: buildroot v1 for Milk-V Duo (256M)
     packages:
@@ -572,9 +576,8 @@ devices:
         display_name: "Milk-V Duo (256M RAM)"
         supported_combos:
           - arduino-milkv-duo256m-sd
-          - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
-
+          - buildroot-sdk-milkv-duo-256m-v2
           - buildroot-sdk-milkv-duo-256m-v1
   - id: milkv-duos
     display_name: "Milk-V Duo S"
