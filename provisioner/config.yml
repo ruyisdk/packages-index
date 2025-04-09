@@ -539,6 +539,10 @@ image_combos:
     display_name: buildroot v1 for Milk-V Duo (256M)
     packages:
       - board-image/buildroot-sdk-milkv-duo-256m-v1
+  - id: debian-milkv-duo-256m
+    display_name: debian  for Milk-V Duo (256M)
+    packages:
+      - board-image/debian-milkv-duo-256m
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -592,6 +596,7 @@ devices:
           - buildroot-sdk-milkv-duo256m-python
           - buildroot-sdk-milkv-duo-256m-v2
           - buildroot-sdk-milkv-duo-256m-v1
+          - debian-milkv-duo-256m
   - id: milkv-duos
     display_name: "Milk-V Duo S"
     variants:

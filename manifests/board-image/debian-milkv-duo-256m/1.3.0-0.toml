@@ -1,0 +1,32 @@
+format = "v1"
+[[distfiles]]
+name = "duo256_sd.img.lz4"
+size = 197236667
+urls = [ "https://github.com/Fishwaldo/sophgo-sg200x-debian/releases/download/v1.3.0/duo256_sd.img.lz4",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "8331f2649ddd733bf495124ba4a72737f5616bd51754ef0f0ca92440127bbfc3"
+sha512 = "61429719fd692b56259b4cd298ffa88f57426a8de52fd5ecf6fd60ba1a0d7a0c27a0e1532ae08e428b31642b867b916e951b101c5be838c2098df9667dffa89a"
+
+[metadata]
+desc = "debian  for Milk-V Duo (256M) with version v1.3.0"
+service_level = []
+upstream_version = "v1.3.0"
+
+[blob]
+distfiles = [ "duo256_sd.img.lz4",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "milkv-duo"
+eula = ""
+
+[provisionable.partition_map]
+disk = "duo256_sd.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14353654313
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14353654313
