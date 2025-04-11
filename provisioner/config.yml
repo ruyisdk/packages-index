@@ -575,6 +575,11 @@ image_combos:
     packages:
       - board-image/oerv-sipeed-lpi4a-8g-Innovation
       - board-image/uboot-oerv-sipeed-lpi4a-8g-Innovation
+  - id: oerv-sipeed-lpi4a-16g-Innovation
+    display_name: openeuler Innovation for LicheePi 4A
+    packages:
+      - board-image/uboot-oerv-sipeed-lpi4a-16g-Innovation
+      - board-image/oerv-sipeed-lpi4a-16g-Innovation
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -767,6 +772,7 @@ devices:
           - revyos-sipeed-lpi4a-16g
 
           - oerv-sipeed-lpi4a-16g-LTS
+          - oerv-sipeed-lpi4a-16g-Innovation
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
     variants:
