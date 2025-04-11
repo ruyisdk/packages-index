@@ -1,0 +1,32 @@
+format = "v1"
+[[distfiles]]
+name = "licheervnano-e_sd.img.lz4"
+size = 378963382
+urls = [ "https://github.com/scpcom/sophgo-sg200x-debian/releases/download/v1.6.7/licheervnano-e_sd.img.lz4",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "6698732db1af4f69c910bbcf93dea69365ce6409a741885ec79df880bb57d587"
+sha512 = "bce7796d9e3439b30db25005b00e847e9abcddba55639e1cebef3af00c41768efae8d7a78e3ad2cf0ba5bf65197041efbdb78a04dd48241bcd3da48b4a002615"
+
+[metadata]
+desc = "debian  for LicheeRV Nano with version v1.6.7"
+service_level = []
+upstream_version = "v1.6.7"
+
+[blob]
+distfiles = [ "licheervnano-e_sd.img.lz4",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "github:Fishwaldo"
+eula = ""
+
+[provisionable.partition_map]
+disk = "licheervnano-e_sd.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14392989952
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14392989952
