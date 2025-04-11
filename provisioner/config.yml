@@ -585,6 +585,11 @@ image_combos:
     packages:
       - board-image/oerv-milkv-pioneer-v1.3-LTS
       - board-image/firmware-oerv-milkv-pioneer-v1.3-LTS
+  - id: oerv-milkv-pioneer-v1.3
+    display_name: openeuler  for Pioneer Box
+    packages:
+      - board-image/oerv-milkv-pioneer
+      - board-image/firmware-oerv-milkv-pioneer
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -690,6 +695,7 @@ devices:
           - oerv-milkv-pioneer-xfce-nvme
           - revyos-milkv-pioneer-v1.3
           - oerv-milkv-pioneer-v1.3-LTS
+          - oerv-milkv-pioneer-v1.3
       - id: v1.2
         display_name: "Milk-V Pioneer Box (v1.2)"
         supported_combos:

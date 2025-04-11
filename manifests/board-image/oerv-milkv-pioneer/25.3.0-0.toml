@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "openEuler-25.03-riscv64-sg2042.img.zip"
+size = 1444484098
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-25.03/embedded_img/riscv64/SG2042/openEuler-25.03-riscv64-sg2042.img.zip",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "1cb009baf1534aed719123538bf2228e55b0968aeaeaf14f9a981d4a45797b48"
+sha512 = "f1c7f9a7b3fd6e159e33afe93e10dee51b3507f309fb483b50ec45d0bba2b5efe49c19270215dce665f174082c136ea87bd5c21ea275a9ef7d071718ab44e745"
+
+[metadata]
+desc = "openEuler 25.03 image for Milk-V Pioneer"
+upstream_version = "25.03"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "openEuler-25.03-riscv64-sg2042.img.zip",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "milkv-pioneer"
+eula = ""
+
+[provisionable.partition_map]
+disk = "openEuler-25.03-riscv64-sg2042.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14394999206
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14394999206
