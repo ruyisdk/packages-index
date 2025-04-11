@@ -570,6 +570,11 @@ image_combos:
     packages:
       - board-image/uboot-revyos-milkv-meles-16g
       - board-image/revyos-milkv-meles-16g
+  - id: oerv-sipeed-lpi4a-8g-Innovation
+    display_name: openeuler Innovation for LicheePi 4A
+    packages:
+      - board-image/oerv-sipeed-lpi4a-8g-Innovation
+      - board-image/uboot-oerv-sipeed-lpi4a-8g-Innovation
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -753,6 +758,7 @@ devices:
           - oerv-sipeed-lpi4a-8g-xfce
           - revyos-sipeed-lpi4a-8g
           - oerv-sipeed-lpi4a-8g-LTS
+          - oerv-sipeed-lpi4a-8g-Innovation
       - id: 16g
         display_name: "Sipeed LicheePi 4A (16G RAM)"
         supported_combos:

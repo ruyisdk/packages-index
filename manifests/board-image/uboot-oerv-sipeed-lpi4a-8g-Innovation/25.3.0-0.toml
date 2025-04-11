@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "u-boot-with-spl-lpi4a.bin"
+size = 1032280
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-25.03/embedded_img/riscv64/lpi4a/u-boot-with-spl-lpi4a.bin",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "b2732a56f2b5d5e642804e94a55754b6b6dae54d02ac5ca4249d1df59931e391"
+sha512 = "b699b4a7276501c32057bef7d87fe939ade9a15d9754163f8da59c0f4d97c5f2ecceb5549e1cbbfe3c3b0e757bdf07a6d0f731ee0c270e990233d55176415284"
+
+[metadata]
+desc = "U-Boot image for LicheePi 4A (8G RAM) and openEuler 25.03"
+upstream_version = "25.03"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "u-boot-with-spl-lpi4a.bin",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "sipeed-lpi4a"
+eula = ""
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lpi4a.bin"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14393715408
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14393715408

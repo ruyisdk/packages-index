@@ -1,0 +1,43 @@
+format = "v1"
+[[distfiles]]
+name = "openEuler-25.03-riscv64-lpi4a-base-boot.ext4.zst"
+size = 242844903
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-25.03/embedded_img/riscv64/lpi4a/openEuler-25.03-riscv64-lpi4a-base-boot.ext4.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "4aa2d5623e85d602f77e30ed2ab6aed8ba933c48748b9bbbf8e94925069c817c"
+sha512 = "3261f20372ae42fffb3ccc363c18cc88515ffd342651867e06c823023aea9dcdf54cd8c6d199da1e11651bc6871170d53e640ea9c1085905fcc30d0c8d2da7ad"
+[[distfiles]]
+name = "openEuler-25.03-riscv64-lpi4a-base-root.ext4.zst"
+size = 1082046912
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-25.03/embedded_img/riscv64/lpi4a/openEuler-25.03-riscv64-lpi4a-base-root.ext4.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "30701eb9e4d8edfae3cd17dbf7457fa816b0393e4d17c47a4ad207143fa73868"
+sha512 = "028e5a9724e33748d386ac4ac613c858a30a6613bbc3e0322a78fc805cc42a1812b7f391033ab1df7ca6f049d9c97daa124c3a66fb33f795af0e1a830e5dbf2e"
+
+[metadata]
+desc = "openEuler 25.03 image for Sipeed LicheePi 4A"
+upstream_version = "25.03"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "openEuler-25.03-riscv64-lpi4a-base-boot.ext4.zst", "openEuler-25.03-riscv64-lpi4a-base-root.ext4.zst",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "sipeed-lpi4a"
+eula = ""
+
+[provisionable.partition_map]
+boot = "openEuler-25.03-riscv64-lpi4a-base-boot.ext4.zst"
+root = "openEuler-25.03-riscv64-lpi4a-base-root.ext4.zst"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14393715408
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14393715408
