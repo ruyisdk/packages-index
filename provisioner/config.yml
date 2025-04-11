@@ -555,6 +555,11 @@ image_combos:
     display_name: bianbu minimal for BananaPi BPI-F3
     packages:
       - board-image/bianbu-bpi-f3-minimal
+  - id: oerv-sipeed-lpi4a-8g-LTS
+    display_name: openeuler LTS for LicheePi 4A
+    packages:
+      - board-image/oerv-sipeed-lpi4a-8g-LTS
+      - board-image/uboot-oerv-sipeed-lpi4a-8g-LTS
   - id: oerv-sipeed-lpi4a-16g-LTS
     display_name: openeuler LTS for LicheePi 4A
     packages:
@@ -747,6 +752,7 @@ devices:
           - oerv-sipeed-lpi4a-8g-headless
           - oerv-sipeed-lpi4a-8g-xfce
           - revyos-sipeed-lpi4a-8g
+          - oerv-sipeed-lpi4a-8g-LTS
       - id: 16g
         display_name: "Sipeed LicheePi 4A (16G RAM)"
         supported_combos:
