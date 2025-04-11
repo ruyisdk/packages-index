@@ -1,0 +1,32 @@
+format = "v1"
+[[distfiles]]
+name = "ubuntu-24.10-preinstalled-server-riscv64%2Bunmatched.img.xz"
+size = 1032701560
+urls = [ "https://mirror.iscas.ac.cn/ubuntu-cdimage/releases/24.10/release/ubuntu-24.10-preinstalled-server-riscv64%2Bunmatched.img.xz",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "aff591c54a782f8068523fd8ffa4a2721c4959902b578778bb3cdcbec8934f28"
+sha512 = "308880616455b6006a2c50cebb21b1e6596f29acc51f9bccdb36eb964d468ec9a1fce4d2c00faac0cc1997ffb622bce57cc3990ac166b3f159a701efc34ccc98"
+
+[metadata]
+desc = "Official Ubuntu 24.10 Server image for SiFive HiFive Unmatched"
+service_level = []
+upstream_version = "24.10"
+
+[blob]
+distfiles = [ "ubuntu-24.10-preinstalled-server-riscv64%2Bunmatched.img.xz",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "Ubuntu"
+eula = ""
+
+[provisionable.partition_map]
+disk = "ubuntu-24.10-preinstalled-server-riscv64%2Bunmatched.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14399858478
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14399858478
