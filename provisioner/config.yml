@@ -376,10 +376,10 @@ image_combos:
       - board-image/openwrt-sifive-unmatched
 
   # RevyOS
-  - id: revyos-milkv-pioneer
+  - id: revyos-milkv-pioneer-v1.3
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
-      - board-image/revyos-milkv-pioneer
+      - board-image/revyos-milkv-pioneer-v1.3
   - id: revyos-sipeed-lc4a-8g
     display_name: "RevyOS for Sipeed Lichee Cluster 4A (8G RAM)"
     packages:
@@ -654,7 +654,7 @@ devices:
           # - fedora-milkv-pioneer-v1.2  # cannot download from Google Drive
           - oerv-milkv-pioneer-base-nvme
           - oerv-milkv-pioneer-xfce-nvme
-          - revyos-milkv-pioneer
+          - revyos-milkv-pioneer-v1.3
       - id: v1.2
         display_name: "Milk-V Pioneer Box (v1.2)"
         supported_combos:
