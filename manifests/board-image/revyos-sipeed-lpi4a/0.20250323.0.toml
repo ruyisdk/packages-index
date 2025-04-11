@@ -1,0 +1,43 @@
+format = "v1"
+[[distfiles]]
+name = "boot-lpi4a-20250323_154524.ext4.zst"
+size = 73219435
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250323/boot-lpi4a-20250323_154524.ext4.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "dfde2ad405e328625424752d6b24ab89855a59870f9190ef430bb54ca2c125b8"
+sha512 = "4180240e0e168e901fd509ff7adb3176caf5a1ebe3a6d25f80b2efda4290b5169a0a453e5573d33f21e2ca85641dc80e83059427cf5128e84ee075dd8ad1c380"
+[[distfiles]]
+name = "root-lpi4a-20250323_154524.ext4.zst"
+size = 1333298432
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250323/root-lpi4a-20250323_154524.ext4.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "75a3d9992264ad13fec41b2171a4877e4a097e217c4e3eee358ceb4d938bf419"
+sha512 = "d0248f83c11b5990c1c77325de4497aa1a86ace0ae7461ad2ecda0333553782421d95b6c88c769490305fae43b51db685e26d07dc6d5c0c52a17fe51c6b5311e"
+
+[metadata]
+desc = "RevyOS 20250323 image for Sipeed LicheePi 4A"
+upstream_version = "20250323"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "boot-lpi4a-20250323_154524.ext4.zst", "root-lpi4a-20250323_154524.ext4.zst",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "PLCT"
+eula = ""
+
+[provisionable.partition_map]
+boot = "boot-lpi4a-20250323_154524.ext4.zst"
+root = "root-lpi4a-20250323_154524.ext4.zst"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14392989952
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14392989952
