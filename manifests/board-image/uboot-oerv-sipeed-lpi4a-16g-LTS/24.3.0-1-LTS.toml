@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "u-boot-with-spl-lpi4a-16g.bin"
+size = 992712
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-24.03-LTS-SP1/embedded_img/riscv64/lpi4a/u-boot-with-spl-lpi4a-16g.bin",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "39b05820158b04269b5ad4f704ba5610c5caed3e7496a25834a3304af2a1ba9c"
+sha512 = "eae7af0d09b445f9c0ba16d1420cbda4a915b779923c22ac1a6452d63b3d2456b4ea1bfddafc074cbfc8424ed8d725c4beefcfc3714dc7d81b4d8dbd510b50b7"
+
+[metadata]
+desc = "U-Boot image for LicheePi 4A (16G RAM) and openEuler 24.03-LTS-SP1"
+upstream_version = "24.03-LTS-SP1"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "u-boot-with-spl-lpi4a-16g.bin",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "sipeed-lpi4a"
+eula = ""
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lpi4a-16g.bin"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14393546464
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14393546464

@@ -555,6 +555,11 @@ image_combos:
     display_name: bianbu minimal for BananaPi BPI-F3
     packages:
       - board-image/bianbu-bpi-f3-minimal
+  - id: oerv-sipeed-lpi4a-16g-LTS
+    display_name: openeuler LTS for LicheePi 4A
+    packages:
+      - board-image/uboot-oerv-sipeed-lpi4a-16g-LTS
+      - board-image/oerv-sipeed-lpi4a-16g-LTS
   - id: revyos-milkv-meles-16g
     display_name: RevyOS image for Milk-V Meles using EMMC
     packages:
@@ -749,6 +754,7 @@ devices:
           - oerv-sipeed-lpi4a-16g-xfce
           - revyos-sipeed-lpi4a-16g
 
+          - oerv-sipeed-lpi4a-16g-LTS
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
     variants:
