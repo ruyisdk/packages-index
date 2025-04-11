@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "Armbian_community_25.2.0-trunk.124_Star64_noble_edge_5.15.0_minimal.img.xz"
+size = 220427108
+urls = [ "https://github.com/armbian/community/releases/download/25.2.0-trunk.124/Armbian_community_25.2.0-trunk.124_Star64_noble_edge_5.15.0_minimal.img.xz",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "0feedf2bcb4cb7eb75421645b83e4cca4c371e2450254a49de75ae6a5dfb5bc4"
+sha512 = "e9dbabef369237e423b9b3d052a93bcd3ac8c7dc096670230e3457991224a2e8d04b6033453d9e37923fb6b4fdd4ba5ab3832b248d40a38dc75e35e4726f1dec"
+
+[metadata]
+desc = "armbian  for Star64 with version 25.2.0-trunk.124"
+upstream_version = "25.2.0-trunk.124"
+[[metadata.service_level]]
+level = "untested"
+
+[blob]
+distfiles = [ "Armbian_community_25.2.0-trunk.124_Star64_noble_edge_5.15.0_minimal.img.xz",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "Armbian"
+eula = ""
+
+[provisionable.partition_map]
+disk = "Armbian_community_25.2.0-trunk.124_Star64_noble_edge_5.15.0_minimal.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14395266550
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14395266550

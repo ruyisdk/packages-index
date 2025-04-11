@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip"
+size = 2616243211
+urls = [ "https://archive.spacemit.com/image/k1/version/bianbu/v2.1.1/bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "a42a0efc1c55f4942b081a9fc444a9dec853ff165c1fd8cd4775539cc64ed408"
+sha512 = "36adc5b8de585a1a88df9f5d640d12f743ac213747c694116cb0d6a0adb98d50388e891c8952675816beac3d904c1ce2d2b44126477a005cd2dda739d2f210b9"
+
+[metadata]
+desc = "Official bianbu desktop image for Banana Pi F3 version 2.1.1"
+upstream_version = "2.1.1"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "bpi-f3"
+eula = ""
+
+[provisionable.partition_map]
+disk = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14356174136
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14356174136

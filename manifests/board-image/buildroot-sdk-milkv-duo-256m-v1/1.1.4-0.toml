@@ -1,0 +1,32 @@
+format = "v1"
+[[distfiles]]
+name = "milkv-duo256m-sd-v1.1.4.img.zip"
+size = 85210948
+urls = [ "https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/v1.1.4/milkv-duo256m-sd-v1.1.4.img.zip",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "d368465381441adc72c43b1a4db3ffe8ce3a30d169f77d31f1ab6e3a472642a5"
+sha512 = "5ae5f10d1a326cd116be776b394195d872819ca17e151215d6d7a5e7e685f451e8fa47c00afa12f1102248cf56ef1c1cba5e4db9957091af1eac57c322ef8bba"
+
+[metadata]
+desc = "buildroot v1 for Milk-V Duo (256M) with version v1.1.4"
+service_level = []
+upstream_version = "v1.1.4"
+
+[blob]
+distfiles = [ "milkv-duo256m-sd-v1.1.4.img.zip",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "milkv-duo"
+eula = ""
+
+[provisionable.partition_map]
+disk = "milkv-duo256m-sd-v1.1.4.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14352219321
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14352219321

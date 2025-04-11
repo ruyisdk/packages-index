@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "openEuler-24.09-V1-base-unmatched-testing.img.zst"
+size = 1170030875
+urls = [ "https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/testing/20241105/v0.1/Unmatched/openEuler-24.09-V1-base-unmatched-testing.img.zst",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "9c6c3ac236f1faf03bab9b6564328496b576fbcd8c43642ec449eaf46ca23135"
+sha512 = "cbe14de8954008bb610a6248762b87b780a18283e9d056610f6122f23bccf3933286179f2c0375fc403a0f562bc5cad178b90703efaf4566506ba4673559f3af"
+
+[metadata]
+desc = "openEuler 24.09-20241105-v0.1 BASE image for SiFive HiFive Unmatched"
+upstream_version = "24.09-20241105-v0.1"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "openEuler-24.09-V1-base-unmatched-testing.img.zst",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "PLCT"
+eula = ""
+
+[provisionable.partition_map]
+disk = "openEuler-24.09-V1-base-unmatched-testing.img.zst"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14396160191
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14396160191

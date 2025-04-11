@@ -1,0 +1,32 @@
+format = "v1"
+[[distfiles]]
+name = "milkv-duo-musl-riscv64-sd_v2.0.0.img.zip"
+size = 63204048
+urls = [ "https://github.com/milkv-duo/duo-buildroot-sdk-v2/releases/download/v2.0.0/milkv-duo-musl-riscv64-sd_v2.0.0.img.zip",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "893d876be93e70079d9acaf0ea57704e470b2fb540616fd3d943615fccfd6369"
+sha512 = "18f25ecdf0b545534877e56c84d1b2b31c3e92aa801192fcd856c9ed743578c4e506b77b139f2895a833a5355386b025f7d9de506a5b86b788c31cd49a97e20a"
+
+[metadata]
+desc = "buildroot v2 for Milk-V Duo (64M) with version v2.0.0"
+service_level = []
+upstream_version = "v2.0.0"
+
+[blob]
+distfiles = [ "milkv-duo-musl-riscv64-sd_v2.0.0.img.zip",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "milkv-duo"
+eula = ""
+
+[provisionable.partition_map]
+disk = "milkv-duo-musl-riscv64-sd_v2.0.0.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14352219321
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14352219321

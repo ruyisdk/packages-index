@@ -232,11 +232,11 @@ image_combos:
     display_name: "Milk-V Duo Official buildroot SDK (256M RAM, Lite, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duo256m-python
-  - id: buildroot-sdk-milkv-duos-freertos-sdcard
+  - id: buildroot-sdk-milkv-duos-sd
     display_name: "Milk-V Duo S Official buildroot SDK (FreeRTOS, SD card)"
     packages:
       - board-image/buildroot-sdk-milkv-duos-sd
-  - id: buildroot-sdk-sipeed-licheervnano-linux-freertos
+  - id: buildroot-sdk-sipeed-licheervnano
     display_name: "Sipeed LicheeRV Nano Official buildroot SDK (Linux & FreeRTOS)"
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
@@ -270,14 +270,14 @@ image_combos:
     display_name: "Canaan Kendryte K230 Official CanMV Ubuntu SDK"
     packages:
       - board-image/canmv-ubuntu-sdk-canaan-k230
-  - id: ubuntu-server-sifive-unmatched
+  - id: ubuntu-sifive-unmatched
     display_name: "Ubuntu Server for SiFive HiFive Unmatched"
     packages:
-      - board-image/ubuntu-server-riscv64-sifive-unmatched
-  - id: debian-fishwaldo-sipeed-licheervnano
+      - board-image/ubuntu-sifive-unmatched
+  - id: debian-sipeed-licheervnano
     display_name: "Debian for Sipeed LicheeRV Nano (from https://github.com/Fishwaldo)"
     packages:
-      - board-image/debian-fishwaldo-sg200x-sipeed-licheervnano
+      - board-image/debian-sipeed-licheervnano
 
   # BSDs
   - id: freebsd-riscv64
@@ -376,10 +376,10 @@ image_combos:
       - board-image/openwrt-sifive-unmatched
 
   # RevyOS
-  - id: revyos-milkv-pioneer
+  - id: revyos-milkv-pioneer-v1.3
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
-      - board-image/revyos-sg2042-milkv-pioneer
+      - board-image/revyos-milkv-pioneer-v1.3
   - id: revyos-sipeed-lc4a-8g
     display_name: "RevyOS for Sipeed Lichee Cluster 4A (8G RAM)"
     packages:
@@ -510,11 +510,90 @@ image_combos:
     display_name: "WCH CH592X EVB RT-Thread SDK (documentation-only)"
     packages: []
     postinst_msgid: doc-rtthread-wch-ch592x-evb
+  - id: bianbu-bpi-f3
+    display_name: bianbu  for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3
+  - id: buildroot-sdk-milkv-duos-sd-v2
+    display_name: buildroot sd-v2 for Milk-V Duo S
+    packages:
+      - board-image/buildroot-sdk-milkv-duos-sd-v2
+  - id: buildroot-sdk-milkv-duo-64m-v2
+    display_name: buildroot v2 for Milk-V Duo (64M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-64m-v2
+  - id: buildroot-sdk-milkv-duo-64m-v1
+    display_name: buildroot v1 for Milk-V Duo (64M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-64m-v1
+  - id: buildroot-sdk-milkv-duo-256m-v2
+    display_name: buildroot v2 for Milk-V Duo (256M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-256m-v2
+  - id: buildroot-sdk-milkv-duo-256m-v1
+    display_name: buildroot v1 for Milk-V Duo (256M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-256m-v1
+  - id: debian-milkv-duos-sd
+    display_name: debian sd for Milk-V Duo S
+    packages:
+      - board-image/debian-milkv-duos-sd
+  - id: debian-milkv-duo-256m
+    display_name: debian  for Milk-V Duo (256M)
+    packages:
+      - board-image/debian-milkv-duo-256m
 
 #
 # Supported devices
 #
 
+  - id: bianbu-bpi-f3-desktop
+    display_name: bianbu desktop for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3-desktop
+  - id: bianbu-bpi-f3-minimal
+    display_name: bianbu minimal for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3-minimal
+  - id: oerv-sipeed-lpi4a-8g-LTS
+    display_name: openeuler LTS for LicheePi 4A
+    packages:
+      - board-image/oerv-sipeed-lpi4a-8g-LTS
+      - board-image/uboot-oerv-sipeed-lpi4a-8g-LTS
+  - id: oerv-sipeed-lpi4a-16g-LTS
+    display_name: openeuler LTS for LicheePi 4A
+    packages:
+      - board-image/uboot-oerv-sipeed-lpi4a-16g-LTS
+      - board-image/oerv-sipeed-lpi4a-16g-LTS
+  - id: revyos-milkv-meles-16g
+    display_name: RevyOS image for Milk-V Meles using EMMC
+    packages:
+      - board-image/uboot-revyos-milkv-meles-16g
+      - board-image/revyos-milkv-meles-16g
+  - id: oerv-sipeed-lpi4a-8g-Innovation
+    display_name: openeuler Innovation for LicheePi 4A
+    packages:
+      - board-image/oerv-sipeed-lpi4a-8g-Innovation
+      - board-image/uboot-oerv-sipeed-lpi4a-8g-Innovation
+  - id: oerv-sipeed-lpi4a-16g-Innovation
+    display_name: openeuler Innovation for LicheePi 4A
+    packages:
+      - board-image/uboot-oerv-sipeed-lpi4a-16g-Innovation
+      - board-image/oerv-sipeed-lpi4a-16g-Innovation
+  - id: oerv-milkv-pioneer-v1.3-LTS
+    display_name: openeuler LTS for Pioneer Box
+    packages:
+      - board-image/oerv-milkv-pioneer-v1.3-LTS
+      - board-image/firmware-oerv-milkv-pioneer-v1.3-LTS
+  - id: oerv-milkv-pioneer-v1.3
+    display_name: openeuler  for Pioneer Box
+    packages:
+      - board-image/oerv-milkv-pioneer
+      - board-image/firmware-oerv-milkv-pioneer
+  - id: ubuntu-sifive-unmatched-LTS
+    display_name: ubuntu LTS for HiFive Unmatched
+    packages:
+      - board-image/ubuntu-sifive-unmatched-LTS
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -558,23 +637,25 @@ devices:
         display_name: "Milk-V Duo (64M RAM)"
         supported_combos:
           - arduino-milkv-duo-sd
-          - buildroot-sdk-milkv-duo
           - buildroot-sdk-milkv-duo-python
+          - buildroot-sdk-milkv-duo-64m-v2
+          - buildroot-sdk-milkv-duo-64m-v1
       - id: 256m
         display_name: "Milk-V Duo (256M RAM)"
         supported_combos:
           - arduino-milkv-duo256m-sd
-          - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
-
+          - buildroot-sdk-milkv-duo-256m-v2
+          - buildroot-sdk-milkv-duo-256m-v1
+          - debian-milkv-duo-256m
   - id: milkv-duos
     display_name: "Milk-V Duo S"
     variants:
       - id: generic
         display_name: "Milk-V Duo S (generic variant)"
         supported_combos:
-          - buildroot-sdk-milkv-duos-freertos-sdcard
-
+          - buildroot-sdk-milkv-duos-sd-v2
+          - debian-milkv-duos-sd
   - id: milkv-mars
     display_name: "Milk-V Mars"
     variants:
@@ -603,6 +684,10 @@ devices:
         supported_combos:
           - revyos-milkv-meles-8g
 
+      - id: 16g
+        display_name: Milk-V Meles (16g)
+        supported_combos:
+          - revyos-milkv-meles-16g
   - id: milkv-pioneer
     display_name: "Milk-V Pioneer Box"
     variants:
@@ -612,7 +697,9 @@ devices:
           # - fedora-milkv-pioneer-v1.2  # cannot download from Google Drive
           - oerv-milkv-pioneer-base-nvme
           - oerv-milkv-pioneer-xfce-nvme
-          - revyos-milkv-pioneer
+          - revyos-milkv-pioneer-v1.3
+          - oerv-milkv-pioneer-v1.3-LTS
+          - oerv-milkv-pioneer-v1.3
       - id: v1.2
         display_name: "Milk-V Pioneer Box (v1.2)"
         supported_combos:
@@ -656,8 +743,9 @@ devices:
           - oerv-sifive-unmatched-xfce
           - openkylin-sifive-unmatched
           - openwrt-sifive-unmatched
-          - ubuntu-server-sifive-unmatched
+          - ubuntu-sifive-unmatched
 
+          - ubuntu-sifive-unmatched-LTS
   - id: sipeed-lc4a
     display_name: "Sipeed Lichee Cluster 4A"
     variants:
@@ -691,6 +779,8 @@ devices:
           - oerv-sipeed-lpi4a-8g-headless
           - oerv-sipeed-lpi4a-8g-xfce
           - revyos-sipeed-lpi4a-8g
+          - oerv-sipeed-lpi4a-8g-LTS
+          - oerv-sipeed-lpi4a-8g-Innovation
       - id: 16g
         display_name: "Sipeed LicheePi 4A (16G RAM)"
         supported_combos:
@@ -698,6 +788,8 @@ devices:
           - oerv-sipeed-lpi4a-16g-xfce
           - revyos-sipeed-lpi4a-16g
 
+          - oerv-sipeed-lpi4a-16g-LTS
+          - oerv-sipeed-lpi4a-16g-Innovation
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
     variants:
@@ -713,8 +805,8 @@ devices:
       - id: generic
         display_name: "Sipeed LicheeRV Nano (generic variant)"
         supported_combos:
-          - buildroot-sdk-sipeed-licheervnano-linux-freertos
-          - debian-fishwaldo-sipeed-licheervnano
+          - buildroot-sdk-sipeed-licheervnano
+          - debian-sipeed-licheervnano
 
   - id: sipeed-maix1
     display_name: "Sipeed Maix-I"
@@ -941,3 +1033,11 @@ devices:
         supported_combos:
           - placeholder-freertos-wch-ch592x-evb
           - placeholder-rtthread-wch-ch592x-evb
+  - id: bpi-f3
+    display_name: BananaPi BPI-F3
+    variants:
+      - id: generic
+        display_name: BananaPi BPI-F3 (generic)
+        supported_combos:
+          - bianbu-bpi-f3-desktop
+          - bianbu-bpi-f3-minimal

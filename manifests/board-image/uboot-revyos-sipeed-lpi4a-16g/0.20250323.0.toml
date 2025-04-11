@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "u-boot-with-spl-lpi4a-16g-main.bin"
+size = 992728
+urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250323/u-boot-with-spl-lpi4a-16g-main.bin",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "946ef12ac79f59a6f43c63c534477776d2b07d7ce8919f4c7d05ed29ddfad30d"
+sha512 = "e626d1ee7617095179fa31394bf0f129225be9527b9042d62957051b11303298d3c46fe0c2d053046cde192c3cf62ea687f4616028f499927603a50bd39144c8"
+
+[metadata]
+desc = "U-Boot image for LicheePi 4A (16G RAM) and RevyOS 20250323"
+upstream_version = "20250323"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "u-boot-with-spl-lpi4a-16g-main.bin",]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[metadata.vendor]
+name = "PLCT"
+eula = ""
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lpi4a-16g-main.bin"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14392989952
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14392989952

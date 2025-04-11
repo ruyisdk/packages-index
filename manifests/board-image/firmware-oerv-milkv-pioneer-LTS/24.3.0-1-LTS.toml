@@ -1,0 +1,33 @@
+format = "v1"
+[[distfiles]]
+name = "sg2042_firmware_linuxboot.img.zip"
+size = 16982087
+urls = [ "https://fast-mirror.isrc.ac.cn/openeuler/openEuler-24.03-LTS-SP1/embedded_img/riscv64/SG2042/sg2042_firmware_linuxboot.img.zip",]
+restrict = [ "mirror",]
+
+[distfiles.checksums]
+sha256 = "1d1e47ce2cbbeda528c4338030f914c4905af89fc939783e3ff80fefa935c57d"
+sha512 = "0fdf299e372f8af01b988afcee3021045ab81d02e6bc3b3a90136f1f36ec3b4452f8fde25023f54bda65651d5cecfb3a9adfa216e8c9e001339a388f51941497"
+
+[metadata]
+desc = "Firmware image for Milk-V Pioneer and openEuler 24.03-LTS-SP1"
+upstream_version = "24.03-LTS-SP1"
+[[metadata.service_level]]
+level = "good"
+
+[blob]
+distfiles = [ "sg2042_firmware_linuxboot.img.zip",]
+
+[provisionable]
+strategy = "dd_v1"
+
+[metadata.vendor]
+name = "milkv-pioneer"
+eula = ""
+
+[provisionable.partition_map]
+disk = "sg2042_firmware_linuxboot.img"
+
+# This file is created by program Sync Package Index inside support-matrix
+# Run ID: 14394567519
+# Run URL: https://github.com/wychlw/support-matrix/actions/runs/14394567519
