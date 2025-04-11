@@ -270,10 +270,10 @@ image_combos:
     display_name: "Canaan Kendryte K230 Official CanMV Ubuntu SDK"
     packages:
       - board-image/canmv-ubuntu-sdk-canaan-k230
-  - id: ubuntu-server-sifive-unmatched
+  - id: ubuntu-sifive-unmatched
     display_name: "Ubuntu Server for SiFive HiFive Unmatched"
     packages:
-      - board-image/ubuntu-server-riscv64-sifive-unmatched
+      - board-image/ubuntu-sifive-unmatched
   - id: debian-sipeed-licheervnano
     display_name: "Debian for Sipeed LicheeRV Nano (from https://github.com/Fishwaldo)"
     packages:
@@ -739,7 +739,7 @@ devices:
           - oerv-sifive-unmatched-xfce
           - openkylin-sifive-unmatched
           - openwrt-sifive-unmatched
-          - ubuntu-server-sifive-unmatched
+          - ubuntu-sifive-unmatched
 
   - id: sipeed-lc4a
     display_name: "Sipeed Lichee Cluster 4A"
