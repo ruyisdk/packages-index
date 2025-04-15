@@ -7,6 +7,7 @@ The canonical location is https://github.com/ruyisdk/packages-index.
 
 We welcome packaging contributions -- please raise an issue or post a pull
 request in case something is not like what you expect to be.
+Please see our [contribution guidelines](./CONTRIBUTING.md) ([中文](./CONTRIBUTING.zh.md)) for details on how to get started.
 
 ## License
 
