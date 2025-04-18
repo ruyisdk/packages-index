@@ -520,6 +520,10 @@ image_combos:
     packages:
       - board-image/revyos-milkv-meles
       - board-image/uboot-revyos-milkv-meles-16g
+  - id: buildroot-sdk-milkv-duo-256m-v2
+    display_name: buildroot v2 for Milk-V Duo (256M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-256m-v2
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -572,6 +576,7 @@ devices:
           - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
 
+          - buildroot-sdk-milkv-duo-256m-v2
   - id: milkv-duos
     display_name: "Milk-V Duo S"
     variants:
