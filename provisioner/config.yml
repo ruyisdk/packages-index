@@ -520,6 +520,10 @@ image_combos:
     packages:
       - board-image/revyos-milkv-meles
       - board-image/uboot-revyos-milkv-meles-16g
+  - id: buildroot-sdk-sipeed-licheervnano
+    display_name: buildroot SDK for LicheeRV Nano
+    packages:
+      - board-image/buildroot-sdk-sipeed-licheervnano
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -725,6 +729,7 @@ devices:
           - buildroot-sdk-sipeed-licheervnano-linux-freertos
           - debian-fishwaldo-sipeed-licheervnano
 
+          - buildroot-sdk-sipeed-licheervnano
   - id: sipeed-maix1
     display_name: "Sipeed Maix-I"
     variants:
