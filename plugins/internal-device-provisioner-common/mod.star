@@ -93,7 +93,7 @@ def do_fastboot_flash(part, img_path):
     RUYI.log.I(
         "flashing [yellow]" + img_path + "[/] into device partition [green]" + part + "[/]"
     )
-    ret = _do_fastboot("flash", part, img_path)
+    ret = do_fastboot("flash", part, img_path)
     if ret != 0:
         RUYI.log.F("failed to flash [green]" + part + "[/] image into device storage")
         RUYI.log.W("the device could be in an inconsistent state now, check now")
