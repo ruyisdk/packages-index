@@ -379,7 +379,7 @@ image_combos:
   - id: revyos-milkv-pioneer
     display_name: "RevyOS for Milk-V Pioneer"
     packages:
-      - board-image/revyos-sg2042-milkv-pioneer
+      - board-image/revyos-milkv-pioneer
   - id: revyos-sipeed-lc4a-8g
     display_name: "RevyOS for Sipeed Lichee Cluster 4A (8G RAM)"
     packages:
