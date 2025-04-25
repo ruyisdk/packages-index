@@ -524,6 +524,10 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: ubuntu-sifive-unmatched-LTS
+    display_name: ubuntu LTS for HiFive Unmatched
+    packages:
+      - board-image/ubuntu-sifive-unmatched-LTS
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -671,6 +675,7 @@ devices:
           - openwrt-sifive-unmatched
           - ubuntu-server-sifive-unmatched
 
+          - ubuntu-sifive-unmatched-LTS
   - id: sipeed-lc4a
     display_name: "Sipeed Lichee Cluster 4A"
     variants:
