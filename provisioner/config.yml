@@ -524,6 +524,10 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: debian-milkv-duo-256m
+    display_name: debian  for Milk-V Duo (256M)
+    packages:
+      - board-image/debian-milkv-duo-256m
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -576,6 +580,7 @@ devices:
           - buildroot-sdk-milkv-duo256m
           - buildroot-sdk-milkv-duo256m-python
 
+          - debian-milkv-duo-256m
   - id: milkv-duos
     display_name: "Milk-V Duo S"
     variants:
