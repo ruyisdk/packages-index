@@ -524,6 +524,11 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: oerv-sipeed-lpi4a-16g-LTS
+    display_name: openeuler LTS for LicheePi 4A (16GB RAM)
+    packages:
+      - board-image/uboot-oerv-sipeed-lpi4a-16g-LTS
+      - board-image/oerv-sipeed-lpi4a-LTS
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -711,6 +716,7 @@ devices:
           - oerv-sipeed-lpi4a-16g-xfce
           - revyos-sipeed-lpi4a-16g
 
+          - oerv-sipeed-lpi4a-16g-LTS
   - id: sipeed-licheerv
     display_name: "Sipeed Lichee RV"
     variants:
