@@ -1,7 +1,7 @@
 ruyi-entity = "v0"
 
 # FIXME: Check and update with the correct CPU
-related = ["cpu:generic-rv64gc", "device:wch-ch32v103-evb"]
+related = ["cpu:generic-rv64gc"]
 unique_among_type_during_traversal = true
 
 [device-variant]

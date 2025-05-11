@@ -1,5 +1,12 @@
 ruyi-entity = "v0"
 
+related = [
+  "device-variant:wch-ch32v103-evb@c6t6",
+  "device-variant:wch-ch32v103-evb@c8t6",
+  "device-variant:wch-ch32v103-evb@c8u6",
+  "device-variant:wch-ch32v103-evb@r8t6",
+]
+
 unique_among_type_during_traversal = true
 
 [device]
