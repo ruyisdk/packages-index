@@ -26,12 +26,11 @@
     },
     "related": {
       "type": "array",
-      "description": "List of related entity references, must include reference to parent device",
+      "description": "List of related entity references",
       "items": {
         "type": "string",
         "pattern": "^.+:.+"
-      },
-      "minItems": 2
+      }
     },
     "unique_among_type_during_traversal": {
       "type": "boolean",
