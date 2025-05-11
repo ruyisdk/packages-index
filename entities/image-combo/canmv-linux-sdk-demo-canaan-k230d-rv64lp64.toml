@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:canaan-k230d@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Canaan Kendryte K230D CanMV Linux SDK demo, RV64LP64 ABI"
+package_atoms = ["board-image/canmv-linux-sdk-demo-canaan-k230d-rv64lp64"]

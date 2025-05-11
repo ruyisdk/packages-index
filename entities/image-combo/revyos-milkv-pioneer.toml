@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:milkv-pioneer@v1.3",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "RevyOS for Milk-V Pioneer"
+package_atoms = ["board-image/revyos-milkv-pioneer"]

@@ -1,0 +1,51 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Image Combo Entity",
+  "description": "Schema for image combo entities in the RuyiSDK packages-index",
+  "type": "object",
+  "required": ["ruyi-entity", "related", "unique_among_type_during_traversal", "image-combo"],
+  "properties": {
+    "ruyi-entity": {
+      "type": "string",
+      "description": "Version identifier for the entity format",
+      "enum": ["v0"]
+    },
+    "related": {
+      "type": "array",
+      "description": "List of related entities, typically device variant(s) this image combo supports",
+      "items": {
+        "type": "string",
+        "pattern": "^.+:.+"
+      },
+      "minItems": 1
+    },
+    "unique_among_type_during_traversal": {
+      "type": "boolean",
+      "description": "Indicates if this entity should be unique among its type during traversal"
+    },
+    "image-combo": {
+      "type": "object",
+      "description": "Properties specific to the image combo",
+      "required": ["display_name", "package_atoms"],
+      "properties": {
+        "display_name": {
+          "type": "string",
+          "description": "Human-readable name of the image combo"
+        },
+        "package_atoms": {
+          "type": "array",
+          "description": "List of package atoms required for this image combo",
+          "items": {
+            "type": "string",
+            "pattern": "^[a-zA-Z0-9-]+/[a-zA-Z0-9-]+"
+          }
+        },
+        "postinst_msgid": {
+          "type": "string",
+          "description": "Optional ID of a post-installation message to display"
+        }
+      }
+    }
+  },
+  "additionalProperties": false
+}

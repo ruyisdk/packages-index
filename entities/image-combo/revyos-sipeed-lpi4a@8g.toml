@@ -1,0 +1,13 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:sipeed-lpi4a@8g",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "RevyOS for Sipeed LicheePi 4A (8G RAM)"
+package_atoms = [
+  "board-image/revyos-sipeed-lpi4a",
+  "board-image/uboot-revyos-sipeed-lpi4a-8g"
+]

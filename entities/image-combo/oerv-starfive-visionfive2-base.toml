@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:starfive-visionfive2@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "openEuler RISC-V (base system) for StarFive VisionFive2"
+package_atoms = ["board-image/oerv-starfive-visionfive2-base"]

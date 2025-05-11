@@ -22,3 +22,251 @@ zh_CN = """
 
 将下载完成的文件置于 [green]{{ dest_path }}[/] 并重新执行安装命令。
 """
+
+["provisioner/doc-buildroot-sdk-canaan-k510"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the official documentation for
+instructions on how to build the SDK, as upstream does not provide pre-built
+images right now. The RuyiSDK Support Matrix record may be of use too.
+
+Link: https://github.com/kendryte/k510_buildroot
+Link: https://github.com/ruyisdk/support-matrix/blob/main/K510/BuildRoot/README.md
+"""
+
+["provisioner/doc-buildroot-sdk-milkv-vega"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the official documentation for
+instructions on how to build the SDK, as upstream does not provide pre-built
+images right now. The RuyiSDK Support Matrix record may be of use too.
+
+Link: https://milkv.io/zh/docs/vega/getting-started/buildroot-sdk
+Link: https://github.com/ruyisdk/support-matrix/blob/main/Vega/BuildRoot/README.md
+"""
+
+["provisioner/doc-freertos-sipeed-maix1"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the official documentation for
+instructions on how to build the SDK, as upstream does not provide pre-built
+images right now. The RuyiSDK Support Matrix record may be of use too.
+
+Link: https://github.com/kendryte/kendryte-freertos-sdk
+Link: https://github.com/ruyisdk/support-matrix/blob/main/Maix-I_K210/FreeRTOS/README.md
+"""
+
+["provisioner/doc-freertos-sipeed-tangmega138kpro"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the official documentation for
+instructions on how to build the SDK, as upstream does not provide pre-built
+images right now. You also need a Windows system for running the FPGA
+programmer, which is proprietary and Windows-only.
+
+The RuyiSDK Support Matrix record may be of use too.
+
+Link: https://github.com/sipeed/TangMega-138KPro-example
+Link: https://github.com/ruyisdk/support-matrix/blob/main/Tang_Mega_138K/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-sipeed-tangmega138kpro"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the official documentation for
+instructions on how to build the SDK, as upstream does not provide pre-built
+images right now. You also need a Windows system for running the FPGA
+programmer, which is proprietary and Windows-only.
+
+The RuyiSDK Support Matrix record may be of use too.
+
+Link: https://github.com/sipeed/TangMega-138KPro-example
+Link: https://github.com/ruyisdk/support-matrix/blob/main/Tang_Mega_138K/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v103-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V103/FreeRTOS/README.md
+"""
+
+["provisioner/doc-freertos-pio-wch-ch32v103-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V103/FreeRTOS/README_pio.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v103-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V103/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v203-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V203/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v203-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V203/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v208-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V208/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v208-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V208/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v303-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V303/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v303-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V303/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v305-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V305/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v305-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V305/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch32v307-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V307/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch32v307-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH32V307/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch582f-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH582F/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch582f-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH582F/RT-Thread/README.md
+"""
+
+["provisioner/doc-freertos-wch-ch592x-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH592X/FreeRTOS/README.md
+"""
+
+["provisioner/doc-rtthread-wch-ch592x-evb"]
+en_US = """
+[bold green]NOTE[/]: You have to consult the RuyiSDK Support Matrix documentation
+for instructions on how to build the SDK, as upstream does not provide
+pre-built images right now. You may also need a Windows system for running
+the WCH-Link tool, which is Windows-only.
+
+Link: https://github.com/ruyisdk/support-matrix/blob/main/CH592X/RT-Thread/README.md
+"""
+
+["provisioner/oerv-milkv-pioneer-nvme"]
+en_US = """
+[bold green]NOTE[/]: You will need to tweak the rootfs parameter for openEuler to properly
+boot on Milk-V Pioneer v1.2 and later models, whose rootfs resides on NVMe
+drive instead of TF card.
+
+Since [yellow]ruyi[/] does not run as [yellow]root[/], you will have to perform the following
+actions yourself before booting the target device:
+
+* mount the target device's [green]/boot[/] partition,
+* check the file [cyan]/extlinux/extlinux.conf[/] in the partition,
+* replace [yellow]mmcblk1p3[/] with [yellow]nvme0n1p3[/] as needed.
+"""
+
+["provisioner/oerv-sifive-unmatched-readme"]
+en_US = """
+[bold green]NOTE[/]: Please also see the README provided by the openEuler devs for
+further instructions on image usage.
+
+Link: https://mirror.iscas.ac.cn/openeuler-sig-riscv/openEuler-RISC-V/preview/openEuler-23.09-V1-riscv64/Unmatched/README.unmatched.txt
+"""

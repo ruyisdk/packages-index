@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:wch-ch592x-evb@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "WCH CH592X EVB RT-Thread SDK (documentation-only)"
+package_atoms = []
+postinst_msgid = "provisioner/doc-rtthread-wch-ch592x-evb"

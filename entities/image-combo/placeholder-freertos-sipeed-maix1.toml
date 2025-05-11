@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:sipeed-maix1@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Sipeed Maix-I Official FreeRTOS SDK (documentation-only)"
+package_atoms = []
+postinst_msgid = "provisioner/doc-freertos-sipeed-maix1"

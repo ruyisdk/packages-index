@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:sifive-unmatched@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "openEuler RISC-V (XFCE) for SiFive HiFive Unmatched"
+package_atoms = ["board-image/oerv-sifive-unmatched-xfce"]
+postinst_msgid = "provisioner/oerv-sifive-unmatched-readme"

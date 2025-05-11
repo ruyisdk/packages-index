@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:awol-d1dev@generic",
+  "device-variant:sipeed-licheerv@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "openEuler RISC-V (base system) for Allwinner D1"
+package_atoms = ["board-image/oerv-awol-d1-base"]

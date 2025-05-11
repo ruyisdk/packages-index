@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:sifive-unmatched@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "OpenWrt for SiFive HiFive Unmatched"
+package_atoms = ["board-image/openwrt-sifive-unmatched"]

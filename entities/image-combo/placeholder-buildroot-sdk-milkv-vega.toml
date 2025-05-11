@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:milkv-vega@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Milk-V Vega Official Buildroot SDK (documentation-only)"
+package_atoms = []
+postinst_msgid = "provisioner/doc-buildroot-sdk-milkv-vega"

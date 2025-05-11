@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:starfive-visionfive@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "openEuler RISC-V (XFCE) for StarFive VisionFive"
+package_atoms = ["board-image/oerv-starfive-visionfive-xfce"]

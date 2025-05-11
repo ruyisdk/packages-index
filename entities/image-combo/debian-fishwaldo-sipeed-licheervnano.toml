@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:sipeed-licheervnano@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Debian for Sipeed LicheeRV Nano (from https://github.com/Fishwaldo)"
+package_atoms = ["board-image/debian-fishwaldo-sg200x-sipeed-licheervnano"]
