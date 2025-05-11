@@ -1,13 +1,7 @@
 ruyi-entity = "v0"
 
-# FIXME: Check and update with the correct CPU
-related = ["cpu:generic-rv64gc"]
 unique_among_type_during_traversal = true
 
 [device]
 id = "sipeed-tangmega138kpro"
 display_name = "Sipeed Tang Mega 138K Pro"
-
-[[device.variants]]
-id = "generic"
-display_name = "Sipeed Tang Mega 138K Pro (generic variant)"

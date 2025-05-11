@@ -1,21 +1,7 @@
 ruyi-entity = "v0"
 
-# FIXME: Check and update with the correct CPU
-related = ["cpu:generic-rv64gc"]
 unique_among_type_during_traversal = true
 
 [device]
 id = "wch-ch32v307-evb"
 display_name = "WCH CH32V307 EVB"
-
-[[device.variants]]
-id = "rct6"
-display_name = "WCH CH32V307 EVB (CH32V307RCT6)"
-
-[[device.variants]]
-id = "wcu6"
-display_name = "WCH CH32V307 EVB (CH32V307WCU6)"
-
-[[device.variants]]
-id = "vct6"
-display_name = "WCH CH32V307 EVB (CH32V307VCT6)"

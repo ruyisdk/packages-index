@@ -1,53 +1,7 @@
 ruyi-entity = "v0"
 
-# FIXME: Check and update with the correct CPU
-related = ["cpu:generic-rv64gc"]
 unique_among_type_during_traversal = true
 
 [device]
 id = "wch-ch32v203-evb"
 display_name = "WCH CH32V203 EVB"
-
-[[device.variants]]
-id = "c6t6"
-display_name = "WCH CH32V203 EVB (CH32V203C6T6)"
-
-[[device.variants]]
-id = "c8t6"
-display_name = "WCH CH32V203 EVB (CH32V203C8T6)"
-
-[[device.variants]]
-id = "c8u6"
-display_name = "WCH CH32V203 EVB (CH32V203C8U6)"
-
-[[device.variants]]
-id = "f6p6"
-display_name = "WCH CH32V203 EVB (CH32V203F6P6)"
-
-[[device.variants]]
-id = "f8p6"
-display_name = "WCH CH32V203 EVB (CH32V203F8P6)"
-
-[[device.variants]]
-id = "f8u6"
-display_name = "WCH CH32V203 EVB (CH32V203F8U6)"
-
-[[device.variants]]
-id = "g6u6"
-display_name = "WCH CH32V203 EVB (CH32V203G6U6)"
-
-[[device.variants]]
-id = "g8r6"
-display_name = "WCH CH32V203 EVB (CH32V203G8R6)"
-
-[[device.variants]]
-id = "k6t6"
-display_name = "WCH CH32V203 EVB (CH32V203K6T6)"
-
-[[device.variants]]
-id = "k8t6"
-display_name = "WCH CH32V203 EVB (CH32V203K8T6)"
-
-[[device.variants]]
-id = "rbt6"
-display_name = "WCH CH32V203 EVB (CH32V203RBT6)"

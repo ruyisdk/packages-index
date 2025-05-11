@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc", "device:milkv-duo"]
+unique_among_type_during_traversal = true
+
+[device-variant]
+id = "256m"
+variant_name = "256M RAM"

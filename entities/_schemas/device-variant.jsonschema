@@ -1,0 +1,41 @@
+{
+  "$schema": "http://json-schema.org/draft-07/schema#",
+  "title": "Device Variant Entity Schema",
+  "description": "Schema for Device Variant entity definitions in the Ruyi SDK",
+  "type": "object",
+  "required": ["ruyi-entity", "device-variant", "related"],
+  "properties": {
+    "ruyi-entity": {
+      "type": "string",
+      "description": "Version of the entity schema",
+      "enum": ["v0"]
+    },
+    "device-variant": {
+      "type": "object",
+      "required": ["id", "variant_name"],
+      "properties": {
+        "id": {
+          "type": "string",
+          "description": "Unique identifier for the device variant"
+        },
+        "variant_name": {
+          "type": "string",
+          "description": "Human-readable name for the device variant"
+        }
+      }
+    },
+    "related": {
+      "type": "array",
+      "description": "List of related entity references, must include reference to parent device",
+      "items": {
+        "type": "string",
+        "pattern": "^.+:.+"
+      },
+      "minItems": 2
+    },
+    "unique_among_type_during_traversal": {
+      "type": "boolean",
+      "description": "Whether this entity should be unique among all entities of the same type during traversal"
+    }
+  }
+}

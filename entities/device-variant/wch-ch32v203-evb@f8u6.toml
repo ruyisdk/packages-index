@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+# FIXME: Check and update with the correct CPU
+related = ["cpu:generic-rv64gc", "device:wch-ch32v203-evb"]
+unique_among_type_during_traversal = true
+
+[device-variant]
+id = "f8u6"
+variant_name = "CH32V203F8U6"

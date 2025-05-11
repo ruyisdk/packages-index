@@ -1,13 +1,7 @@
 ruyi-entity = "v0"
 
-# FIXME: Check and update with the correct CPU
-related = ["cpu:generic-rv64gc"]
 unique_among_type_during_traversal = true
 
 [device]
 id = "wch-ch582f-evb"
 display_name = "WCH CH582F EVB"
-
-[[device.variants]]
-id = "generic"
-display_name = "WCH CH582F EVB (generic variant)"
