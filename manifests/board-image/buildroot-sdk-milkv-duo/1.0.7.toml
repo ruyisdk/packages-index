@@ -1,28 +1,28 @@
 format = "v1"
 
 [metadata]
-desc = "Official Buildroot SDK image for Milk-V Duo (64M RAM) v1.0.7-2023-1223"
+desc = "Official Buildroot SDK image for Milk-V Duo (64M RAM) v1.0.7-2023-1223 (with Python)"
 vendor = { name = "Milk-V", eula = "" }
 
 [[distfiles]]
-name = "milkv-duo-v1.0.7-2023-1223.img.zip"
-size = 31653399
+name = "milkv-duo-python-v1.0.7-2023-1223.img.zip"
+size = 62044626
 urls = [
-  "https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.0.7/milkv-duo-v1.0.7-2023-1223.img.zip",
+  "https://github.com/milkv-duo/duo-buildroot-sdk/releases/download/Duo-V1.0.7/milkv-duo-python-v1.0.7-2023-1223.img.zip",
 ]
 restrict = ["mirror"]
 
 [distfiles.checksums]
-sha256 = "b6c21cc7e3ef0567adec77e47d66fccdb58f883d45316ec909d7e48a151dbbb3"
-sha512 = "76ec3efa640742eb3ca7928758ee371ddf9da1d1d9b6884e71fe866672d8aaf6c46ffa8de1360388e0cea4dd766afd3096f12b50533014afe9c3b97e70871ace"
+sha256 = "d421c967ef70df2e09c3de2094beadec30df8da01cc8af492cd188835062b717"
+sha512 = "da0671c502a79e58c92c757d4ff2294e199ec0d94845e236ade0ff5afbf55bb97ad341b0522068cec3dfc1555d9402adfd8fa8727a82a096b30268a92fa799db"
 
 [blob]
 distfiles = [
-  "milkv-duo-v1.0.7-2023-1223.img.zip",
+  "milkv-duo-python-v1.0.7-2023-1223.img.zip",
 ]
 
 [provisionable]
 strategy = "dd-v1"
 
 [provisionable.partition_map]
-disk = "milkv-duo-v1.0.7-2023-1223.img"
+disk = "milkv-duo-python-v1.0.7-2023-1223.img"
