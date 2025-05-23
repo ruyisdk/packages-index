@@ -524,6 +524,11 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: oerv-milkv-pioneer-v1.3
+    display_name: openeuler  for Pioneer Box
+    packages:
+      - board-image/firmware-oerv-milkv-pioneer
+      - board-image/oerv-milkv-pioneer
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -626,6 +631,7 @@ devices:
           - oerv-milkv-pioneer-base-nvme
           - oerv-milkv-pioneer-xfce-nvme
           - revyos-milkv-pioneer
+          - oerv-milkv-pioneer-v1.3
       - id: v1.2
         display_name: "Milk-V Pioneer Box (v1.2)"
         supported_combos:
