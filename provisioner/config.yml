@@ -524,6 +524,10 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: buildroot-sdk-milkv-duo-64m-v2
+    display_name: buildroot v2 for Milk-V Duo (64M)
+    packages:
+      - board-image/buildroot-sdk-milkv-duo-64m-v2
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -569,6 +573,7 @@ devices:
           - arduino-milkv-duo-sd
           - buildroot-sdk-milkv-duo
           - buildroot-sdk-milkv-duo-python
+          - buildroot-sdk-milkv-duo-64m-v2
       - id: 256m
         display_name: "Milk-V Duo (256M RAM)"
         supported_combos:
