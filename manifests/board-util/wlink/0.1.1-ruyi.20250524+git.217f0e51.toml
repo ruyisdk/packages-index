@@ -35,10 +35,19 @@ sha512 = "110fa7816fb6318c3b10952f3f3c9efa8555018134029cdb98e9a2a25f7e76860d70fa
 host = "aarch64"
 distfiles = ["wlink-0.1.1-ruyi.20250524+git.217f0e51.aarch64.tar.gz"]
 
+[binary.commands]
+wlink = "bin/wlink"
+
 [[binary]]
 host = "riscv64"
 distfiles = ["wlink-0.1.1-ruyi.20250524+git.217f0e51.riscv64.tar.gz"]
 
+[binary.commands]
+wlink = "bin/wlink"
+
 [[binary]]
 host = "x86_64"
 distfiles = ["wlink-0.1.1-ruyi.20250524+git.217f0e51.x86_64.tar.gz"]
+
+[binary.commands]
+wlink = "bin/wlink"
