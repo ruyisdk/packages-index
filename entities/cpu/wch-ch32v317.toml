@@ -1,0 +1,9 @@
+ruyi-entity = "v0"
+
+related = ["uarch:wch-qingke-v4f"]
+unique_among_type_during_traversal = true
+
+# https://www.wch.cn/products/CH32V317.html
+[cpu]
+id = "wch-ch32v317"
+display_name = "WCH CH32V317"
