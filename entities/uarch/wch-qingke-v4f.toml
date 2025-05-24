@@ -1,0 +1,14 @@
+ruyi-entity = "v0"
+
+related = ["arch:riscv32"]
+unique_among_type_during_traversal = true
+
+# source: https://www.wch.cn/products/QingKe.html?categoryId=77
+# retrieved 2025-05-25
+[uarch]
+id = "wch-qingke-v4f"
+display_name = "WCH Qingke V4F"
+arch = "riscv32"
+
+[uarch.riscv]
+isa = "rv32imafc"
