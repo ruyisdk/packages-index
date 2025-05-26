@@ -10,7 +10,7 @@ size = 54381827
 urls = [
   "mirror://ruyi-3rdparty-milkv/repacks/arduino-milkv-duo-sd-v1.1.2-2024-0801.ruyi1.img.zst",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "0f0f79a9d9b3dd765dab2b9cfcb7febfe188f6fbfc847dee349efe34b791e52c"

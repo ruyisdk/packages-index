@@ -10,7 +10,7 @@ size = 41634434
 urls = [
   "mirror://ruyi-3rdparty-canaan/temp/kendryte-k230d-linux-sdk-demo.rv64lp64.20240731.ext4.img.zst",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "e4794957663e331a3cbdee5bfc474da5e10094f640ba89ebd8570c584a0ca1ff"

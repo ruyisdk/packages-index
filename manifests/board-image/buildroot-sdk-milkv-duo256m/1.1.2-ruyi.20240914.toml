@@ -10,7 +10,7 @@ size = 69179291
 urls = [
   "mirror://ruyi-3rdparty-milkv/repacks/milkv-duo256m-sd-v1.1.2-2024-0801.ruyi1.img.zst",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "a2c6a881bc953774ff524685c001f0d198df2e9de47e48aec446c6b855e9d450"

@@ -11,7 +11,7 @@ strip_components = 2
 urls = [
   "mirror://ruyi-3rdparty-milkv/repacks/duo-examples-52ae647a051a4e13f1228ade35a14dabb4459b4c.src.tar.zst",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "021aa13afd63768d7d1cd87b98c7fbb5239b3d881ecfbb40b0584b266d9c11b3"

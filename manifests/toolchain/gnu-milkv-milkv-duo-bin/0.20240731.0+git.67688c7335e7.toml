@@ -10,7 +10,7 @@ size = 309989522
 urls = [
   "mirror://ruyi-3rdparty-milkv/repacks/gnu-milkv-milkv-duo-bin.67688c7335e7.tar.zst",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "b088dab24342c8299dbae051ebedbe4dd44a2c19f54b14468ddbe811e3ce8351"

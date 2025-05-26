@@ -11,7 +11,7 @@ size = 46759980
 urls = [
   "https://www.wch.cn/download/file?id=356",
 ]
-restrict = "mirror"
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "1c077ceb9ae3787a86ac99abdf04c80a9b15a17f0b8995c56a9b22c8ade6239e"
