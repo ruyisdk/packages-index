@@ -3,7 +3,7 @@ RUYI = ruyi_plugin_rev(1)
 load(
     "ruyi-plugin://internal-riscv-profile-data",
     _map_mcpu="map_mcpu",
-    _profiles="profiles",
+    _profiles="riscv64_profiles",
 )
 
 #
