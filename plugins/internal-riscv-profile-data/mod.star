@@ -27,6 +27,10 @@ def _init_profiles(profiles, generic, emulator_presets):
     return res
 
 
+_trivial_rv32_profiles = RUYI.load_toml("trivial-riscv32-profiles.toml")["profiles"]
+_trivial_rv32_profiles = {x["id"]: x for x in _trivial_rv32_profiles}
+_generic_rv32_profile = _trivial_rv32_profiles["generic-rv32gc"]
+
 _trivial_rv64_profiles = RUYI.load_toml("trivial-riscv64-profiles.toml")["profiles"]
 _trivial_rv64_profiles = {x["id"]: x for x in _trivial_rv64_profiles}
 _generic_rv64_profile = _trivial_rv64_profiles["generic"]
@@ -45,6 +49,12 @@ def map_mcpu(mcpu, quirks):
             return _mcpu_map[q][mcpu]
     return mcpu
 
+
+riscv32_profiles = _init_profiles(
+    _trivial_rv32_profiles,
+    _generic_rv32_profile,
+    _emulator_presets,
+)
 
 riscv64_profiles = _init_profiles(
     _trivial_rv64_profiles,
