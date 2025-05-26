@@ -5,5 +5,5 @@ env = { QEMU_CPU = "rv64" }
 env = { QEMU_CPU = "thead-c906" }
 
 [thead-c910.qemu-linux-user]
-need_flavor = ["xthead"]
+need_quirks = ["xthead"]
 env = { QEMU_CPU = "c910v" }

@@ -6,7 +6,7 @@ mcpu = ""
 
 [[profiles]]
 id = "baremetal-rv64ilp32"
-needed_flavors = ["rv64ilp32"]
+needed_quirks = ["rv64ilp32"]
 mabi = "ilp32d"
 
 [[profiles]]
@@ -15,7 +15,7 @@ march = "rv64imafdc_zba_zbb_zbc_zbs_zbkb_zbkc_zbkx_zknd_zkne_zknh_zksed_zksh_zic
 
 [[profiles]]
 id = "sipeed-lpi4a"
-needed_flavors = ["xthead"]
+needed_quirks = ["xthead"]
 mcpu = "thead-c910"
 
 [[profiles]]

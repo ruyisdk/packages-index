@@ -13,8 +13,13 @@ def list_all_profile_ids_v1():
     return list(_profiles.keys())
 
 
+# Compatibility alias for Ruyi < 0.34.0
 def list_needed_flavors_v1(profile_id):
-    return _profiles[profile_id].get("needed_flavors")
+    return list_needed_quirks_v1(profile_id)
+
+
+def list_needed_quirks_v1(profile_id):
+    return _profiles[profile_id].get("needed_quirks")
 
 
 def get_common_flags_v1(profile_id):
@@ -30,11 +35,11 @@ def get_common_flags_v1(profile_id):
     return " ".join(args)
 
 
-def get_common_flags_v2(profile_id, toolchain_flavors):
+def get_common_flags_v2(profile_id, toolchain_quirks):
     p = _profiles[profile_id]
     args = []
     if p["mcpu"]:
-        mapped_mcpu = _map_mcpu(p["mcpu"], toolchain_flavors)
+        mapped_mcpu = _map_mcpu(p["mcpu"], toolchain_quirks)
         args.append("-mcpu=" + mapped_mcpu)
     if p["march"]:
         # Sometimes we want to explicitly override the march string implied

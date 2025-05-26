@@ -31,18 +31,18 @@ _trivial_profiles = RUYI.load_toml("trivial-profiles.toml")["profiles"]
 _trivial_profiles = {x["id"]: x for x in _trivial_profiles}
 _generic_profile = _trivial_profiles["generic"]
 
-_mcpu_map = RUYI.load_toml("flavor-specific-mcpus.toml")
+_mcpu_map = RUYI.load_toml("mcpu-quirks.toml")
 _emulator_presets = RUYI.load_toml("emulator-presets.toml")
 
 
-# def map_mcpu(mcpu: str, flavors: list[str]) -> str:
-def map_mcpu(mcpu, flavors):
+# def map_mcpu(mcpu: str, quirks: list[str]) -> str:
+def map_mcpu(mcpu, quirks):
     # maybe our mcpu needs some substitution
-    for fl in flavors:
-        if fl not in _mcpu_map:
+    for q in quirks:
+        if q not in _mcpu_map:
             continue
-        if mcpu in _mcpu_map[fl]:
-            return _mcpu_map[fl][mcpu]
+        if mcpu in _mcpu_map[q]:
+            return _mcpu_map[q][mcpu]
     return mcpu
 
 
