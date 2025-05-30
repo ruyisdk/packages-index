@@ -3,7 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official Buildroot SDK image for Milk-V Duo S v1.1.1-2024-0528 (SD card)"
 vendor = { name = "Milk-V", eula = "" }
-upstream_version = "Duo-V1.1.2"
+upstream_version = "Duo-V1.1.1"
 
 [[distfiles]]
 name = "milkv-duos-sd-v1.1.1-2024-0528.img.zip"
