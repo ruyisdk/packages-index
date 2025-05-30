@@ -1,0 +1,48 @@
+format = "v1"
+
+[metadata]
+desc = "RevyOS 20250420 image for Milk-V Meles"
+upstream_version = "20250420"
+vendor = { name = "Milk-V", eula = "" }
+
+[[metadata.service_level]]
+level = "good"
+
+[[distfiles]]
+name = "boot-meles-20250420_084525.ext4.zst"
+size = 73212299
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250420/boot-meles-20250420_084525.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "d8b95011f1d5d308a18bd756ed5ea82d210e576ed6e589dc45558868876e9ca9"
+sha512 = "0b194be85655fdbe6496332750dc4aa6537c7b3a370b3a13c04034df6217bb52e74b47bc53d36431bb5ef5a1bc7af1c3286204739a8f1126ec97bb6532758a49"
+
+[[distfiles]]
+name = "root-meles-20250420_084525.ext4.zst"
+size = 1358247784
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250420/root-meles-20250420_084525.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "83a1c0ac2c00cb21c576bd112d90c4422e1ea076cace2b8b0b6440b8e2ab45cc"
+sha512 = "506d144ccd4180f6ef9fe30d4c1c721ebdb4004d1b245e96972253cb55f8438c7f2efd982e246f799b15f8693235315bea72c0ba64f667bf930f37bcdb412ac2"
+
+[blob]
+distfiles = [
+  "boot-meles-20250420_084525.ext4.zst",
+  "root-meles-20250420_084525.ext4.zst",
+]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[provisionable.partition_map]
+boot = "boot-meles-20250420_084525.ext4"
+root = "root-meles-20250420_084525.ext4"
+
+# Manually created by Kosaka Reiya
