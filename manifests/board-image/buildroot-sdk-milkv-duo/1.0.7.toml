@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official Buildroot SDK image for Milk-V Duo (64M RAM) v1.0.7-2023-1223 (with Python)"
 vendor = { name = "Milk-V", eula = "" }
+upstream_version = "Duo-V1.0.7"
 
 [[distfiles]]
 name = "milkv-duo-python-v1.0.7-2023-1223.img.zip"
