@@ -524,6 +524,10 @@ image_combos:
     display_name: buildroot SDK for LicheeRV Nano
     packages:
       - board-image/buildroot-sdk-sipeed-licheervnano
+  - id: bianbu-bpi-f3-desktop
+    display_name: bianbu desktop for BananaPi BPI-F3
+    packages:
+      - board-image/bianbu-bpi-f3-desktop
 devices:
   - id: awol-d1dev
     display_name: "Allwinner Nezha D1"
@@ -955,3 +959,10 @@ devices:
         supported_combos:
           - placeholder-freertos-wch-ch592x-evb
           - placeholder-rtthread-wch-ch592x-evb
+  - id: bpi-f3
+    display_name: BananaPi BPI-F3
+    variants:
+      - id: generic
+        display_name: BananaPi BPI-F3 (generic)
+        supported_combos:
+          - bianbu-bpi-f3-desktop
