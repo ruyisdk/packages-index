@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["device-variant:bpi-f3@generic"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "bianbu-bpi-f3"
+display_name = "BananaPi BPI-F3"
