@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["uarch:spacemit-x60"]
+unique_among_type_during_traversal = true
+
+[cpu]
+id = "spacemit-k1"
+display_name = "SpacemiT Key Stone K1"
