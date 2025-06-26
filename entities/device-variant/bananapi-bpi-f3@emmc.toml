@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["cpu:spacemit-k1"]
+unique_among_type_during_traversal = true
+
+[device-variant]
+id = "emmc"
+variant_name = "eMMC storage"
