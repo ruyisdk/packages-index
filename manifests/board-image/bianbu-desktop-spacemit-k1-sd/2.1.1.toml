@@ -1,0 +1,32 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Desktop 2.1.1 for SpacemiT K1, SD image"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "2.1.1"
+
+[[metadata.service_level]]
+level = "good"
+
+[[distfiles]]
+name = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip"
+size = 560652288
+urls = [
+  "https://archive.spacemit.com/image/k1/version/bianbu/v2.1.1/bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "8dabd17c30bdb2c0d4e076417a90b6cddca2031e0e19350fd0d4ee29944a953f"
+sha512 = "1318b6207085af38036445fb7e0a1ed87545417ac018c7a4ae7733f1110c3944d3ff0fbfd6f105905efe003f386660bde20efc529206549f99805761c5adbc85"
+
+[blob]
+distfiles = [
+  "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img"
