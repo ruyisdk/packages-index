@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:bananapi-bpi-f3@sd",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Bianbu Desktop for SpacemiT K1"
+package_atoms = ["board-image/bianbu-desktop-spacemit-k1-sd"]
