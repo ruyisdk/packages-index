@@ -1,0 +1,43 @@
+format = "v1"
+
+[metadata]
+desc = "RevyOS 20231026 image for Sipeed LicheePi 4A"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20231026"
+
+[[distfiles]]
+name = "boot-20231026_181638.ext4.zst"
+size = 20243315
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20231026/boot-20231026_181638.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "8701f837cc7976979bba7d42044f8cb4f90a404c647351a8b77ef9a0e6c40936"
+sha512 = "268ce04cb22ea6805da6ab434f566b8d7df9ed6734c904434f17f6b7c3600517e0deaf28b20f00ac206d1c9c2ab872b9d053b5517430373e37d94dfb74f46c99"
+
+[[distfiles]]
+name = "root-20231026_181638.ext4.zst"
+size = 1582623779
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20231026/root-20231026_181638.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "cb5b8b850965e12599e8a68b8a68b8500a7533ee7f2e79361187ae4ab0246505"
+sha512 = "826b645d14b650eef46b65c2f22ddff4f1856b15d211148dad1bec834ba6d458a8fd963d193c8f9a33d04796a9b7de024256d2dbb228077183218eab25b26660"
+
+[blob]
+distfiles = [
+  "boot-20231026_181638.ext4.zst",
+  "root-20231026_181638.ext4.zst",
+]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[provisionable.partition_map]
+boot = "boot-20231026_181638.ext4"
+root = "root-20231026_181638.ext4"
