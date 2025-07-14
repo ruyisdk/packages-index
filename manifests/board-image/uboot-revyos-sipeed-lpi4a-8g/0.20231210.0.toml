@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "U-Boot image for LicheePi 4A (8G RAM) and RevyOS 20231210"
 vendor = { name = "PLCT", eula = "" }
+upstream_version = "20231210"
 
 [[distfiles]]
 name = "u-boot-with-spl-lpi4a-8g.20231210.bin"
