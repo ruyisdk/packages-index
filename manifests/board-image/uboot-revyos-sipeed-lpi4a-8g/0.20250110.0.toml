@@ -1,26 +1,29 @@
 format = "v1"
+
+[metadata]
+desc = "U-Boot image for LicheePi 4A (8G RAM) and RevyOS 20250110"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20250110"
+
 [[distfiles]]
 name = "u-boot-with-spl-lpi4a-main.20250110.bin"
 size = 1032312
-urls = [ "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-main.bin",]
-restrict = [ "mirror",]
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250110/u-boot-with-spl-lpi4a-main.bin",
+]
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "a9b57cfbd4ffaa5031aa39e1e22eaa8169654712e41f7ad5ae453d22da8e0807"
 sha512 = "fd2389e3e3a8198f56a56711d8f662ab07c0f8851927111ae4b6e5d1e22cd66419d0ea5e362eb1622ebd0b424480c10dfda1833494a1b30e203b2724d33d987c"
 
-[metadata]
-desc = "U-Boot image for LicheePi 4A (8G RAM) and RevyOS 20250110"
-
 [blob]
-distfiles = [ "u-boot-with-spl-lpi4a-main.20250110.bin",]
+distfiles = [
+  "u-boot-with-spl-lpi4a-main.20250110.bin",
+]
 
 [provisionable]
 strategy = "fastboot-v1(lpi4a-uboot)"
-
-[metadata.vendor]
-name = "PLCT"
-eula = ""
 
 [provisionable.partition_map]
 uboot = "u-boot-with-spl-lpi4a-main.20250110.bin"
@@ -30,3 +33,4 @@ uboot = "u-boot-with-spl-lpi4a-main.20250110.bin"
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/12910390785
 
 # Manually fixed restrict
+# Manually fixed by Kosaka Reiya
