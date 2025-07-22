@@ -2,8 +2,8 @@ format = "v1"
 
 [metadata]
 desc = "RevyOS 20250526 image for Milk-V Meles"
-upstream_version = "20250526"
 vendor = { name = "Milk-V", eula = "" }
+upstream_version = "20250526"
 
 [[distfiles]]
 name = "boot-meles-20250526_182249.ext4.zst"
