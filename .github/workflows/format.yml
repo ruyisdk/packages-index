@@ -1,0 +1,55 @@
+name: Format-manifest checks
+
+on:
+  push:
+    branches:
+      - main
+    paths:
+      - .github/**
+      - manifests/board-image/**
+  pull_request:
+    branches:
+      - main
+    paths:
+      - .github/**
+      - manifests/board-image/**
+
+jobs:
+  format-manifest:
+    name: format-manifest test
+    runs-on: 'ubuntu-latest'
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+        with:
+          path: packages-index
+
+      - name: Install ruyi
+        id: setup
+        run: |
+          mkdir bin/
+
+          version="$(curl --silent https://api.github.com/repos/ruyisdk/ruyi/releases/latest | \
+            jq --raw-output ".tag_name")"
+          curl -sL -o bin/ruyi "https://github.com/ruyisdk/ruyi/releases/download/${version}/ruyi-${version}.amd64"
+
+          chmod +x ./bin/ruyi
+          ./bin/ruyi version
+          ./bin/ruyi telemetry consent
+
+      - name: Test manifests
+        run: |
+          for toml in `find ./packages-index/manifests/board-image/ -type f`; do
+
+            echo test $toml
+            cp $toml test.toml
+
+            ./bin/ruyi admin format-manifest test.toml
+            diff -ura $toml test.toml
+
+          done
+
+      - name: Post Install ruyi
+        if: ${{ always() && steps.setup.conclusion == 'success' }}
+        run: ./bin/ruyi telemetry upload
+
