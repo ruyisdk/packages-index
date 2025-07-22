@@ -1,31 +1,32 @@
 format = "v1"
 
-[[distfiles]]
-name = "u-boot-with-spl-meles-4g-20250110.bin"
-size = 780496
-urls = ["https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250110/u-boot-with-spl-meles-4g.bin", ]
-restrict = ["mirror", ]
-
-[distfiles.checksums]
-sha256 = "d3db76c8f7e50611d4cb63caad202fc26f20232f23c31196c94f1e8d7a876214"
-sha512 = "580dd9e3fe36330da29ff84ed12ca1455fee0df373585c4587ef8c3c7dfd54fa95593bb2c7c65c88b1961abc1395b877e1e5cb065e0ec1e9274e4431c7fa8eb5"
-
 [metadata]
 desc = "U-Boot image for Milk-V Meles (Single-rank, 4G RAM), for RevyOS, from 20250110 to 20250526"
+vendor = { name = "Milk-V", eula = "" }
 upstream_version = "20250110"
 
 [[metadata.service_level]]
 level = "good"
 
+[[distfiles]]
+name = "u-boot-with-spl-meles-4g-20250110.bin"
+size = 780496
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250110/u-boot-with-spl-meles-4g.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "d3db76c8f7e50611d4cb63caad202fc26f20232f23c31196c94f1e8d7a876214"
+sha512 = "580dd9e3fe36330da29ff84ed12ca1455fee0df373585c4587ef8c3c7dfd54fa95593bb2c7c65c88b1961abc1395b877e1e5cb065e0ec1e9274e4431c7fa8eb5"
+
 [blob]
-distfiles = ["u-boot-with-spl-meles-4g-20250110.bin", ]
+distfiles = [
+  "u-boot-with-spl-meles-4g-20250110.bin",
+]
 
 [provisionable]
 strategy = "fastboot-v1(lpi4a-uboot)"
-
-[metadata.vendor]
-name = "Milk-V"
-eula = ""
 
 [provisionable.partition_map]
 uboot = "u-boot-with-spl-meles-4g-20250110.bin"
