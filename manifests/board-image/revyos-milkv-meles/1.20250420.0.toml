@@ -2,8 +2,8 @@ format = "v1"
 
 [metadata]
 desc = "RevyOS 20250420 image for Milk-V Meles"
-upstream_version = "20250420"
 vendor = { name = "Milk-V", eula = "" }
+upstream_version = "20250420"
 
 [[metadata.service_level]]
 level = "good"
