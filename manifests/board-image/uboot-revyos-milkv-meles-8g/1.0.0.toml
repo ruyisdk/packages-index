@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "U-Boot image for Milk-V Meles (Dual-rank, 8G RAM), for RevyOS, v1.0.0"
 vendor = { name = "Milk-V", eula = "" }
+upstream_version = "v1.0.0"
 
 [[distfiles]]
 name = "u-boot-with-spl-milkv-meles-dualrank-1.0.0.bin"

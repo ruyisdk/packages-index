@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "U-Boot image for Milk-V Meles (Single-rank, 4G RAM), for RevyOS, 20240601"
+vendor = { name = "Milk-V", eula = "" }
+upstream_version = "20240601"
+
+[[distfiles]]
+name = "u-boot-with-spl-meles-4g-20240601.bin"
+size = 780208
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240601/u-boot-with-spl-meles-4g.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "98053c37a3030b7a36203a704745b36bc7d470e7f3d7e164471136668ae84ad3"
+sha512 = "36e0d8d1d143c2ffa1b2a111252599445b2ec590bd4637cab152de595b4193ca36bfaecb486089402774c3182d8d6edc8bfaa279b764a0f21a3f8a69c75ba2f1"
+
+[blob]
+distfiles = [
+  "u-boot-with-spl-meles-4g-20240601.bin",
+]
+
+[provisionable]
+strategy = "fastboot-v1(lpi4a-uboot)"
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-meles-4g-20240601.bin"
