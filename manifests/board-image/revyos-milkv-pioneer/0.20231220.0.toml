@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "RevyOS 20231220 image for Milk-V Pioneer Box with SG2042"
 vendor = { name = "PLCT", eula = "" }
+upstream_version = "20231220"
 
 [[distfiles]]
 name = "revyos-pioneer-20231220-005807.img.zst"

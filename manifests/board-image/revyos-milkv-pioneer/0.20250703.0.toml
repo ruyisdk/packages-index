@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "RevyOS 20250703 image for Milk-V Pioneer Box with SG2042"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20250703"
+
+[[distfiles]]
+name = "revyos-pioneer-20250703-161018.img.zst"
+size = 1566958299
+urls = [
+  "https://mirror.iscas.ac.cn/revyos/extra/images/sg2042/20250703/revyos-pioneer-20250703-161018.img.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "55f03792739f763717ce017b8fddd2b0410e4661522db5cc756154683eeede6d"
+sha512 = "10adb2fe4b8cf7ffd776ffe7b38cd1b942303529a9daf48617c7e7643b83930805bf52a0d7c5d08179fe19db328fb24defc2d83fbe5177409a7f14ac44a6504a"
+
+[blob]
+distfiles = [
+  "revyos-pioneer-20250703-161018.img.zst",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "revyos-pioneer-20250703-161018.img"
