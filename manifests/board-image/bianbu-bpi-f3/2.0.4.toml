@@ -1,26 +1,28 @@
 format = "v1"
+
+[metadata]
+desc = "Official bianbu desktop image for Banana Pi F3 version v2.0.4"
+vendor = { name = "bpi_f3", eula = "" }
+
 [[distfiles]]
 name = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip"
 size = 196
-urls = [ "https://archive.spacemit.com/image/k1/version/bianbu/bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",]
-restrict = [ "mirror",]
+urls = [
+  "https://archive.spacemit.com/image/k1/version/bianbu/bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",
+]
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
 sha512 = "9002a0475fdb38541e78048709006926655c726e93e823b84e2dbf5b53fd539a5342e7266447d23db0e5528e27a19961b115b180c94f2272ff124c7e5c8304e7"
 
-[metadata]
-desc = "Official bianbu desktop image for Banana Pi F3 version v2.0.4"
-
 [blob]
-distfiles = [ "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",]
+distfiles = [
+  "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",
+]
 
 [provisionable]
 strategy = "dd-v1"
-
-[metadata.vendor]
-name = "bpi_f3"
-eula = ""
 
 [provisionable.partition_map]
 disk = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img"
@@ -28,3 +30,5 @@ disk = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img"
 # This file is created by CI Sync Package Index inside support-matrix
 # Run ID: 13302859068
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13302859068
+
+# Fix format by Kosaka Reiya

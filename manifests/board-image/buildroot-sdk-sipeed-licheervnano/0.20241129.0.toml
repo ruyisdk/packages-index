@@ -1,26 +1,28 @@
 format = "v1"
+
+[metadata]
+desc = "Buildroot SDK & FreeRTOS image for Sipeed LicheeRV Nano, 20241129"
+vendor = { name = "Sipeed", eula = "" }
+
 [[distfiles]]
 name = "2024-11-29-11-46-540e94.img.xz"
 size = 143903488
-urls = [ "https://github.com/sipeed/LicheeRV-Nano-Build/releases/download/20241129/2024-11-29-11-46-540e94.img.xz",]
-restrict = [ "mirror",]
+urls = [
+  "https://github.com/sipeed/LicheeRV-Nano-Build/releases/download/20241129/2024-11-29-11-46-540e94.img.xz",
+]
+restrict = ["mirror"]
 
 [distfiles.checksums]
 sha256 = "828d366440c5b5f4199cc493b6aab98c0f4b17f3cb632c78fd6f9207993e27f3"
 sha512 = "2395bbbb6e5142332a28630514a0497577772011dd1fef829cb1c576a1ae40ad68f5714d4bdc9c30deb32bcb47dedc4bb84ca17a3a8ee098dd0e4828899a0109"
 
-[metadata]
-desc = "Buildroot SDK & FreeRTOS image for Sipeed LicheeRV Nano, 20241129"
-
 [blob]
-distfiles = [ "2024-11-29-11-46-540e94.img.xz",]
+distfiles = [
+  "2024-11-29-11-46-540e94.img.xz",
+]
 
 [provisionable]
 strategy = "dd-v1"
-
-[metadata.vendor]
-name = "Sipeed"
-eula = ""
 
 [provisionable.partition_map]
 disk = "2024-11-29-11-46-540e94.img"
@@ -29,3 +31,4 @@ disk = "2024-11-29-11-46-540e94.img"
 # Run: In local
 
 # Manually fixed restrict
+# Fix format by Kosaka Reiya
