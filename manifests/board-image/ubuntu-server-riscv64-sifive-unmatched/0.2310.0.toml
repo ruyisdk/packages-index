@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official Ubuntu 23.10 Server image for SiFive HiFive Unmatched"
 vendor = { name = "Ubuntu", eula = "" }
+upstream_version = "23.10"
 
 [[distfiles]]
 name = "ubuntu-23.10-preinstalled-server-riscv64+unmatched.img.xz"

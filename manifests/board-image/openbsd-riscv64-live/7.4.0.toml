@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official OpenBSD 7.4 riscv64 live image"
 vendor = { name = "OpenBSD", eula = "" }
+upstream_version = "7.4"
 
 [[distfiles]]
 name = "install74.img"

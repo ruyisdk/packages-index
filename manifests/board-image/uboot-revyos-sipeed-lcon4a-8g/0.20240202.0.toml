@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "U-Boot image for Sipeed Lichee Console 4A (8G RAM) and RevyOS 20240202"
 vendor = { name = "Sipeed", eula = "" }
+upstream_version = "20240319"
 
 [[distfiles]]
 name = "u-boot-with-spl-console8g.bin"

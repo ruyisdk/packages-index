@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Armbian 25.2.0-trunk.86 image for Pine64 Star64"
 vendor = { name = "Armbian", eula = "" }
+upstream_version = "25.2.0-trunk.86"
 
 [[distfiles]]
 name = "Armbian_community_25.2.0-trunk.86_Star64_noble_edge_5.15.0_xfce_desktop.img.xz"

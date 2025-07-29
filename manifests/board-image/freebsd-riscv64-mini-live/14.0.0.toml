@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official FreeBSD 14.0 RELEASE riscv64 live image"
 vendor = { name = "FreeBSD", eula = "" }
+upstream_version = "14.0"
 
 [[distfiles]]
 name = "FreeBSD-14.0-RELEASE-riscv-riscv64-mini-memstick.img.xz"

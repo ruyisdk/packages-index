@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official openKylin 1.0 image for SiFive HiFive Unmatched"
 vendor = { name = "openKylin", eula = "" }
+upstream_version = "1.0"
 
 [[distfiles]]
 name = "openKylin-1.0-hifive-unmatched-riscv64.img.xz"
