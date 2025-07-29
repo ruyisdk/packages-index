@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Buildroot SDK & FreeRTOS image for Sipeed LicheeRV Nano, 20241129"
 vendor = { name = "Sipeed", eula = "" }
+upstream_version = "20241129"
 
 [[distfiles]]
 name = "2024-11-29-11-46-540e94.img.xz"

@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official OpenWRT 23.05.2 image for SiFive Unmatched"
 vendor = { name = "OpenWrt", eula = "" }
+upstream_version = "23.05.2"
 
 [[distfiles]]
 name = "openwrt-23.05.2-sifiveu-generic-sifive_unmatched-ext4-sdcard.img.gz"

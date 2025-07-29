@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Debian image for Sipeed LicheeRV Nano with Sophgo SG200x, from https://github.com/Fishwaldo"
 vendor = { name = "github:Fishwaldo", eula = "" }
+upstream_version = "v1.0.0"
 
 [[distfiles]]
 name = "licheervnano_sd.img.lz4"

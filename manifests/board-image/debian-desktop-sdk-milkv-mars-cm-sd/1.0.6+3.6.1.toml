@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "Official Debian Desktop SDK v3.6.1 image for Milk-V Mars CM v1.0.6 (SD card)"
 vendor = { name = "Milk-V", eula = "" }
+upstream_version = "V1.0.6"
 
 [[distfiles]]
 name = "mars-cm_debian-desktop_sdk-v3.6.1_cm4-io-board_sdcard_v1.0.6.img.zip"
