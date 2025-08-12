@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "buildroot  for LicheeRV Nano with version 20250319"
+desc = "Buildroot SDK & FreeRTOS image for Sipeed LicheeRV Nano, 20250319"
 vendor = { name = "Sipeed", eula = "" }
 upstream_version = "20250319"
 
@@ -23,7 +23,7 @@ distfiles = [
 ]
 
 [provisionable]
-strategy = "dd_v1"
+strategy = "dd-v1"
 
 [provisionable.partition_map]
 disk = "2025-03-19-15-13-e4e133.img"
