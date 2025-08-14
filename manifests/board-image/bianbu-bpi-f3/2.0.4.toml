@@ -3,18 +3,19 @@ format = "v1"
 [metadata]
 desc = "Official bianbu desktop image for Banana Pi F3 version v2.0.4"
 vendor = { name = "bpi_f3", eula = "" }
+upstream_version = "v2.0.4"
 
 [[distfiles]]
 name = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip"
-size = 196
+size = 2632497569
 urls = [
-  "https://archive.spacemit.com/image/k1/version/bianbu/bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",
+  "https://archive.spacemit.com/image/k1/version/bianbu/v2.0.4/bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img.zip",
 ]
 restrict = ["mirror"]
 
 [distfiles.checksums]
-sha256 = "80c3fe2ae1062abf56456f52518bd670f9ec3917b7f85e152b347ac6b6faf880"
-sha512 = "9002a0475fdb38541e78048709006926655c726e93e823b84e2dbf5b53fd539a5342e7266447d23db0e5528e27a19961b115b180c94f2272ff124c7e5c8304e7"
+sha256 = "436ae1db2c8ca4d860e726f2ff7ed6b0da4947e9b67ee8fac6db263d1625e03f"
+sha512 = "98c41db327ec78607d9f9ce67eddc2b2340f65cbbbb45b9f840faef1fc2e285de8c509f816fe9fce6cac4e893b02ae087a7e04f87e644ddca3d607a337b2cf32"
 
 [blob]
 distfiles = [
@@ -31,4 +32,4 @@ disk = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img"
 # Run ID: 13302859068
 # Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13302859068
 
-# Fix format by Kosaka Reiya
+# Manually fixed by Kosaka Reiya
