@@ -1,8 +1,8 @@
 format = "v1"
 
 [metadata]
-desc = "Official bianbu desktop image for Banana Pi F3 version v2.0.4"
-vendor = { name = "bpi_f3", eula = "" }
+desc = "Official Bianbu Desktop v2.0.4 for SpacemiT K1, SD image"
+vendor = { name = "SpacemiT", eula = "" }
 upstream_version = "v2.0.4"
 
 [[distfiles]]
@@ -27,9 +27,3 @@ strategy = "dd-v1"
 
 [provisionable.partition_map]
 disk = "bianbu-24.04-desktop-k1-v2.0.4-release-20241206002355.img"
-
-# This file is created by CI Sync Package Index inside support-matrix
-# Run ID: 13302859068
-# Run URL: https://github.com/ruyisdk/support-matrix/actions/runs/13302859068
-
-# Manually fixed by Kosaka Reiya
