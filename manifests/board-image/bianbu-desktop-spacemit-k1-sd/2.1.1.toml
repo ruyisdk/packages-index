@@ -10,15 +10,15 @@ level = "good"
 
 [[distfiles]]
 name = "bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip"
-size = 560652288
+size = 2616243211
 urls = [
   "https://archive.spacemit.com/image/k1/version/bianbu/v2.1.1/bianbu-24.04-desktop-k1-v2.1.1-release-20250305144026.img.zip",
 ]
 restrict = ["mirror"]
 
 [distfiles.checksums]
-sha256 = "8dabd17c30bdb2c0d4e076417a90b6cddca2031e0e19350fd0d4ee29944a953f"
-sha512 = "1318b6207085af38036445fb7e0a1ed87545417ac018c7a4ae7733f1110c3944d3ff0fbfd6f105905efe003f386660bde20efc529206549f99805761c5adbc85"
+sha256 = "a42a0efc1c55f4942b081a9fc444a9dec853ff165c1fd8cd4775539cc64ed408"
+sha512 = "36adc5b8de585a1a88df9f5d640d12f743ac213747c694116cb0d6a0adb98d50388e891c8952675816beac3d904c1ce2d2b44126477a005cd2dda739d2f210b9"
 
 [blob]
 distfiles = [
