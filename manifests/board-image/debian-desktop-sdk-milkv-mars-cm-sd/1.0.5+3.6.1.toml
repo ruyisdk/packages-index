@@ -6,9 +6,7 @@ vendor = { name = "Milk-V", eula = "" }
 upstream_version = "V1.0.5"
 
 [[distfiles]]
-name = [
-  "mars-cm_debian-desktop_sdk-v3.6.1_cm4-io-board_sdcard_v1.0.5.img.zip",
-]
+name = "mars-cm_debian-desktop_sdk-v3.6.1_cm4-io-board_sdcard_v1.0.5.img.zip"
 size = 1216117229
 urls = [
   "https://github.com/milkv-mars/mars-buildroot-sdk/releases/download/V1.0.5/mars-cm_debian-desktop_sdk-v3.6.1_cm4-io-board_sdcard_v1.0.5.img.zip",
