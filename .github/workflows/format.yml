@@ -34,6 +34,7 @@ jobs:
           curl -sL -o bin/ruyi "https://github.com/ruyisdk/ruyi/releases/download/${version}/ruyi-${version}.amd64"
 
           chmod +x ./bin/ruyi
+          ./bin/ruyi config set repo.local "$(realpath ./packages-index)"
           ./bin/ruyi version
           ./bin/ruyi telemetry consent
 
@@ -48,6 +49,10 @@ jobs:
             diff -ura $toml test.toml
 
           done
+
+      - name: Test data structure
+        run: |
+          ./bin/ruyi list --name-contains ""
 
       - name: Post Install ruyi
         if: ${{ always() && steps.setup.conclusion == 'success' }}
