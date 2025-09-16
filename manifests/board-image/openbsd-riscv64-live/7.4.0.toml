@@ -9,7 +9,7 @@ upstream_version = "7.4"
 name = "install74.img"
 size = 528482304
 urls = [
-  "https://mirrors.tuna.tsinghua.edu.cn/OpenBSD/7.4/riscv64/install74.img",
+  "https://ftp.openbsd.org/pub/OpenBSD/7.4/riscv64/install74.img",
 ]
 restrict = ["mirror"]
 
