@@ -9,8 +9,7 @@ upstream_version = "24.04.3"
 name = "ubuntu-24.04.3-preinstalled-server-riscv64+unmatched.img.xz"
 size = 1083910496
 urls = [
-  "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/releases/24.04/release/ubuntu-24.04.3-preinstalled-server-riscv64+unmatched.img.xz",
-  "https://cdimage.ubuntu.com/releases/24.04/release/ubuntu-24.04.3-preinstalled-server-riscv64+unmatched.img.xz",
+  "mirror://ubuntu-cdimage/releases/24.04/release/ubuntu-24.04.3-preinstalled-server-riscv64+unmatched.img.xz",
 ]
 restrict = ["mirror"]
 
