@@ -9,7 +9,7 @@ upstream_version = "20240127"
 name = "boot-lpi4amain-20240127_105111.ext4.zst"
 size = 82431352
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4amain/20240127/boot-lpi4amain-20240127_105111.ext4.zst",
+  "mirror://revyos/extra/images/lpi4amain/20240127/boot-lpi4amain-20240127_105111.ext4.zst",
 ]
 restrict = ["mirror"]
 
@@ -21,7 +21,7 @@ sha512 = "565e8568f3580178b61dd34309df19dd101fd5ecc1106b2b5438774a3618779905e8a6
 name = "root-lpi4amain-20240127_105111.ext4.zst"
 size = 1286756863
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4amain/20240127/root-lpi4amain-20240127_105111.ext4.zst",
+  "mirror://revyos/extra/images/lpi4amain/20240127/root-lpi4amain-20240127_105111.ext4.zst",
 ]
 restrict = ["mirror"]
 

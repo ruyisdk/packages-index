@@ -9,7 +9,7 @@ upstream_version = "20250526"
 name = "boot-meles-20250526_182249.ext4.zst"
 size = 74460469
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250526/boot-meles-20250526_182249.ext4.zst",
+  "mirror://revyos/extra/images/meles/20250526/boot-meles-20250526_182249.ext4.zst",
 ]
 restrict = ["mirror"]
 
@@ -21,7 +21,7 @@ sha512 = "07f6eb57c05565eba186f35acbb78748a1cdc19aa2808ef55627409d867a652e5bc440
 name = "root-meles-20250526_182249.ext4.zst"
 size = 1372735549
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250526/root-meles-20250526_182249.ext4.zst",
+  "mirror://revyos/extra/images/meles/20250526/root-meles-20250526_182249.ext4.zst",
 ]
 restrict = ["mirror"]
 

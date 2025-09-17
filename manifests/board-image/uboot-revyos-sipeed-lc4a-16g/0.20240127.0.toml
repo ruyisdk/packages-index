@@ -10,7 +10,7 @@ name = "u-boot-with-spl-lc4a-16g-main.bin"
 unpack = "raw"
 size = 968944
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4amain/20240127/u-boot-with-spl-lc4a-16g-main.bin",
+  "mirror://revyos/extra/images/lpi4amain/20240127/u-boot-with-spl-lc4a-16g-main.bin",
 ]
 restrict = ["mirror"]
 

@@ -12,7 +12,7 @@ level = "good"
 name = "u-boot-with-spl-meles-20250110.bin"
 size = 780480
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250110/u-boot-with-spl-meles.bin",
+  "mirror://revyos/extra/images/meles/20250110/u-boot-with-spl-meles.bin",
 ]
 restrict = ["mirror"]
 

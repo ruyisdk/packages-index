@@ -9,7 +9,7 @@ upstream_version = "20240716"
 name = "revyos-pioneer-20240716-130625.img.zst"
 size = 1542685593
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/sg2042/20240716/revyos-pioneer-20240716-130625.img.zst",
+  "mirror://revyos/extra/images/sg2042/20240716/revyos-pioneer-20240716-130625.img.zst",
 ]
 restrict = ["mirror"]
 

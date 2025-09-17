@@ -12,7 +12,7 @@ level = "good"
 name = "boot-lpi4a-20250323_154524.ext4.zst"
 size = 73219435
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250323/boot-lpi4a-20250323_154524.ext4.zst",
+  "mirror://revyos/extra/images/lpi4a/20250323/boot-lpi4a-20250323_154524.ext4.zst",
 ]
 restrict = ["mirror"]
 
@@ -24,7 +24,7 @@ sha512 = "4180240e0e168e901fd509ff7adb3176caf5a1ebe3a6d25f80b2efda4290b5169a0a45
 name = "root-lpi4a-20250323_154524.ext4.zst"
 size = 1333298432
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20250323/root-lpi4a-20250323_154524.ext4.zst",
+  "mirror://revyos/extra/images/lpi4a/20250323/root-lpi4a-20250323_154524.ext4.zst",
 ]
 restrict = ["mirror"]
 

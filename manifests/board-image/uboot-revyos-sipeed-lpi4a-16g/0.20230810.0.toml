@@ -9,7 +9,7 @@ upstream_version = "20230810"
 name = "u-boot-with-spl-lpi4a-16g.20230810.bin"
 size = 968352
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lpi4a/20230810/u-boot-with-spl-lpi4a-16g.bin",
+  "mirror://revyos/extra/images/lpi4a/20230810/u-boot-with-spl-lpi4a-16g.bin",
 ]
 restrict = ["mirror"]
 

@@ -9,7 +9,7 @@ upstream_version = "20250729"
 name = "boot-console-20250728_180944.ext4.zst"
 size = 74494483
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lcon4a/20250729/boot-console-20250728_180944.ext4.zst",
+  "mirror://revyos/extra/images/lcon4a/20250729/boot-console-20250728_180944.ext4.zst",
 ]
 restrict = ["mirror"]
 
@@ -21,7 +21,7 @@ sha512 = "fea0a3fc3e0c51a819d61526e5a12e87988f289b2d37c1ebe512a01f438d7f4281a83c
 name = "root-console-20250728_180944.ext4.zst"
 size = 1394630726
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/lcon4a/20250729/root-console-20250728_180944.ext4.zst",
+  "mirror://revyos/extra/images/lcon4a/20250729/root-console-20250728_180944.ext4.zst",
 ]
 restrict = ["mirror"]
 

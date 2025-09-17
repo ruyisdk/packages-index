@@ -9,7 +9,7 @@ upstream_version = "20240601"
 name = "u-boot-with-spl-meles-4g-20240601.bin"
 size = 780208
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20240601/u-boot-with-spl-meles-4g.bin",
+  "mirror://revyos/extra/images/meles/20240601/u-boot-with-spl-meles-4g.bin",
 ]
 restrict = ["mirror"]
 

@@ -12,7 +12,7 @@ level = "good"
 name = "boot-meles-20250323_154525.ext4.zst"
 size = 73226669
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250323/boot-meles-20250323_154525.ext4.zst",
+  "mirror://revyos/extra/images/meles/20250323/boot-meles-20250323_154525.ext4.zst",
 ]
 restrict = ["mirror"]
 
@@ -24,7 +24,7 @@ sha512 = "d7d716848e1a3a7b7094e34771dc7d83824a4bcd1a150ae1550042a61ef168d5ca7f8b
 name = "root-meles-20250323_154525.ext4.zst"
 size = 1320473059
 urls = [
-  "https://mirror.iscas.ac.cn/revyos/extra/images/meles/20250323/root-meles-20250323_154525.ext4.zst",
+  "mirror://revyos/extra/images/meles/20250323/root-meles-20250323_154525.ext4.zst",
 ]
 restrict = ["mirror"]
 
