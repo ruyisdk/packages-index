@@ -9,8 +9,7 @@ upstream_version = "14.0"
 name = "FreeBSD-14.0-RELEASE-riscv-riscv64-mini-memstick.img.xz"
 size = 73746532
 urls = [
-  "https://mirrors.ustc.edu.cn/freebsd/releases/riscv/riscv64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-riscv-riscv64-mini-memstick.img.xz",
-  "https://download.freebsd.org/releases/riscv/riscv64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-riscv-riscv64-mini-memstick.img.xz",
+  "https://archive.freebsd.org/old-releases/riscv/riscv64/ISO-IMAGES/14.0/FreeBSD-14.0-RELEASE-riscv-riscv64-mini-memstick.img.xz",
 ]
 restrict = ["mirror"]
 
