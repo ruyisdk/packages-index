@@ -21,30 +21,8 @@ def list_all_profile_ids_v1():
     return l
 
 
-# Compatibility alias for Ruyi < 0.34.0
-def list_needed_flavors_v1(profile_id):
-    return list_needed_quirks_v1(profile_id)
-
-
 def list_needed_quirks_v1(profile_id):
     return _profiles[profile_id].get("needed_quirks")
-
-
-def get_common_flags_v1(profile_id):
-    # Allow the user precise control if explicitly requested
-    if profile_id == "manual":
-        return ""
-
-    p = _profiles[profile_id]
-    args = []
-    if p["mcpu"]:
-        args.append("-mcpu=" + p["mcpu"])
-    if p["march"]:
-        # Sometimes we want to explicitly override the march string implied
-        # by the mcpu option.
-        args.append("-march=" + p["march"])
-    args.append("-mabi=" + p["mabi"])
-    return " ".join(args)
 
 
 def get_common_flags_v2(profile_id, toolchain_quirks):
