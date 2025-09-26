@@ -26,10 +26,6 @@ def list_needed_quirks_v1(profile_id):
 
 
 def get_common_flags_v2(profile_id, toolchain_quirks):
-    # Allow the user precise control if explicitly requested
-    if profile_id == "manual":
-        return ""
-
     p = _profiles[profile_id]
     args = []
     if p["mcpu"]:
@@ -39,7 +35,8 @@ def get_common_flags_v2(profile_id, toolchain_quirks):
         # Sometimes we want to explicitly override the march string implied
         # by the mcpu option.
         args.append("-march=" + p["march"])
-    args.append("-mabi=" + p["mabi"])
+    if p["mabi"]:
+        args.append("-mabi=" + p["mabi"])
     return " ".join(args)
 
 
