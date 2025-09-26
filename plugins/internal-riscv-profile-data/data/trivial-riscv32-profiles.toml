@@ -1,4 +1,10 @@
 [[profiles]]
+id = "manual"
+march = ""
+mabi = ""
+mcpu = ""
+
+[[profiles]]
 id = "generic-rv32ec"
 march = "rv32ec"
 mabi = "ilp32e"
