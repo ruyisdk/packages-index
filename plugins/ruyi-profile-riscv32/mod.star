@@ -11,10 +11,14 @@ load(
 #
 
 def list_all_profile_ids_v1():
+    l = ["manual"]
+
     # NOTE: the explicit list() cast is for compatibility with both Starlark
     # and Python semantics, as Ruyi >= 0.20.0 have removed the Starlark
     # sandbox in favor of direct unsandboxed execution.
-    return list(_profiles.keys())
+    l.extend(list(_profiles.keys()))
+
+    return l
 
 
 # Compatibility alias for Ruyi < 0.34.0
@@ -27,6 +31,10 @@ def list_needed_quirks_v1(profile_id):
 
 
 def get_common_flags_v1(profile_id):
+    # Allow the user precise control if explicitly requested
+    if profile_id == "manual":
+        return ""
+
     p = _profiles[profile_id]
     args = []
     if p["mcpu"]:
@@ -40,6 +48,10 @@ def get_common_flags_v1(profile_id):
 
 
 def get_common_flags_v2(profile_id, toolchain_quirks):
+    # Allow the user precise control if explicitly requested
+    if profile_id == "manual":
+        return ""
+
     p = _profiles[profile_id]
     args = []
     if p["mcpu"]:
