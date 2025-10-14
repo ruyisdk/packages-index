@@ -32,34 +32,34 @@ urls = [
 [[mirrors]]
 id = "freebsd-releases"
 urls = [
-  "https://mirror.iscas.ac.cn/FreeBSD/releases",
-  "https://download.freebsd.org/releases",
-  "https://archive.freebsd.org/old-releases",
+  "https://mirror.iscas.ac.cn/FreeBSD/releases/",
+  "https://download.freebsd.org/releases/",
+  "https://archive.freebsd.org/old-releases/",
 ]
 
 [[mirrors]]
 id = "freebsd-old-releases"
 urls = [
-  "https://archive.freebsd.org/old-releases",
+  "https://archive.freebsd.org/old-releases/",
 ]
 
 [[mirrors]]
 id = "openbsd"
 urls = [
-  "https://mirrors.tuna.tsinghua.edu.cn/OpenBSD",
-  "https://cdn.openbsd.org/pub/OpenBSD",
-  "https://ftp.openbsd.org/pub/OpenBSD",
+  "https://mirrors.tuna.tsinghua.edu.cn/OpenBSD/",
+  "https://cdn.openbsd.org/pub/OpenBSD/",
+  "https://ftp.openbsd.org/pub/OpenBSD/",
 ]
 
 [[mirrors]]
 id = "revyos"
 urls = [
-  "https://mirror.iscas.ac.cn/revyos",
+  "https://mirror.iscas.ac.cn/revyos/",
 ]
 
 [[mirrors]]
 id = "ubuntu-cdimage"
 urls = [
-  "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage",
-  "https://cdimage.ubuntu.com",
+  "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/",
+  "https://cdimage.ubuntu.com/",
 ]
