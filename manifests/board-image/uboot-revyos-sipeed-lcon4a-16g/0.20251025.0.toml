@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "U-Boot image for Sipeed Lichee Console 4A (16G RAM) and RevyOS 20251025"
-vendor = { name = "Sipeed", eula = "" }
+vendor = { name = "PLCT", eula = "" }
 upstream_version = "20251025"
 
 [[distfiles]]

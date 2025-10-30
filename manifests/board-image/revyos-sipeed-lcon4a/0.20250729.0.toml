@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "RevyOS 20250729 image for Sipeed Lichee Console 4A"
-vendor = { name = "Sipeed", eula = "" }
+vendor = { name = "PLCT", eula = "" }
 upstream_version = "20250729"
 
 [[distfiles]]
