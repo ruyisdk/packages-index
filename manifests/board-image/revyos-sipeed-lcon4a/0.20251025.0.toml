@@ -1,0 +1,43 @@
+format = "v1"
+
+[metadata]
+desc = "RevyOS 20251025 image for Sipeed Lichee Console 4A"
+vendor = { name = "Sipeed", eula = "" }
+upstream_version = "20251025"
+
+[[distfiles]]
+name = "boot-console-20251025_114703.ext4.zst"
+size = 46350406
+urls = [
+  "mirror://revyos/extra/images/lcon4a/20251025/boot-console-20251025_114703.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "39c30f57eb0df4a0063ce004b94537ffe5ab2db4c29fa6fb2557b49c33350517"
+sha512 = "fae982e30ea6a5d68cca04b5c203b1f7fd4e32c406be7d2b60c20a4b5529c3152cf2c2dfffef0531caed8c25057579171940bfbf1feb855b90a6acdf13bc6eae"
+
+[[distfiles]]
+name = "root-console-20251025_114703.ext4.zst"
+size = 1347330302
+urls = [
+  "mirror://revyos/extra/images/lcon4a/20251025/root-console-20251025_114703.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "fd9325abc188ca41a0faa4bda53cc409f04f3cc8c22880243e48b6dbc750bb00"
+sha512 = "7a0a9204ce25b0ddaef0a358d1c13107aeb3c1ea4511657b99961caa39e27709ae334c270e5407405e9e7e1fa83dfdab94987862f38d8d01b4e68067e8a4898e"
+
+[blob]
+distfiles = [
+  "boot-console-20251025_114703.ext4.zst",
+  "root-console-20251025_114703.ext4.zst",
+]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[provisionable.partition_map]
+boot = "boot-console-20251025_114703.ext4"
+root = "root-console-20251025_114703.ext4"

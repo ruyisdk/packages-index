@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "U-Boot image for Sipeed Lichee Console 4A (16G RAM) and RevyOS 20251025"
+vendor = { name = "Sipeed", eula = "" }
+upstream_version = "20251025"
+
+[[distfiles]]
+name = "u-boot-with-spl-lcon4a-16g.bin"
+size = 1032200
+urls = [
+  "mirror://revyos/extra/images/lcon4a/20251025/u-boot-with-spl-lcon4a-16g.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "0028aff1f77bc424cd8033dc08080a3081320524efca4eff8caf58481e99ae47"
+sha512 = "f58d106fbd3e84191e470be805f5c5d65436155607467a46953ad9b7de37ea212fbf1d8d74dd56d45d6c760d7b9746a8ee30043fba7900ec2c05c03583a5448c"
+
+[blob]
+distfiles = [
+  "u-boot-with-spl-lcon4a-16g.bin",
+]
+
+[provisionable]
+strategy = "fastboot-v1(lpi4a-uboot)"
+
+[provisionable.partition_map]
+uboot = "u-boot-with-spl-lcon4a-16g.bin"
