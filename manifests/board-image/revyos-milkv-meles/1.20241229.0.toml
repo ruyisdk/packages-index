@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "RevyOS 20241229 image for Milk-V Meles"
-vendor = { name = "Milk-V", eula = "" }
+vendor = { name = "PLCT", eula = "" }
 upstream_version = "20241229"
 
 [[distfiles]]

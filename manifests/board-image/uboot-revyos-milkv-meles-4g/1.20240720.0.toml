@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "U-Boot image for Milk-V Meles (Single-rank, 4G RAM), for RevyOS, 20240720"
-vendor = { name = "Milk-V", eula = "" }
+vendor = { name = "PLCT", eula = "" }
 upstream_version = "20240720"
 
 [[distfiles]]
