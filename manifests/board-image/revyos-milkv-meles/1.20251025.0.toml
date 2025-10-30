@@ -1,0 +1,43 @@
+format = "v1"
+
+[metadata]
+desc = "RevyOS 20251025 image for Milk-V Meles"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20251025"
+
+[[distfiles]]
+name = "boot-meles-20251025_114547.ext4.zst"
+size = 73543530
+urls = [
+  "mirror://revyos/extra/images/meles/20251025/boot-meles-20251025_114547.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "938054eb50172693682cb783e32673a518990b09602be17506ef47159279c2f2"
+sha512 = "4234410f661e2fcf3d6a0573a7a42fdf7157a03c25e9022f37842eef0063dde7d9ccf3f60e891f72574ec02a8a974e46a673287a7dbef1110e77a2a195ec3580"
+
+[[distfiles]]
+name = "root-meles-20251025_114547.ext4.zst"
+size = 1344833576
+urls = [
+  "mirror://revyos/extra/images/meles/20251025/root-meles-20251025_114547.ext4.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "0d5c8efa58dcfa8600639b3a3a4c5d0a5dac1b9960fef37dac0b6f4108d48f48"
+sha512 = "7bf944de67f96cbba34c97adfadf36745f288a14bf54ecf8c6f9f05ed6a36a7d695f302e040d699999949606a0813101c43d2cdfec4469ae988dc85b5f825461"
+
+[blob]
+distfiles = [
+  "boot-meles-20251025_114547.ext4.zst",
+  "root-meles-20251025_114547.ext4.zst",
+]
+
+[provisionable]
+strategy = "fastboot-v1"
+
+[provisionable.partition_map]
+boot = "boot-meles-20251025_114547.ext4"
+root = "root-meles-20251025_114547.ext4"
