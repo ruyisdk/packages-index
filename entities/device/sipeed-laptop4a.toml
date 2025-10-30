@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["device-variant:sipeed-laptop4a@8g", "device-variant:sipeed-laptop4a@16g"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "sipeed-laptop4a"
+display_name = "Sipeed Lichee Book 4A"
