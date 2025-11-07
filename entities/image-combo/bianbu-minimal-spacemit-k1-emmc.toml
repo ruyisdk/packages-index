@@ -6,5 +6,5 @@ related = [
 unique_among_type_during_traversal = true
 
 [image-combo]
-display_name = "Bianbu Minimal for SpacemiT K1"
+display_name = "Bianbu Minimal for SpacemiT K1/M1"
 package_atoms = ["board-image/bianbu-minimal-spacemit-k1"]
