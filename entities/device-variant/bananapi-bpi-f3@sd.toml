@@ -5,4 +5,4 @@ unique_among_type_during_traversal = true
 
 [device-variant]
 id = "sd"
-variant_name = "SD storage"
+variant_name = "SD/SSD storage"
