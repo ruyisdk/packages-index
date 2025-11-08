@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "Official Bianbu Desktop v3.0.1 for SpacemiT K1"
+desc = "Official Bianbu Minimal v3.0.1 for SpacemiT K1"
 vendor = { name = "SpacemiT", eula = "" }
 upstream_version = "v3.0.1"
 
