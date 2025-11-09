@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["device-variant:pine64-star64@generic"]
-unique_among_type_during_traversal = true
-
-[device]
-id = "pine64-star64"
-display_name = "Pine64 Star64"
