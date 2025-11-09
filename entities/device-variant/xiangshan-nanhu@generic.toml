@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["cpu:xiangshan-nanhu"]
+unique_among_type_during_traversal = true
+
+[device-variant]
+id = "generic"
+variant_name = "generic variant"
