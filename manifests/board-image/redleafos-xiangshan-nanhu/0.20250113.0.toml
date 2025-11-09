@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "RedleafOS 20250113 image for Xiangshan Nanhu"
+vendor = { name = "PLCT", eula = "" }
+upstream_version = "20250113"
+
+[[distfiles]]
+name = "debian-nanhu-20250113-113430.img.zst"
+size = 1580537401
+urls = [
+  "https://mirror.iscas.ac.cn/redleafos/extra/images/20250113/debian-nanhu-20250113-113430.img.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "3df2266e7115c94f38cabec9e70d4176111b5acc7bc6e05aef37dfd17824a5eb"
+sha512 = "9b6dcc710d2a13d302700d23706ad3a986f9edf623baade01141231201f4ddcd79fa378f092cce4c860f72c93a4537a2c400296cdf9817f2e0f31aa937a2b68f"
+
+[blob]
+distfiles = [
+  "debian-nanhu-20250113-113430.img.zst",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "debian-nanhu-20250113-113430.img"
