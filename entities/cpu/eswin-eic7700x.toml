@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["uarch:sifive-p550"]
+unique_among_type_during_traversal = true
+
+[cpu]
+id = "eswin-eic7700x"
+display_name = "ESWIN EIC7700X"

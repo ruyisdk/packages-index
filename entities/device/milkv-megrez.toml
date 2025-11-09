@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:milkv-megrez@generic",
+]
+unique_among_type_during_traversal = true
+
+[device]
+id = "milkv-megrez"
+display_name = "Milk-V Megrez"
