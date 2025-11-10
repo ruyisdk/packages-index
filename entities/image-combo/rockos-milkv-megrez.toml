@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:milkv-megrez@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "RedleafOS for MilkV Megrez"
+package_atoms = ["board-image/rockos-milkv-megrez"]
