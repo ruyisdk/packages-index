@@ -1,0 +1,19 @@
+# It's fine to switch to different ul style for better readability
+MD004: false
+
+# Use 4 spaces for nested list items for (1) better visual separation and
+# (2) consistency with Python
+MD007:
+  indent: 4
+
+# Sometimes we cannot break lines due to mixed CJK content and bad
+# line-wrapping behavior of *some* environments
+MD013: false
+
+# Duplicate headings is necessary in our case
+# It seems Markdownlint sees the "title" frontmatter the same as h1,
+# but in our case frontmatter is discarded by the Ruyi package manager.
+MD025: false
+
+# No impact on readability
+MD034: false
