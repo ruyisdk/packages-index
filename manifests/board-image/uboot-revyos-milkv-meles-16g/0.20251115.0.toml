@@ -1,15 +1,15 @@
 format = "v1"
 
 [metadata]
-desc = "U-Boot image for Milk-V Meles (Dual-rank, 16G RAM), for RevyOS, 20250930"
+desc = "U-Boot image for Milk-V Meles (Dual-rank, 16G RAM), for RevyOS, 20251115"
 vendor = { name = "PLCT", eula = "" }
-upstream_version = "20250930"
+upstream_version = "20251115"
 
 [[distfiles]]
 name = "u-boot-with-spl-meles-16g.bin"
 size = 780496
 urls = [
-  "mirror://revyos/extra/images/meles/20250930/u-boot-with-spl-meles-16g.bin",
+  "mirror://revyos/extra/images/meles/20251115/u-boot-with-spl-meles-16g.bin",
 ]
 restrict = ["mirror"]
 
