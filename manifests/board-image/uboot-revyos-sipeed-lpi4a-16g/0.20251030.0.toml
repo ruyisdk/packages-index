@@ -1,15 +1,15 @@
 format = "v1"
 
 [metadata]
-desc = "U-Boot image for LicheePi 4A (16G RAM) and RevyOS 20250930"
+desc = "U-Boot image for LicheePi 4A (16G RAM) and RevyOS 20251030"
 vendor = { name = "PLCT", eula = "" }
-upstream_version = "20250930"
+upstream_version = "20251030"
 
 [[distfiles]]
 name = "u-boot-with-spl-lpi4a-16g-main.bin"
 size = 992728
 urls = [
-  "mirror://revyos/extra/images/lpi4a/20250930/u-boot-with-spl-lpi4a-16g-main.bin",
+  "mirror://revyos/extra/images/lpi4a/20251030/u-boot-with-spl-lpi4a-16g-main.bin",
 ]
 restrict = ["mirror"]
 
