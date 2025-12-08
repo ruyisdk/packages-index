@@ -1,15 +1,15 @@
 format = "v1"
 
 [metadata]
-desc = "U-Boot image for Sipeed Lichee Console 4A (8G RAM) and RevyOS 20250930"
+desc = "U-Boot image for Sipeed Lichee Console 4A (8G RAM) and RevyOS 20251115"
 vendor = { name = "PLCT", eula = "" }
-upstream_version = "20250930"
+upstream_version = "20251115"
 
 [[distfiles]]
 name = "u-boot-with-spl-lcon4a.bin"
 size = 1032200
 urls = [
-  "mirror://revyos/extra/images/lcon4a/20250930/u-boot-with-spl-lcon4a.bin",
+  "mirror://revyos/extra/images/lcon4a/20251115/u-boot-with-spl-lcon4a.bin",
 ]
 restrict = ["mirror"]
 
