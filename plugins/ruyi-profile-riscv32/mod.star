@@ -11,7 +11,7 @@ load(
 #
 
 def list_all_profile_ids_v1():
-    l = ["manual"]
+    l = ["manual-rv32"]
 
     # NOTE: the explicit list() cast is for compatibility with both Starlark
     # and Python semantics, as Ruyi >= 0.20.0 have removed the Starlark

@@ -1,5 +1,5 @@
 [[profiles]]
-id = "manual"
+id = "manual-rv32"
 march = ""
 mabi = ""
 mcpu = ""
