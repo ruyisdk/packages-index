@@ -1,0 +1,18 @@
+# 由ruyi-packaging自动生成
+
+name = "board-image-revyos-sipeed-lcon4a"
+version = "20251226"
+description = "Ruyi SDK revyos-sipeed-lcon4a开发板镜像（20251226）"
+homepage = "https://ruyisdk.github.io/"
+license = "Apache-2.0"
+
+[source]
+type = "tar.gz"
+url = "https://github.com/ruyisdk/board-image/releases/download/20251226/revyos-sipeed-lcon4a-20251226.tar.gz"
+sha256 = "placeholder-sha256"
+
+[build]
+script = "install -Dm755 ./image.tar.gz /usr/share/ruyi/board-images/revyos-sipeed-lcon4a-20251226.tar.gz"
+
+[install]
+destdir = "$RUYI_PREFIX"
