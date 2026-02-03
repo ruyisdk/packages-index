@@ -6,13 +6,13 @@ on:
       - main
     paths:
       - .github/**
-      - manifests/board-image/**
+      - packages/board-image/**
   pull_request:
     branches:
       - main
     paths:
       - .github/**
-      - manifests/board-image/**
+      - packages/board-image/**
 
 jobs:
   format-manifest:
@@ -40,7 +40,7 @@ jobs:
 
       - name: Test manifests
         run: |
-          for toml in `find ./packages-index/manifests/board-image/ -type f`; do
+          for toml in `find ./packages-index/packages/board-image/ -type f`; do
 
             echo test $toml
             cp $toml test.toml
@@ -57,4 +57,3 @@ jobs:
       - name: Post Install ruyi
         if: ${{ always() && steps.setup.conclusion == 'success' }}
         run: ./bin/ruyi telemetry upload
-
