@@ -1,8 +1,17 @@
 RUYI = ruyi_plugin_rev(1)
 
+load(
+    "ruyi-plugin://internal-i18n-compat",
+    _msg="msg",
+)
+
 #
 # Helpers
 #
+
+def _m(msgid):
+    return _msg("plugins/internal-device-provisioner-common/" + msgid)
+
 
 #def call_subprocess_with_ondemand_elevation(argv: list[str]) -> int:
 def call_subprocess_with_ondemand_elevation(argv):
@@ -15,12 +24,8 @@ def call_subprocess_with_ondemand_elevation(argv):
     if ret == 0:
         return ret
 
-    RUYI.log.W(
-        "The command failed with return code [yellow]" + str(ret) + "[/], that may or may not be caused by lack of privileges."
-    )
-    if not RUYI.cli_ask_for_yesno_confirmation(
-        "Do you want to retry the command with [yellow]sudo[/]?"
-    ):
+    RUYI.log.W(_m("cmd-failed").format(ret=ret))
+    if not RUYI.cli_ask_for_yesno_confirmation(_m("prompt-retry-sudo")):
         return ret
 
     RUYI.log.D("about to spawn subprocess with sudo: argv=['sudo'] + " + repr(argv))
@@ -43,10 +48,11 @@ def pretend_dd(
     blkdev_paths,  # PartitionMapDecl
 ):  # list[str]
     result = []
+    msg_dd = _m("pretend-dd-to-blkdev")
     for part, img_path in img_paths.items():
         blkdev_path = blkdev_paths[part]
         result.append(
-            "write [yellow]" + img_path + "[/] contents to [green]" + blkdev_path + "[/] with dd"
+            msg_dd.format(img_path=img_path, blkdev_path=blkdev_path)
         )
     return result
 
@@ -60,24 +66,22 @@ def do_dd(infile, outfile, blocksize=4096):
         "bs=" + str(blocksize),
     ]
 
-    RUYI.log.I(
-        "dd-ing [yellow]" + infile + "[/] to [green]" + outfile + "[/] with block size " + str(blocksize) + "..."
-    )
+    RUYI.log.I(_m("dd-to-blkdev").format(infile=infile, outfile=outfile, blocksize=blocksize))
     retcode = call_subprocess_with_ondemand_elevation(argv)
     if retcode == 0:
-        RUYI.log.I("successfully flashed [green]" + outfile + "[/]")
+        RUYI.log.I(_m("file-flashed").format(outfile=outfile))
     else:
-        RUYI.log.F("failed to flash the [green]" + outfile + "[/] disk/partition")
-        RUYI.log.W("the device could be in an inconsistent state now, check now")
+        RUYI.log.F(_m("flash-to-partition-failed").format(outfile=outfile))
+        RUYI.log.W(_m("device-inconsistent"))
 
     return retcode
 
 
 #def pretend_fastboot(img_paths: PartitionMapDecl, _: PartitionMapDecl) -> list[str]:
 def pretend_fastboot(img_paths, blkdev_paths):
+    msg_flash = _m("pretend-flash-to-partition")
     return [
-        "flash [yellow]" + f + "[/] into device partition [green]" + p + "[/]"
-        for p, f in img_paths.items()
+        msg_flash.format(img_path=f, part=p) for p, f in img_paths.items()
     ]
 
 
@@ -90,14 +94,12 @@ def do_fastboot(*args):
 
 #def do_fastboot_flash(part: str, img_path: str) -> int:
 def do_fastboot_flash(part, img_path):
-    RUYI.log.I(
-        "flashing [yellow]" + img_path + "[/] into device partition [green]" + part + "[/]"
-    )
+    RUYI.log.I(_m("flash-to-partition").format(img_path=img_path, part=part))
     ret = do_fastboot("flash", part, img_path)
     if ret != 0:
-        RUYI.log.F("failed to flash [green]" + part + "[/] image into device storage")
-        RUYI.log.W("the device could be in an inconsistent state now, check now")
+        RUYI.log.F(_m("part-flash-failed").format(part=part))
+        RUYI.log.W(_m("device-inconsistent"))
     else:
-        RUYI.log.I("[green]" + part + "[/] image successfully flashed")
+        RUYI.log.I(_m("part-flashed").format(part=part))
 
     return ret

@@ -7,6 +7,15 @@ load(
     _need_host_blkdevs_none="need_host_blkdevs_none",
 )
 
+load(
+    "ruyi-plugin://internal-i18n-compat",
+    _msg="msg",
+)
+
+
+def _m(msgid):
+    return _msg("plugins/ruyi-device-provision-strategy-spacemit-k1/" + msgid)
+
 
 #def _pretend_spacemit_k1(img_paths: PartitionMapDecl, _: PartitionMapDecl) -> list[str]:
 def _pretend_spacemit_k1(img_paths, blkdev_paths):
@@ -19,17 +28,19 @@ def _pretend_spacemit_k1(img_paths, blkdev_paths):
     bootfs_path = img_paths["bootfs"]
     rootfs_path = img_paths["rootfs"]
 
+    msg_load = _m("pretend-load-to-device")
+    msg_flash = _m("pretend-flash-to-partition")
     return [
-        "load FSBL [yellow]" + fsbl_path + "[/] to device",
-        "load U-Boot [yellow]" + uboot_path + "[/] to device",
-        "flash [yellow]" + gpt_path + "[/] to partition [green]gpt[/]",
-        "flash [yellow]" + bootinfo_path + "[/] to partition [green]bootinfo[/]",
-        "flash [yellow]" + fsbl_path + "[/] to partition [green]fsbl[/]",
-        "flash [yellow]" + env_path + "[/] to partition [green]env[/]",
-        "flash [yellow]" + opensbi_path + "[/] to partition [green]opensbi[/]",
-        "flash [yellow]" + uboot_path + "[/] to partition [green]uboot[/]",
-        "flash [yellow]" + bootfs_path + "[/] to partition [green]bootfs[/]",
-        "flash [yellow]" + rootfs_path + "[/] to partition [green]rootfs[/]",
+        msg_load.format(what="FSBL", img_path=fsbl_path),
+        msg_load.format(what="U-Boot", img_path=uboot_path),
+        msg_flash.format(img_path=gpt_path, part="gpt"),
+        msg_flash.format(img_path=bootinfo_path, part="bootinfo"),
+        msg_flash.format(img_path=fsbl_path, part="fsbl"),
+        msg_flash.format(img_path=env_path, part="env"),
+        msg_flash.format(img_path=opensbi_path, part="opensbi"),
+        msg_flash.format(img_path=uboot_path, part="uboot"),
+        msg_flash.format(img_path=bootfs_path, part="bootfs"),
+        msg_flash.format(img_path=rootfs_path, part="rootfs"),
     ]
 
 
@@ -60,37 +71,37 @@ def _flash_spacemit_k1(img_paths, blkdev_paths):
     uboot_img_path = img_paths["uboot"]
 
     # Stage FSBL and continue
-    RUYI.log.I("staging the FSBL image")
+    RUYI.log.I(_m("staging-fsbl"))
     ret = _do_fastboot("stage", fsbl_img_path)
     if ret != 0:
-        RUYI.log.F("failed to stage FSBL image")
+        RUYI.log.F(_m("staging-fsbl-failed"))
         return ret
 
-    RUYI.log.I("continuing to execute staged FSBL")
+    RUYI.log.I(_m("continuing-to-fsbl"))
     ret = _do_fastboot("continue")
     if ret != 0:
-        RUYI.log.F("failed to continue execution with FSBL")
+        RUYI.log.F(_m("continuing-to-fsbl-failed"))
         return ret
 
     # Wait for 1 second
-    RUYI.log.I("waiting " + str(wait_secs) + "s for the device to load FSBL")
+    RUYI.log.I(_m("wait-fsbl").format(wait_secs=wait_secs))
     RUYI.sleep(wait_secs)
 
     # Stage u-boot and continue
-    RUYI.log.I("staging the U-Boot image")
+    RUYI.log.I(_m("staging-uboot"))
     ret = _do_fastboot("stage", uboot_img_path)
     if ret != 0:
-        RUYI.log.F("failed to stage u-boot image")
+        RUYI.log.F(_m("staging-uboot-failed"))
         return ret
         
-    RUYI.log.I("continuing to execute staged u-boot")
+    RUYI.log.I(_m("continuing-to-uboot"))
     ret = _do_fastboot("continue")
     if ret != 0:
-        RUYI.log.F("failed to continue execution with U-Boot")
+        RUYI.log.F(_m("continuing-to-uboot-failed"))
         return ret
         
     # Wait for 1 second
-    RUYI.log.I("waiting " + str(wait_secs) + "s for the device to load U-Boot")
+    RUYI.log.I(_m("wait-uboot").format(wait_secs=wait_secs))
     RUYI.sleep(wait_secs)
 
     # Flash all partitions
@@ -106,10 +117,10 @@ def _flash_spacemit_k1(img_paths, blkdev_paths):
     }
 
     for partition, img_path in partitions.items():
-        RUYI.log.I("flashing the [yellow]" + partition + "[/] partition")
+        RUYI.log.I(_m("flashing-partition").format(part=partition))
         ret = _do_fastboot_flash(partition, img_path)
         if ret != 0:
-            RUYI.log.F("failed to flash the [yellow]" + partition + "[/] partition")
+            RUYI.log.F(_m("flashing-partition-failed").format(part=partition))
             return ret
 
     return 0

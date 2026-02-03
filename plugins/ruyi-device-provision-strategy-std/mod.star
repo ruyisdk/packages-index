@@ -11,6 +11,15 @@ load(
     _need_host_blkdevs_none="need_host_blkdevs_none",
 )
 
+load(
+    "ruyi-plugin://internal-i18n-compat",
+    _msg="msg",
+)
+
+
+def _m(msgid):
+    return _msg("plugins/ruyi-device-provision-strategy-std/" + msgid)
+
 #
 # Implementation
 #
@@ -30,9 +39,9 @@ def _flash_dd(img_paths, blkdev_paths):
 def _pretend_lpi4a_uboot(img_paths, blkdev_paths):
     p = img_paths["uboot"]
     return [
-        "flash [yellow]" + p + "[/] into device RAM",
-        "reboot the device",
-        "flash [yellow]" + p + "[/] into device partition [green]uboot[/]",
+        _m("pretend-flash-to-ram").format(img_path=p),
+        _m("pretend-reboot"),
+        _m("pretend-flash-to-partition").format(img_path=p, part="uboot"),
     ]
 
 
@@ -48,22 +57,22 @@ def _flash_lpi4a_uboot(img_paths, blkdev_paths):
     # See: https://wiki.sipeed.com/hardware/en/lichee/th1520/lpi4a/4_burn_image.html
     uboot_img_path = img_paths["uboot"]
 
-    RUYI.log.I("flashing uboot image into device RAM")
+    RUYI.log.I(_m("flashing-uboot-ram"))
     ret = _do_fastboot("flash", "ram", uboot_img_path)
     if ret != 0:
-        RUYI.log.F("failed to flash uboot image into device RAM")
-        RUYI.log.W("the device state should be intact, but please re-check")
+        RUYI.log.F(_m("flashing-uboot-ram-failed"))
+        RUYI.log.W(_m("recheck"))
         return ret
 
-    RUYI.log.I("rebooting device into new uboot")
+    RUYI.log.I(_m("rebooting-to-uboot"))
     ret = _do_fastboot("reboot")
     if ret != 0:
-        RUYI.log.F("failed to reboot the device")
-        RUYI.log.W("the device state should be intact, but please re-check")
+        RUYI.log.F(_m("reboot-failed"))
+        RUYI.log.W(_m("recheck"))
         return ret
 
     wait_secs = 1.0
-    RUYI.log.I("waiting " + str(wait_secs) + "s for the device to come back online")
+    RUYI.log.I(_m("waiting-for-device").format(wait_secs=wait_secs))
     RUYI.sleep(wait_secs)
 
     return _do_fastboot_flash("uboot", uboot_img_path)
