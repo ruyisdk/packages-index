@@ -52,6 +52,12 @@ urls = [
 ]
 
 [[mirrors]]
+id = "openxiangshan-xscc"
+urls = [
+  "https://github.com/OpenXiangShan/xscc/releases/download/",
+]
+
+[[mirrors]]
 id = "revyos"
 urls = [
   "https://mirror.iscas.ac.cn/revyos/",
