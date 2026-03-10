@@ -3,6 +3,7 @@ format = "v1"
 [metadata]
 desc = "XiangShan Compiler Collection"
 vendor = { name = "OpenXiangShan", eula = "" }
+upstream_version = "1.0.0"
 
 [[distfiles]]
 name = "xscc-v1.0.0-linux-x86_64-riscv64.tar.gz"
