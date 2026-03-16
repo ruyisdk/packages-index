@@ -3,6 +3,7 @@ ruyi-repo = "v1"
 [repo]
 doc_uri = "https://ruyisdk.org/docs/intro"
 id = "ruyisdk"
+name = "RuyiSDK official repository"
 
 [[telemetry]]
 id = "ruyisdk-hq-pm"
