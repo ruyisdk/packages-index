@@ -26,4 +26,5 @@ mcpu = "thead-c910"
 
 [[profiles]]
 id = "milkv-duo"
+needed_quirks = ["xthead"]
 mcpu = "thead-c906"
