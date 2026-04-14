@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.692 image for UEFI RISC-V64 (minimal)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.692"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.692_Uefi-riscv64_trixie_current_6.18.21_minimal.img.xz"
+size = 1041255172
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.692/Armbian_community_26.2.0-trunk.692_Uefi-riscv64_trixie_current_6.18.21_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "26d3b76973c47de1cca4fb3db7dcb010a22712d38552e90725fb3f5477c9b296"
+sha512 = "19efcf69ff2bb3a1ac6dca956e45292b968363cfc9b18eb7aa9543da97210816c5c8353920b358879af56ff3d1a3c825d9814abc6a57fe4f695d83fdba8ccecc"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.692_Uefi-riscv64_trixie_current_6.18.21_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.692_Uefi-riscv64_trixie_current_6.18.21_minimal.img"
