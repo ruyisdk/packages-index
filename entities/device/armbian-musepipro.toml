@@ -1,10 +1,8 @@
 ruyi-entity = "v0"
 
-related = [
-  "device-variant:armbian-musepipro@generic",
-]
+related = ["device-variant:armbian-musepipro@generic"]
 unique_among_type_during_traversal = true
 
-[image-combo]
-display_name = "Armbian for Muse Pi Pro"
-package_atoms = ["board-image/armbian-musepipro"]
+[device]
+id = "armbian-musepipro"
+display_name = "Muse Pi Pro"
