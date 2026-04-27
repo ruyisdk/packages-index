@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.696 image for UEFI RISC-V64 (xfce desktop)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.696"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.696_Uefi-riscv64_noble_current_6.18.21_xfce_desktop.img.xz"
+size = 1687233828
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.696/Armbian_community_26.2.0-trunk.696_Uefi-riscv64_noble_current_6.18.21_xfce_desktop.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "dec62fec8720a0bc17041d341503e3eb119208f742612436e8552e1595d7ae52"
+sha512 = "e02922940d1a72d793e9e1bb11fceaea0a5bdc02eda4bded8fa682b0d2ac815937ab3433710b71d0bb0e14fff189c82a37ac1f253cc9601bfcacd3beb2ccba3a"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.696_Uefi-riscv64_noble_current_6.18.21_xfce_desktop.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.696_Uefi-riscv64_noble_current_6.18.21_xfce_desktop.img"
