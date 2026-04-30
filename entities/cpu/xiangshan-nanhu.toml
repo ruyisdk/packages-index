@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["uarch:xiangshan-nanhu"]
-unique_among_type_during_traversal = true
-
-[cpu]
-id = "xiangshan-nanhu"
-display_name = "Xiangshan Nanhu"

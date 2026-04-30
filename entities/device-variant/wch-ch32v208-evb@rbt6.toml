@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["cpu:wch-ch32v208"]
-unique_among_type_during_traversal = true
-
-[device-variant]
-id = "rbt6"
-variant_name = "CH32V208RBT6"

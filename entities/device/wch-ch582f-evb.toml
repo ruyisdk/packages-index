@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["device-variant:wch-ch582f-evb@generic"]
-unique_among_type_during_traversal = true
-
-[device]
-id = "wch-ch582f-evb"
-display_name = "WCH CH582F EVB"

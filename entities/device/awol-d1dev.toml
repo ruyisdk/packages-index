@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["device-variant:awol-d1dev@generic"]
-unique_among_type_during_traversal = true
-
-[device]
-id = "awol-d1dev"
-display_name = "Allwinner Nezha D1"

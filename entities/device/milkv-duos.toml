@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["device-variant:milkv-duos@generic"]
-unique_among_type_during_traversal = true
-
-[device]
-id = "milkv-duos"
-display_name = "Milk-V Duo S"

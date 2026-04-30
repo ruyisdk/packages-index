@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["cpu:xuantie-th1520"]
-unique_among_type_during_traversal = true
-
-[device-variant]
-id = "8g"
-variant_name = "8G RAM"

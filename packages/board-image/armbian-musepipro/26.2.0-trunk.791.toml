@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.791 image for Muse Pi Pro"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.791"
+
+[[distfiles]]
+name = "Armbian_26.2.0-trunk.791_Musepipro_forky_current_6.18.24_minimal.img.xz"
+size = 303591156
+urls = [
+  "https://github.com/armbian/os/releases/download/26.2.0-trunk.791/Armbian_26.2.0-trunk.791_Musepipro_forky_current_6.18.24_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "8d8cd115efef3ba3b61a19f8a75a7502ab445ffd97899a06468d78e5a0f03d24"
+sha512 = "4dbf016ea6e1ecac1bc283dd1bf129c374442f0618cae124994ff0900d967ee3af18fc43c3e6c35344bf99ca57a49d4b6fabf0c166f26e948b3bbc6f9b8a7811"
+
+[blob]
+distfiles = [
+  "Armbian_26.2.0-trunk.791_Musepipro_forky_current_6.18.24_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_26.2.0-trunk.791_Musepipro_forky_current_6.18.24_minimal.img"

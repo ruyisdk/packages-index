@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["cpu:wch-ch592"]
-unique_among_type_during_traversal = true
-
-[device-variant]
-id = "generic"
-variant_name = "generic variant"

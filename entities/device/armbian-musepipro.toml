@@ -1,8 +1,0 @@
-ruyi-entity = "v0"
-
-related = ["device-variant:armbian-musepipro@generic"]
-unique_among_type_during_traversal = true
-
-[device]
-id = "armbian-musepipro"
-display_name = "Muse Pi Pro"
