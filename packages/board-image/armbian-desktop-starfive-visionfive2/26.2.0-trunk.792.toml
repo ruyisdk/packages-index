@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.792 image for StarFive VisionFive 2 (xfce desktop)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.792"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.792_Visionfive2_noble_vendor_6.6.20_xfce_desktop.img.xz"
+size = 921350940
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.792/Armbian_community_26.2.0-trunk.792_Visionfive2_noble_vendor_6.6.20_xfce_desktop.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "7273697ebe662faf9f9cd2399f112bf124dad1400a52a951a2b74d97b458058e"
+sha512 = "94a4f28ef5dd95380a9d23bac8da9938ecbe46141bcb9982acb75469fbdb4def4ccdb765feb000c57b3df21262d9a0eae57d5f34cfeedb08482cc26bc107a8fb"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.792_Visionfive2_noble_vendor_6.6.20_xfce_desktop.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.792_Visionfive2_noble_vendor_6.6.20_xfce_desktop.img"

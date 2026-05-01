@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:starfive-visionfive2@generic",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Armbian (xfce desktop) for Orange Pi RV2"
+package_atoms = ["board-image/armbian-desktop-starfive-visionfive2"]
