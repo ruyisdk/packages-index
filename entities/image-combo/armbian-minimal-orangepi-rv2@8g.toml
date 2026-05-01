@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:orangepi-rv2@8g",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Armbian (minimal) for Orange Pi RV2"
+package_atoms = ["board-image/armbian-minimal-orangepi-rv2"]
