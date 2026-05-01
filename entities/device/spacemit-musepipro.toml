@@ -1,0 +1,8 @@
+ruyi-entity = "v0"
+
+related = ["device-variant:spacemit-musepipro@generic"]
+unique_among_type_during_traversal = true
+
+[device]
+id = "spacemit-musepipro"
+display_name = "SpacemiT MUSE Pi Pro"
