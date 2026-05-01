@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:spacemit-musepipro@8g"
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Armbian for SpacemiT Muse Pi Pro"
+package_atoms = ["board-image/armbian-spacemit-musepipro"]
