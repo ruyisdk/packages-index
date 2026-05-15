@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.703 image for Orange Pi RV2 (xfce desktop)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.703"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.703_Orangepirv2_noble_current_6.18.21_xfce_desktop.img.xz"
+size = 991315004
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.703/Armbian_community_26.2.0-trunk.703_Orangepirv2_noble_current_6.18.21_xfce_desktop.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "9c10514d50074bf956fa2543b660f79d627d18790adbcdb292f039d121f2c14c"
+sha512 = "bb33d7552b7cec7dfc369779e2d8c4ec90f9367651b9e678cf34ac9d208cda5ab3f34518ccb1f8bab313b6d1fe6d94af1a92b1986271a5135a1f590de253e9ea"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.703_Orangepirv2_noble_current_6.18.21_xfce_desktop.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.703_Orangepirv2_noble_current_6.18.21_xfce_desktop.img"
