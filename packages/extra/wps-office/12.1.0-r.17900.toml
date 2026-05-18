@@ -2,7 +2,7 @@ format = "v1"
 
 [metadata]
 desc = "Kingsoft WPS Office"
-vendor = { name = "Kingsoft", eula = "" }  # TODO: there is EULA but no link
+vendor = { name = "Kingsoft", eula = "" }
 
 [[distfiles]]
 name = "wps-office_12.1.0.17900_amd64.deb"

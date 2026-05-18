@@ -38,12 +38,14 @@ distfiles = ["wlink-0.1.1-ruyi.20250524+git.217f0e51.aarch64.tar.gz"]
 [binary.commands]
 wlink = "bin/wlink"
 
+
 [[binary]]
 host = "riscv64"
 distfiles = ["wlink-0.1.1-ruyi.20250524+git.217f0e51.riscv64.tar.gz"]
 
 [binary.commands]
 wlink = "bin/wlink"
+
 
 [[binary]]
 host = "x86_64"

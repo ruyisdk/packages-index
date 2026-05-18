@@ -42,7 +42,7 @@ distfiles = ["RuyiSDK-20250401-PLCT-Sources-riscv64-plct-linux-gnu.tar.xz"]
 
 [toolchain]
 target = "riscv64-plct-linux-gnu"
-flavors = []
+quirks = []
 components = [
   { name = "binutils", version = "2.42" },
   { name = "gcc", version = "14.1.0" },

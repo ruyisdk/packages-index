@@ -42,7 +42,7 @@ distfiles = ["RuyiSDK-20250526-Xuantie-Sources-Xuantie-3.1.0-riscv64-plctxthead-
 
 [toolchain]
 target = "riscv64-plctxthead-linux-gnu"
-flavors = ["xthead"]
+quirks = ["xthead"]
 components = [
   { name = "binutils", version = "2.42" },
   { name = "gcc", version = "14.1.1" },

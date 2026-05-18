@@ -42,7 +42,7 @@ distfiles = ["RuyiSDK-20240906-PLCT-Sources-RV64ILP32-gdf9313313b45-riscv64-plct
 
 [toolchain]
 target = "riscv64-plct-elf"
-flavors = ["rv64ilp32"]
+quirks = ["rv64ilp32"]
 components = [
   { name = "binutils", version = "2.42" },
   { name = "gcc", version = "13.2.0" },

@@ -17,7 +17,7 @@ host = "x86_64"
 distfiles = ["qemu-user-riscv-xthead-6.1.0.ruyi-20231207.amd64.tar.zst"]
 
 [emulator]
-flavors = ["xthead"]
+quirks = ["xthead"]
 
 [[emulator.programs]]
 path = "bin/qemu-riscv32"

@@ -31,7 +31,7 @@ host = "riscv64"
 distfiles = ["box64-upstream-0.3.1-pre.ruyi.20240901+git.9178effd.riscv64.tar.zst"]
 
 [emulator]
-flavors = []
+quirks = []
 
 [[emulator.programs]]
 path = "bin/box64"

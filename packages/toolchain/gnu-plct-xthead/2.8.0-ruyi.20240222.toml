@@ -42,7 +42,7 @@ distfiles = ["RuyiSDK-20240222-T-Head-Sources-T-Head-2.8.0-riscv64-plctxthead-li
 
 [toolchain]
 target = "riscv64-plctxthead-linux-gnu"
-flavors = ["xthead"]
+quirks = ["xthead"]
 components = [
   { name = "binutils", version = "2.35" },
   { name = "gcc", version = "10.2.0" },

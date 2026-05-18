@@ -31,7 +31,7 @@ distfiles = ["RuyiSDK-20231118-Upstream-Sources-riscv64-unknown-linux-gnu.tar.xz
 
 [toolchain]
 target = "riscv64-unknown-linux-gnu"
-flavors = []
+quirks = []
 components = [
   { name = "binutils", version = "2.40" },
   { name = "gcc", version = "13.2.0" },
