@@ -26,34 +26,24 @@ jobs:
 
       - name: Install ruyi
         id: setup
+        uses: ruyisdk/setup-ruyi-action@v1
+        with:
+          ruyi-version: beta
+
+      - name: Configure ruyi
         run: |
-          mkdir bin/
+          ruyi config set repo.local "$(realpath ./packages-index)"
+          ruyi version
+          ruyi telemetry consent
 
-          version="$(curl --silent https://api.github.com/repos/ruyisdk/ruyi/releases/latest | \
-            jq --raw-output ".tag_name")"
-          curl -sL -o bin/ruyi "https://github.com/ruyisdk/ruyi/releases/download/${version}/ruyi-${version}.amd64"
-
-          chmod +x ./bin/ruyi
-          ./bin/ruyi config set repo.local "$(realpath ./packages-index)"
-          ./bin/ruyi version
-          ./bin/ruyi telemetry consent
-
-      - name: Test manifests
+      - name: Check formatting of board-image files
         run: |
-          for toml in `find ./packages-index/packages/board-image/ -type f`; do
-
-            echo test $toml
-            cp $toml test.toml
-
-            ./bin/ruyi admin format-manifest test.toml
-            diff -ura $toml test.toml
-
-          done
+          ruyi admin check --check format --repo ./packages-index --only-packages --category-is board-image
 
       - name: Test data structure
         run: |
-          ./bin/ruyi list --name-contains ""
+          ruyi admin check --check parse --repo ./packages-index
 
       - name: Post Install ruyi
         if: ${{ always() && steps.setup.conclusion == 'success' }}
-        run: ./bin/ruyi telemetry upload
+        run: ruyi telemetry upload
