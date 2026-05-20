@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.696 image for Orange Pi RV2 (minimal)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.696"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.696_Orangepirv2_trixie_current_6.18.21_minimal.img.xz"
+size = 401095448
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.696/Armbian_community_26.2.0-trunk.696_Orangepirv2_trixie_current_6.18.21_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "c03b80efef4306802d8ace1680f23f601cf48fad27a71e8cd7eed04947ee890b"
+sha512 = "66189250e692dce2b54c86b52174c07e37b7da1eef914493c8b99013006403608aa84ea2d31b933cae26b68a06ac664ec94644f6e772a8f6ffbf7b9878d9d551"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.696_Orangepirv2_trixie_current_6.18.21_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.696_Orangepirv2_trixie_current_6.18.21_minimal.img"
