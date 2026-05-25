@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.2.0-trunk.732 image for StarFive VisionFive 2 (minimal)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.2.0-trunk.732"
+
+[[distfiles]]
+name = "Armbian_community_26.2.0-trunk.732_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz"
+size = 296930112
+urls = [
+  "https://github.com/armbian/community/releases/download/26.2.0-trunk.732/Armbian_community_26.2.0-trunk.732_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "ab044f391a567a5d80e9af78b05e65fa3e55e0ddf2636d3b0c03d7b0340ab73c"
+sha512 = "319ed7ed0e9131794c7a62b4e33dff90abdda433a10c287812085b71162a6e91f78a2954698e4c2e0cc4f3d01d8d0e4158654c91d1789989c2b2fc5ca19b7806"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.2.0-trunk.732_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.2.0-trunk.732_Visionfive2_trixie_vendor_6.6.20_minimal.img"
