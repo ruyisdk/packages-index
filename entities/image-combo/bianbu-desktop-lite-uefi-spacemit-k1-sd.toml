@@ -1,0 +1,10 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:spacemit-musepipro@sd",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "Bianbu Desktop Lite UEFI for SpacemiT K1/M1"
+package_atoms = ["board-image/bianbu-desktop-lite-uefi-spacemit-k1-sd"]
