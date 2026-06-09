@@ -30,7 +30,7 @@ def _pretend_spacemit_k1(img_paths, blkdev_paths):
 
     msg_load = _m("pretend-load-to-device")
     msg_flash = _m("pretend-flash-to-partition")
-    return [
+    ret = [
         msg_load.format(what="FSBL", img_path=fsbl_path),
         msg_load.format(what="U-Boot", img_path=uboot_path),
         msg_flash.format(img_path=gpt_path, part="gpt"),
@@ -39,9 +39,21 @@ def _pretend_spacemit_k1(img_paths, blkdev_paths):
         msg_flash.format(img_path=env_path, part="env"),
         msg_flash.format(img_path=opensbi_path, part="opensbi"),
         msg_flash.format(img_path=uboot_path, part="uboot"),
+    ]
+
+    if "esp" in img_paths:
+        ret.extend([
+            msg_flash.format(img_path=img_paths["esp"], part="ESP"),
+            msg_flash.format(img_path=img_paths["bootfs_linux"], part="bootfs_linux"),
+            msg_flash.format(img_path=img_paths["rootfs_linux"], part="rootfs_linux"),
+        ])
+
+    ret.extend([
         msg_flash.format(img_path=bootfs_path, part="bootfs"),
         msg_flash.format(img_path=rootfs_path, part="rootfs"),
-    ]
+    ])
+
+    return ret
 
 
 #def _flash_spacemit_k1(img_paths: PartitionMapDecl, _: PartitionMapDecl) -> int:
@@ -61,6 +73,13 @@ def _flash_spacemit_k1(img_paths, blkdev_paths):
     # sudo fastboot flash env env.bin
     # sudo fastboot flash opensbi fw_dynamic.itb
     # sudo fastboot flash uboot u-boot.itb
+    #
+    # # For UEFI image, also
+    # # See https://github.com/ruyisdk/packages-index/issues/197
+    # sudo fastboot flash ESP efi.img
+    # sudo fastboot flash bootfs_linux bootfs_linux.img
+    # sudo fastboot flash rootfs_linux rootfs_linux.ext4
+    #
     # sudo fastboot flash bootfs bootfs.ext4
     # sudo fastboot flash rootfs rootfs.ext4
     #
@@ -112,9 +131,19 @@ def _flash_spacemit_k1(img_paths, blkdev_paths):
         "env": img_paths["env"],
         "opensbi": img_paths["opensbi"],
         "uboot": img_paths["uboot"],
+    }
+
+    if "esp" in img_paths:
+        partitions.update({
+            "ESP": img_paths["esp"],
+            "bootfs_linux": img_paths["bootfs_linux"],
+            "rootfs_linux": img_paths["rootfs_linux"],
+        })
+
+    partitions.update({
         "bootfs": img_paths["bootfs"],
         "rootfs": img_paths["rootfs"],
-    }
+    })
 
     for partition, img_path in partitions.items():
         RUYI.log.I(_m("flashing-partition").format(part=partition))
