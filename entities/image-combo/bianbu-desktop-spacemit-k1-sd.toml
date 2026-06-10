@@ -2,6 +2,7 @@ ruyi-entity = "v0"
 
 related = [
   "device-variant:bananapi-bpi-f3@sd",
+  "device-variant:spacemit-musepipro@sd",
 ]
 unique_among_type_during_traversal = true
 
