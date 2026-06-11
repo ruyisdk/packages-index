@@ -146,3 +146,13 @@ zh_CN = "正在烧写 [yellow]{part}[/] 分区"
 ["plugins/ruyi-device-provision-strategy-spacemit-k1/flashing-partition-failed"]
 en_US = "failed to flash the [yellow]{part}[/] partition"
 zh_CN = "烧写 [yellow]{part}[/] 分区失败"
+
+# ruyi-device-provision-strategy-spacemit-k3
+
+["plugins/ruyi-device-provision-strategy-spacemit-k3/oem-super-speed"]
+en_US = "set USB link to super speed mode"
+zh_CN = "配置 USB 连接到高速模式"
+
+["plugins/ruyi-device-provision-strategy-spacemit-k3/oem-speed-failed"]
+en_US = "failed to set USB link to super speed mode"
+zh_CN = "配置高速模式失败"
