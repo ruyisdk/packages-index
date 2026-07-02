@@ -1,7 +1,7 @@
 format = "v1"
 
 [metadata]
-desc = "Official Bianbu Desktop Lite v2.3.3 for SpacemiT K1, SD image"
+desc = "Official Bianbu Desktop Lite UEFI v2.3.3 for SpacemiT K1, SD image"
 vendor = { name = "SpacemiT", eula = "" }
 upstream_version = "v2.3.3"
 

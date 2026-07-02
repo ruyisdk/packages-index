@@ -1,0 +1,13 @@
+ruyi-entity = "v0"
+
+related = ["arch:riscv64"]
+unique_among_type_during_traversal = true
+
+[uarch]
+id = "spacemit-x100"
+display_name = "SpacemiT X100"
+arch = "riscv64"
+
+[uarch.riscv]
+# See: https://www.spacemit.com/community/document/info?lang=zh&nodepath=hardware/key_stone/k3/k3_docs/k3_ds.md
+isa = "rv64imafdcbvh_sdtrig_smcntrpmf_smepmp_smstateen_sscofpmf_sspm_sstc_svinval_svnapot_svpbmt_svvptc_zicbom_zicbop_zicboz_zicntr_zicond_zicsr_zifencei_zihintntl_zihintpause_zihpm_zimop_zfa_zfbfmin_zfh_zfhmin_zkt_zba_zbb_zbc_zbs_zvbb_zvbc_zvfbfmin_zvfbfwma_zvfh_zvfhmin_zvkng_zvksg_zvkt_zvl32b_zvl64b_zvl128b_zvl256b"
