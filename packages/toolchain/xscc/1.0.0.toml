@@ -22,6 +22,9 @@ sha512 = "fd577287e100b63ea2df413cd2da603fc679e55a52b3c4867c731887bb667db56eb1b0
 host = "x86_64"
 distfiles = ["xscc-v1.0.0-linux-x86_64-riscv64.tar.gz"]
 
+[binary.metadata]
+install_size = 3133086058
+
 [toolchain]
 target = "riscv64-unknown-linux-gnu"
 quirks = []
