@@ -581,3 +581,33 @@ zh_CN = "配置 USB 连接到高速模式"
 ["plugins/ruyi-device-provision-strategy-spacemit-k3/oem-speed-failed"]
 en_US = "failed to set USB link to super speed mode"
 zh_CN = "配置高速模式失败"
+
+# ruyi-device-provision-strategy-zhihe-a210
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/flashing-bootzero-ram"]
+en_US = "flashing bootzero rvbl image into device RAM"
+zh_CN = "正在将 bootzero rvbl 映像写入设备 RAM"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/flashing-bootzero-ram-failed"]
+en_US = "failed to flash bootzero rvbl image into device RAM"
+zh_CN = "将 bootzero rvbl 映像写入设备 RAM 失败"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/rebooting-to-bootzero"]
+en_US = "rebooting device into bootzero rvbl"
+zh_CN = "正在重启设备以进入 bootzero rvbl"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/flashing-spl-ram"]
+en_US = "flashing spl rvbl image into device RAM"
+zh_CN = "正在将 spl rvbl 映像写入设备 RAM"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/flashing-spl-ram-failed"]
+en_US = "failed to flash spl rvbl image into device RAM"
+zh_CN = "将 spl rvbl 映像写入设备 RAM 失败"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/rebooting-to-spl"]
+en_US = "rebooting device into spl rvbl"
+zh_CN = "正在重启设备以进入 spl rvbl"
+
+["plugins/ruyi-device-provision-strategy-zhihe-a210/wait-spl"]
+en_US = "waiting {wait_secs}s for the device to load SPL"
+zh_CN = "正在等待 {wait_secs}s 以便设备载入 SPL"
