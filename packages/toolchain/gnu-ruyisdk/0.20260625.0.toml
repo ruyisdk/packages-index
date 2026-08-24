@@ -28,12 +28,27 @@ size = 349284360
 sha256 = "b5273974f8508485561d9682e64a729576bd8d18a94544c1374ba6eda0af1760"
 sha512 = "683152c5b465e759c620a1fe00d274c70e19e2eeb036c76f9b6f991546d2f9bad2a993bca715c858d1238cf472602746b985d8121bd7647b60d256116d8b1ed3"
 
+[[distfiles]]
+name = "RuyiSDK-20260625-RuyiSDK-Sources-6fdcde8c3e77-riscv64-ruyisdk-linux-gnu.darwin-aarch64.tar.xz"
+size = 324856796
+
+[distfiles.checksums]
+sha256 = "d7f68095c1d26a528215bf6bd44c3630dfd1849c3ee3a942d2c4daece791f942"
+sha512 = "e44e267781cdcc5f186be52bc2d618c76fe4fc765f61613aa3c66257ec612b1e85f5fd2784d31fbe8d16592e05cc43bb96553c18c497dda9400e0194c3bf7f16"
+
 [[binary]]
 host = "aarch64"
 distfiles = ["RuyiSDK-20260625-RuyiSDK-Sources-6fdcde8c3e77-HOST-aarch64-linux-gnu-riscv64-ruyisdk-linux-gnu.tar.xz"]
 
 [binary.metadata]
 install_size = 2305039238
+
+[[binary]]
+host = "darwin-aarch64"
+distfiles = ["RuyiSDK-20260625-RuyiSDK-Sources-6fdcde8c3e77-riscv64-ruyisdk-linux-gnu.darwin-aarch64.tar.xz"]
+
+[binary.metadata]
+install_size = 2282736851
 
 [[binary]]
 host = "riscv64"
