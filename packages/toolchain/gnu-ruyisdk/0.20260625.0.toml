@@ -44,7 +44,7 @@ distfiles = ["RuyiSDK-20260625-RuyiSDK-Sources-6fdcde8c3e77-HOST-aarch64-linux-g
 install_size = 2305039238
 
 [[binary]]
-host = "darwin-aarch64"
+host = "darwin/aarch64"
 distfiles = ["RuyiSDK-20260625-RuyiSDK-Sources-6fdcde8c3e77-riscv64-ruyisdk-linux-gnu.darwin-aarch64.tar.xz"]
 
 [binary.metadata]
