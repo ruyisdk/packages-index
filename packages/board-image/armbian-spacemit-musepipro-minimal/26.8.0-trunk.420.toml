@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian Minimal 26.8.0-trunk.420 image for SpacemiT Muse Pi Pro"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.8.0-trunk.420"
+
+[[distfiles]]
+name = "Armbian_26.8.0-trunk.420_Musepipro_forky_current_6.18.38_minimal.img.xz"
+size = 332078188
+urls = [
+  "https://github.com/armbian/os/releases/download/26.8.0-trunk.420/Armbian_26.8.0-trunk.420_Musepipro_forky_current_6.18.38_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "cd189c64f7aa9040f27d3a4e0881cbb07607c0228d4892d9be3eec54b8eb5355"
+sha512 = "8ff80f07e77c731880dbcff3189cac2fc8ff2a44529de0ad3424ded44beaa690dcc1a66e5025d4d3717606c9ab4df08bdd551c126d228a178850fa5163291ec6"
+
+[blob]
+distfiles = [
+  "Armbian_26.8.0-trunk.420_Musepipro_forky_current_6.18.38_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_26.8.0-trunk.420_Musepipro_forky_current_6.18.38_minimal.img"
