@@ -31,6 +31,13 @@ urls = [
 # Mirrors of third-party software
 
 [[mirrors]]
+id = "armbian-archive"
+urls = [
+  "https://netcup-01.armbian.com/",
+  "https://netcup-03.armbian.com/",
+]
+
+[[mirrors]]
 id = "freebsd-releases"
 urls = [
   "https://mirror.iscas.ac.cn/FreeBSD/releases/",

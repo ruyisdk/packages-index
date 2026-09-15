@@ -9,7 +9,7 @@ upstream_version = "26.11.0-trunk.19"
 name = "Armbian_community_26.11.0-trunk.19_Orangepirv2_trixie_current_6.18.45_minimal.img.xz"
 size = 418910884
 urls = [
-  "https://github.com/armbian/community/releases/download/26.11.0-trunk.19/Armbian_community_26.11.0-trunk.19_Orangepirv2_trixie_current_6.18.45_minimal.img.xz",
+  "mirror://armbian-archive/cache/community/26.11.0-trunk.19/Armbian_community_26.11.0-trunk.19_Orangepirv2_trixie_current_6.18.45_minimal.img.xz",
 ]
 restrict = ["mirror"]
 
