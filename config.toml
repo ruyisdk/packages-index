@@ -72,6 +72,13 @@ urls = [
 ]
 
 [[mirrors]]
+id = "openkylin-cdimage"
+urls = [
+  "https://mirror.sjtu.edu.cn/openkylin-cdimage/",
+  "https://releases.openkylin.top/",
+]
+
+[[mirrors]]
 id = "ubuntu-cdimage"
 urls = [
   "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/",
