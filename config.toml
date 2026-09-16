@@ -40,7 +40,7 @@ urls = [
 [[mirrors]]
 id = "freebsd-releases"
 urls = [
-  "https://mirror.iscas.ac.cn/FreeBSD/releases/",
+  "https://mirror.nju.edu.cn/freebsd/releases/",
   "https://download.freebsd.org/releases/",
   "https://archive.freebsd.org/old-releases/",
 ]
