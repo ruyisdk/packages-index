@@ -84,3 +84,9 @@ urls = [
   "https://mirrors.tuna.tsinghua.edu.cn/ubuntu-cdimage/",
   "https://cdimage.ubuntu.com/",
 ]
+
+[[mirrors]]
+id = "ubuntu-old-releases"
+urls = [
+  "https://old-releases.ubuntu.com/",
+]
