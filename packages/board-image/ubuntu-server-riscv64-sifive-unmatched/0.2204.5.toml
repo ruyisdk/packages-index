@@ -9,7 +9,7 @@ upstream_version = "22.04.5"
 name = "ubuntu-22.04.5-preinstalled-server-riscv64+unmatched.img.xz"
 size = 856038872
 urls = [
-  "mirror://ubuntu-cdimage/releases/22.04/release/ubuntu-22.04.5-preinstalled-server-riscv64+unmatched.img.xz",
+  "mirror://ubuntu-cdimage/ubuntu/releases/22.04/release/ubuntu-22.04.5-preinstalled-server-riscv64+unmatched.img.xz",
 ]
 restrict = ["mirror"]
 
