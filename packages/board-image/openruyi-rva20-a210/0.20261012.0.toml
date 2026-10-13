@@ -1,0 +1,71 @@
+format = "v1"
+
+[metadata]
+desc = "OpenRuyi RVA20 A210 system image"
+vendor = { name = "OpenRuyi", eula = "" }
+upstream_version = "20261012"
+
+[[distfiles]]
+name = "openruyi-rva20-a210.img.zst"
+size = 1663962694
+urls = [
+  "mirror://revyos/extra/images/a210/tmp/openruyi-rva20-a210.img.zst",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "0b4883bb14b31901d54c4955838d3bbe36bc8211d6fd73b9455b0d8f4f27cd56"
+sha512 = "9d6bf429360b35e48a5a9c90fb7b3aa9e09666041c4d37cbbe398e768dd8c61e310f495086a2a30da5c5366b720b0b29a2acfadf2df186bba4bbf6fa0f203ec4"
+
+[[distfiles]]
+name = "melonpi-v2-bootstrap-rvbl.bin"
+size = 20336
+urls = [
+  "mirror://revyos/extra/images/a210/tmp/melonpi-v2/ram/melonpi-v2-bootstrap-rvbl.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "40b284a44dde6da2be108523cbf005454f9859bcf01d122f71a5a3b37a7e248b"
+sha512 = "d93ea12c2862734d5843993f5e702e82a16923ab13e72445de02caee66e1e98e13230b8ad8fb2db21bee9beb840d4bebd3b1f4c3c440dcd3788cf657c5f6b1e3"
+
+[[distfiles]]
+name = "melonpi-v2-coreboot-ram-rvbl.bin"
+size = 1576960
+urls = [
+  "mirror://revyos/extra/images/a210/tmp/melonpi-v2/ram/melonpi-v2-coreboot-ram-rvbl.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "7239a693cde401e490433a0e5413b16a86d8859611652ae702b3c772a099c73c"
+sha512 = "7c56cc7fc57c7ae7737fce53bd907c57976c8b08208665162dcc98299ebe54e94ba1ec0ee0c477b34739a8b0ee548245da5593019e146cbc274d143601e5cfe9"
+
+[[distfiles]]
+name = "melonpi-v2-coreboot-boot0.bin"
+size = 2129920
+urls = [
+  "mirror://revyos/extra/images/a210/tmp/melonpi-v2/emmc/melonpi-v2-coreboot-boot0.bin",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "7d45b90df3c7d16d8e47487d19e4f7d6ea47ebe3670fd3718bce6b4b05e9ba6d"
+sha512 = "ceb41a613c51a57d164ff822bebfa2d16dad3c70952e49e1cdb9ed2102c7eaad103498bc66fc9540a4f101f3486a4b3adb19d830c58a9b14185406d9f14afd0f"
+
+[blob]
+distfiles = [
+  "openruyi-rva20-a210.img.zst",
+  "melonpi-v2-bootstrap-rvbl.bin",
+  "melonpi-v2-coreboot-ram-rvbl.bin",
+  "melonpi-v2-coreboot-boot0.bin",
+]
+
+[provisionable]
+strategy = "a210-coreboot-v1"
+
+[provisionable.partition_map]
+emmc0 = "openruyi-rva20-a210.img"
+emmc0boot0 = "melonpi-v2-coreboot-boot0.bin"
+ram_bootstrap = "melonpi-v2-bootstrap-rvbl.bin"
+ram_coreboot = "melonpi-v2-coreboot-ram-rvbl.bin"

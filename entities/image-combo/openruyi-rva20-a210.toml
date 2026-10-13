@@ -1,0 +1,11 @@
+ruyi-entity = "v0"
+
+related = [
+  "device-variant:zhihe-a210-sodimm@v2",
+  "device-variant:zhihe-a210-sodimm@v3",
+]
+unique_among_type_during_traversal = true
+
+[image-combo]
+display_name = "OpenRuyi RVA20 image for A210"
+package_atoms = ["board-image/openruyi-rva20-a210"]
