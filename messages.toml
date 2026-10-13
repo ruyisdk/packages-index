@@ -611,3 +611,41 @@ zh_CN = "正在重启设备以进入 spl rvbl"
 ["plugins/ruyi-device-provision-strategy-zhihe-a210/wait-spl"]
 en_US = "waiting {wait_secs}s for the device to load SPL"
 zh_CN = "正在等待 {wait_secs}s 以便设备载入 SPL"
+
+# ruyi-device-provision-strategy-a210-coreboot
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/flashing-bootstrap-ram"]
+en_US = "flashing bootstrap rvbl image into device RAM"
+zh_CN = "正在将 bootstrap rvbl 映像写入设备 RAM"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/flashing-bootstrap-ram-failed"]
+en_US = "failed to flash bootstrap rvbl image into device RAM"
+zh_CN = "将 bootstrap rvbl 映像写入设备 RAM 失败"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/rebooting-to-bootstrap"]
+en_US = "rebooting device into bootstrap rvbl"
+zh_CN = "正在重启设备以进入 bootstrap rvbl"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/flashing-coreboot-ram"]
+en_US = "flashing coreboot rvbl image into device RAM"
+zh_CN = "正在将 coreboot rvbl 映像写入设备 RAM"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/flashing-coreboot-ram-failed"]
+en_US = "failed to flash coreboot rvbl image into device RAM"
+zh_CN = "将 coreboot rvbl 映像写入设备 RAM 失败"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/rebooting-to-coreboot"]
+en_US = "rebooting device into coreboot rvbl"
+zh_CN = "正在重启设备以进入 coreboot rvbl"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/prompt-enter-fastboot"]
+en_US = "please select \"USB Fastboot\" on the device (press F9 or use the Boot Manager), then confirm to continue flashing"
+zh_CN = "请在设备上选择“USB Fastboot”（按 F9 或进入 Boot Manager），然后确认以继续刷写"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/resuming-boot"]
+en_US = "exiting fastboot and booting the device"
+zh_CN = "正在退出 fastboot 并启动设备"
+
+["plugins/ruyi-device-provision-strategy-a210-coreboot/resuming-boot-failed"]
+en_US = "failed to exit fastboot, please reset the device manually"
+zh_CN = "退出 fastboot 失败，请手动复位设备"
