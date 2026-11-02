@@ -1,0 +1,21 @@
+[summary]
+e_machines = [62]
+needed = []
+elf_count = 1
+file_count = 1
+excluded_count = 0
+
+[summary.parsed_attrs_rollup]
+62 = {isa_level = "v1", isa_levels = ["v1"]}
+
+[[record]]
+paths = ["wlink-0.1.1-ruyi.20250524+git.217f0e51/bin/wlink"]
+sha256 = "b16c8a123fd689a7d2e4ec05c89f47592ff97e30d15b35fa21a99c12b1a520cc"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = ""
+needed = []
+parsed_attrs = {isa_level = "v1"}
