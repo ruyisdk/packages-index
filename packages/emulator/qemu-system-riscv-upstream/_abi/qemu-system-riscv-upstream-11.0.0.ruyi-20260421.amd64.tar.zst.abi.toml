@@ -1,0 +1,610 @@
+[summary]
+e_machines = [62]
+needed = ["libSDL2-2.0.so.0", "libX11.so.6", "libaio.so.1t64", "libasound.so.2", "libbz2.so.1.0", "libc.so.6", "libcairo.so.2", "libcap-ng.so.0", "libfdt.so.1", "libfuse3.so.3", "libgdk-3.so.0", "libgdk_pixbuf-2.0.so.0", "libgio-2.0.so.0", "libglib-2.0.so.0", "libgmodule-2.0.so.0", "libgobject-2.0.so.0", "libgtk-3.so.0", "libjack.so.0", "libm.so.6", "libncursesw.so.6", "libnuma.so.1", "libpipewire-0.3.so.0", "libpixman-1.so.0", "libpng16.so.16", "libpulse.so.0", "libseccomp.so.2", "libslirp.so.0", "libsnappy.so.1", "libsndio.so.7", "libspice-server.so.1", "libtinfo.so.6", "liburing.so.2", "libusb-1.0.so.0", "libusbredirparser.so.1", "libvte-2.91.so.0", "libz.so.1", "libzstd.so.1"]
+elf_count = 11
+file_count = 23
+excluded_count = 116
+
+[summary.well_known_maxima]
+GLIBC = "2.38"
+ZLIB = "1.2.0"
+
+[summary.parsed_attrs_rollup]
+62 = {isa_level = "v1", isa_levels = ["v1"]}
+
+[[summary.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[summary.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[summary.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.16", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[summary.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[summary.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[summary.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[summary.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[summary.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3", "libnuma_1.6"]
+
+[[summary.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[summary.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[summary.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1", "SLIRP_4.5", "SLIRP_4.7"]
+
+[[summary.version_needs]]
+soname = "libspice-server.so.1"
+versions = ["SPICE_SERVER_0.10.0", "SPICE_SERVER_0.10.1", "SPICE_SERVER_0.10.2", "SPICE_SERVER_0.10.3", "SPICE_SERVER_0.11.2", "SPICE_SERVER_0.12.2", "SPICE_SERVER_0.12.4", "SPICE_SERVER_0.12.5", "SPICE_SERVER_0.14.2", "SPICE_SERVER_0.6.0", "SPICE_SERVER_0.8.1", "SPICE_SERVER_0.8.2", "SPICE_SERVER_0.8.3"]
+
+[[summary.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[summary.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[summary.version_needs]]
+soname = "libusbredirparser.so.1"
+versions = ["USBREDIRPARSER_0.8.0"]
+
+[[summary.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record]]
+paths = ["bin/qemu-edid"]
+sha256 = "09a73dc66fd53f817279f04f7cc44c3150f13b213e2e5ee348dde55b22d1beb4"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libglib-2.0.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-img"]
+sha256 = "2c8611694d8b9a1c697e5943645e16171104ee17ea057e18b95e60625f885649"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libzstd.so.1", "libz.so.1", "libaio.so.1t64", "liburing.so.2", "libglib-2.0.so.0", "libbz2.so.1.0", "libnuma.so.1", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-system-riscv64"]
+sha256 = "829a48de0e823febaa3c683cf2c4d68838c6cedc29f37de43ed1ecd49139af97"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libpixman-1.so.0", "libpng16.so.16", "libz.so.1", "libsnappy.so.1", "libSDL2-2.0.so.0", "libseccomp.so.2", "libfdt.so.1", "libnuma.so.1", "libgio-2.0.so.0", "libgobject-2.0.so.0", "libglib-2.0.so.0", "libzstd.so.1", "libslirp.so.0", "libncursesw.so.6", "libtinfo.so.6", "libgmodule-2.0.so.0", "libgtk-3.so.0", "libgdk-3.so.0", "libcairo.so.2", "libgdk_pixbuf-2.0.so.0", "libvte-2.91.so.0", "libX11.so.6", "libspice-server.so.1", "libusbredirparser.so.1", "libusb-1.0.so.0", "libfuse3.so.3", "libaio.so.1t64", "liburing.so.2", "libbz2.so.1.0", "libasound.so.2", "libpulse.so.0", "libjack.so.0", "libsndio.so.7", "libpipewire-0.3.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3", "libnuma_1.6"]
+
+[[record.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[record.version_needs]]
+soname = "libusbredirparser.so.1"
+versions = ["USBREDIRPARSER_0.8.0"]
+
+[[record.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[record.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1", "SLIRP_4.5", "SLIRP_4.7"]
+
+[[record.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[record.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[record.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[record.version_needs]]
+soname = "libspice-server.so.1"
+versions = ["SPICE_SERVER_0.10.0", "SPICE_SERVER_0.10.1", "SPICE_SERVER_0.10.2", "SPICE_SERVER_0.10.3", "SPICE_SERVER_0.11.2", "SPICE_SERVER_0.12.2", "SPICE_SERVER_0.12.4", "SPICE_SERVER_0.12.5", "SPICE_SERVER_0.14.2", "SPICE_SERVER_0.6.0", "SPICE_SERVER_0.8.1", "SPICE_SERVER_0.8.2", "SPICE_SERVER_0.8.3"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.16", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-system-riscv32"]
+sha256 = "8515cd3587113929933db6b691c90888f59cca10068c5fa5887cfa0cc9a62663"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libpixman-1.so.0", "libpng16.so.16", "libz.so.1", "libsnappy.so.1", "libSDL2-2.0.so.0", "libseccomp.so.2", "libfdt.so.1", "libnuma.so.1", "libgio-2.0.so.0", "libgobject-2.0.so.0", "libglib-2.0.so.0", "libzstd.so.1", "libslirp.so.0", "libncursesw.so.6", "libtinfo.so.6", "libgmodule-2.0.so.0", "libgtk-3.so.0", "libgdk-3.so.0", "libcairo.so.2", "libgdk_pixbuf-2.0.so.0", "libvte-2.91.so.0", "libX11.so.6", "libspice-server.so.1", "libusbredirparser.so.1", "libusb-1.0.so.0", "libfuse3.so.3", "libaio.so.1t64", "liburing.so.2", "libbz2.so.1.0", "libasound.so.2", "libpulse.so.0", "libjack.so.0", "libsndio.so.7", "libpipewire-0.3.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3", "libnuma_1.6"]
+
+[[record.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[record.version_needs]]
+soname = "libusbredirparser.so.1"
+versions = ["USBREDIRPARSER_0.8.0"]
+
+[[record.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[record.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1", "SLIRP_4.5", "SLIRP_4.7"]
+
+[[record.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[record.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[record.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[record.version_needs]]
+soname = "libspice-server.so.1"
+versions = ["SPICE_SERVER_0.10.0", "SPICE_SERVER_0.10.1", "SPICE_SERVER_0.10.2", "SPICE_SERVER_0.10.3", "SPICE_SERVER_0.11.2", "SPICE_SERVER_0.12.2", "SPICE_SERVER_0.12.4", "SPICE_SERVER_0.12.5", "SPICE_SERVER_0.14.2", "SPICE_SERVER_0.6.0", "SPICE_SERVER_0.8.1", "SPICE_SERVER_0.8.2", "SPICE_SERVER_0.8.3"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.16", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-pr-helper"]
+sha256 = "a9eb74195909f704f79713ccc66d4d70e8ca37bd0d8a27ff4ba0acb1ee6554de"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libnuma.so.1", "liburing.so.2", "libglib-2.0.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["libexec/qemu-bridge-helper"]
+sha256 = "c7d077260996169fe6f625c593e672873bd4906b633aefab4be1ffe6fb468b90"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libglib-2.0.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-nbd"]
+sha256 = "d45614764362e0ec71e89f1a2720d781805b2b5554e2565756bbcd12a2a2120d"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libfuse3.so.3", "libzstd.so.1", "libz.so.1", "libaio.so.1t64", "liburing.so.2", "libglib-2.0.so.0", "libbz2.so.1.0", "libnuma.so.1", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-vmsr-helper"]
+sha256 = "d768744d234dc96a906b96a243954f7838b932ff80464225e842c6d1208a890e"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libnuma.so.1", "liburing.so.2", "libglib-2.0.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-io"]
+sha256 = "e16962db9471db3e89ba61346c0d905e180826dd1ca62e5637b0108d0b78258e"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libzstd.so.1", "libz.so.1", "libaio.so.1t64", "liburing.so.2", "libglib-2.0.so.0", "libbz2.so.1.0", "libnuma.so.1", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-ga"]
+sha256 = "e3edd3e7e81f75a55fff135d936119e824f62e5e2319881f66ac988481d35267"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "liburing.so.2", "libglib-2.0.so.0", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-storage-daemon"]
+sha256 = "fc49f8bdae1314fc417ded479436a48eb6790f07342d0387dd26d6222e070a06"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libfuse3.so.3", "libzstd.so.1", "libz.so.1", "libaio.so.1t64", "liburing.so.2", "libglib-2.0.so.0", "libbz2.so.1.0", "libnuma.so.1", "libm.so.6", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1t64"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "liburing.so.2"
+versions = ["LIBURING_2.0", "LIBURING_2.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false

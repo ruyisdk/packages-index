@@ -1,0 +1,563 @@
+[summary]
+e_machines = [62]
+needed = ["libSDL2-2.0.so.0", "libX11.so.6", "libaio.so.1", "libasound.so.2", "libc.so.6", "libcairo.so.2", "libcap-ng.so.0", "libfdt.so.1", "libfuse3.so.3", "libgdk-3.so.0", "libgdk_pixbuf-2.0.so.0", "libgio-2.0.so.0", "libglib-2.0.so.0", "libgmodule-2.0.so.0", "libgobject-2.0.so.0", "libgtk-3.so.0", "libjack.so.0", "libm.so.6", "libncursesw.so.6", "libnuma.so.1", "libpixman-1.so.0", "libpng16.so.16", "libpthread.so.0", "libpulse.so.0", "libseccomp.so.2", "libslirp.so.0", "libtinfo.so.6", "libusb-1.0.so.0", "libusbredirparser.so.1", "libutil.so.1", "libvte-2.91.so.0", "libz.so.1", "libzstd.so.1"]
+elf_count = 11
+file_count = 23
+excluded_count = 93
+
+[summary.well_known_maxima]
+GLIBC = "2.30"
+ZLIB = "1.2.0"
+
+[summary.parsed_attrs_rollup]
+62 = {isa_level = "v1", isa_levels = ["v1"]}
+
+[[summary.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[summary.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[summary.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[summary.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[summary.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[summary.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[summary.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[summary.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3"]
+
+[[summary.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[summary.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[summary.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[summary.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1"]
+
+[[summary.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[summary.version_needs]]
+soname = "libutil.so.1"
+versions = ["GLIBC_2.2.5"]
+
+[[summary.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record]]
+paths = ["libexec/virtfs-proxy-helper"]
+sha256 = "0a948302fed837faa3501cba9b22d58a93ba69414656baa138ad3f1a514ea149"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-pr-helper"]
+sha256 = "106c5255c3446a511719f29a7c091486f1259e5e3fcd64cf2913828393820d31"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-system-riscv64"]
+sha256 = "1089ed9c1449852bc9af721862fa2008d2ce14ea129e2fa88730c7b2dd879f24"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libfdt.so.1", "libpixman-1.so.0", "libpng16.so.16", "libz.so.1", "libSDL2-2.0.so.0", "libseccomp.so.2", "libnuma.so.1", "libgio-2.0.so.0", "libgobject-2.0.so.0", "libglib-2.0.so.0", "libzstd.so.1", "libslirp.so.0", "libncursesw.so.6", "libtinfo.so.6", "libgmodule-2.0.so.0", "libgtk-3.so.0", "libgdk-3.so.0", "libcairo.so.2", "libgdk_pixbuf-2.0.so.0", "libvte-2.91.so.0", "libX11.so.6", "libusbredirparser.so.1", "libusb-1.0.so.0", "libasound.so.2", "libpulse.so.0", "libjack.so.0", "libpthread.so.0", "libm.so.6", "libfuse3.so.3", "libaio.so.1", "libutil.so.1", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libutil.so.1"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[record.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1"]
+
+[[record.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[record.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[record.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-nbd"]
+sha256 = "5b29c004ddaa329d7b8caffde72e1aa516f3bf31bd1e16be66e2c9c54fec1f6c"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libfuse3.so.3", "libpthread.so.0", "libzstd.so.1", "libz.so.1", "libaio.so.1", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-ga"]
+sha256 = "88403449fb31c8001487ee1e42fe83b5b8a5be736a3a7d9d12b0a93aea16f624"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-edid"]
+sha256 = "99831c064e28583de9aefda2f5aa5c110802fa8affde45b67748a3bcfcff899d"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-img"]
+sha256 = "acd69e8d538cc7aa2e6a8871486f34d937a05bb400ec5c2a9ca887a37524a9a1"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libzstd.so.1", "libz.so.1", "libaio.so.1", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["libexec/qemu-bridge-helper"]
+sha256 = "bc0db207f42a9040855dfea6cdd568fb0a61d83bb25739cec31e37661556a56d"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libcap-ng.so.0", "libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-storage-daemon"]
+sha256 = "bde03cf305bd75834770b160a0aac33c83826d1e408dede4c23187f92f95459d"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libfuse3.so.3", "libpthread.so.0", "libzstd.so.1", "libz.so.1", "libaio.so.1", "libutil.so.1", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libutil.so.1"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-system-riscv32"]
+sha256 = "c5617215956379e8eb32fd55780332bb6d1b1fb43af09a83980e10746bd5d4f1"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libfdt.so.1", "libpixman-1.so.0", "libpng16.so.16", "libz.so.1", "libSDL2-2.0.so.0", "libseccomp.so.2", "libnuma.so.1", "libgio-2.0.so.0", "libgobject-2.0.so.0", "libglib-2.0.so.0", "libzstd.so.1", "libslirp.so.0", "libncursesw.so.6", "libtinfo.so.6", "libgmodule-2.0.so.0", "libgtk-3.so.0", "libgdk-3.so.0", "libcairo.so.2", "libgdk_pixbuf-2.0.so.0", "libvte-2.91.so.0", "libX11.so.6", "libusbredirparser.so.1", "libusb-1.0.so.0", "libasound.so.2", "libpulse.so.0", "libjack.so.0", "libpthread.so.0", "libm.so.6", "libfuse3.so.3", "libaio.so.1", "libutil.so.1", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libutil.so.1"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libz.so.1"
+versions = ["ZLIB_1.2.0"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.1", "libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libtinfo.so.6"
+versions = ["NCURSES6_TINFO_5.0.19991023"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5", "GLIBC_2.29"]
+
+[[record.version_needs]]
+soname = "libncursesw.so.6"
+versions = ["NCURSESW6_5.1.20000708", "NCURSESW6_5.3.20021019", "NCURSESW6_5.7.20081102"]
+
+[[record.version_needs]]
+soname = "libfuse3.so.3"
+versions = ["FUSE_3.0"]
+
+[[record.version_needs]]
+soname = "libslirp.so.0"
+versions = ["SLIRP_4.0", "SLIRP_4.1"]
+
+[[record.version_needs]]
+soname = "libpulse.so.0"
+versions = ["PULSE_0"]
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libasound.so.2"
+versions = ["ALSA_0.9", "ALSA_0.9.0rc4"]
+
+[[record.version_needs]]
+soname = "libpng16.so.16"
+versions = ["PNG16_0"]
+
+[[record.version_needs]]
+soname = "libfdt.so.1"
+versions = ["LIBFDT_1.2"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.12", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.6", "GLIBC_2.7", "GLIBC_2.8", "GLIBC_2.9"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
+
+[[record]]
+paths = ["bin/qemu-io"]
+sha256 = "e3ee58d34a575fced69776aecc7eb3ac774419895acca11f7079e13bb470aee7"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib64/ld-linux-x86-64.so.2"
+soname = ""
+needed = ["libnuma.so.1", "libglib-2.0.so.0", "libm.so.6", "libzstd.so.1", "libz.so.1", "libaio.so.1", "libpthread.so.0", "libc.so.6"]
+parsed_attrs = {isa_level = "v1"}
+
+[[record.version_needs]]
+soname = "libaio.so.1"
+versions = ["LIBAIO_0.1", "LIBAIO_0.4"]
+
+[[record.version_needs]]
+soname = "libnuma.so.1"
+versions = ["libnuma_1.2", "libnuma_1.3"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.2.5"]
+
+[[record.version_needs]]
+soname = "libpthread.so.0"
+versions = ["GLIBC_2.12", "GLIBC_2.2.5", "GLIBC_2.3.2", "GLIBC_2.3.3", "GLIBC_2.3.4"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.10", "GLIBC_2.11", "GLIBC_2.14", "GLIBC_2.17", "GLIBC_2.2.5", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.28", "GLIBC_2.3", "GLIBC_2.3.2", "GLIBC_2.3.4", "GLIBC_2.30", "GLIBC_2.4", "GLIBC_2.7", "GLIBC_2.9"]
+
+[[record.gnu_properties]]
+pr_type = 3221225474
+data_hex = "03000000"
+truncated = false
