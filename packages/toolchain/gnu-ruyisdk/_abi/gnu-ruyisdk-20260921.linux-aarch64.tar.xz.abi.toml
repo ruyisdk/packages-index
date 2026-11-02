@@ -1,0 +1,976 @@
+[summary]
+e_machines = [183]
+needed = ["ld-linux-aarch64.so.1", "libc.so.6", "libgcc_s.so.1", "libm.so.6", "libstdc++.so.6"]
+elf_count = 43
+file_count = 2178
+excluded_count = 5478
+
+[summary.well_known_maxima]
+CXXABI = "1.3.9"
+GCC = "3.0"
+GLIBC = "2.38"
+GLIBCXX = "3.4.21"
+
+[summary.parsed_attrs_rollup]
+183 = {bti = false, pac = false}
+
+[[summary.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[summary.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[summary.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[summary.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[summary.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4", "GLIBCXX_3.4.20", "GLIBCXX_3.4.21", "GLIBCXX_3.4.9"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-size"]
+sha256 = "04fdf2de6476848cc8851a7b72eae89b867811bab14a95dfceefe04d332e1047"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/lto1"]
+sha256 = "06292922664cc457e73c3eda135b669a8ba7302dcb0033f617bfd8aff5eb74c8"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-c++"]
+sha256 = "18d703f98f98011c423973fe86936786cc1bef8c8fc7e8a101794f63d8a8fab9"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/install-tools/fixincl"]
+sha256 = "1c2bc4ee540fb93f94a5244e27f278cd5048cff8ed1c8e4acc9067454b54a394"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-elfedit"]
+sha256 = "212df5ae3f8ebbc6d77294d8099d0a823222fb06b4867bb21dd9751ad7d7a6d3"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-objdump"]
+sha256 = "271f9a9f3cb7a0c30dde99b1b470e3b545f738f1db7df1bb404ce4753ee6e143"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-strip"]
+sha256 = "2a5e88540841931c6d912650e749455959d0661ae8dd4aeebf75e734f9959dfe"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["lib/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/libcc1plugin.so.0.0.0"]
+sha256 = "2b02dd58c76356fee21ee9e49da6728c4f15b1d1baf4169d157308b856130fbb"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcc1plugin.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-aarch64.so.1", "libgcc_s.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.38"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-readelf"]
+sha256 = "2ed60b5d11fe7bfe785c1b9344d1fdd42316ebc8e0ac335314df9c6d4757c927"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ar"]
+sha256 = "4e5311d1ec012d73d84568824a0531feb607605c753b1326a72f7c92b56c8f5f"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov-dump"]
+sha256 = "503cf5d98d71569766bb003d3852f229f1ab56e5c81ec0d3937791f41432a0b7"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/lto-wrapper"]
+sha256 = "55f3a29b33cf05a1b136c9b2c7c86e7a166248c62df19532f209bde91c98c492"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-ar"]
+sha256 = "5bafd7fd1e2271529f353f0605f6ae76a0aab88aeb7b0dcd0673559540745609"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-lto-dump"]
+sha256 = "5e5e738e658cbbfad49a3af3c357fb3be666ff3ad774a959513aa4b3a8d235f1"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1plus"]
+sha256 = "63b06f4f479262820f5225fa505085e64479cdef1c0807fbb8211da42cfc0676"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-nm"]
+sha256 = "7563cc6b9c6b603854e2e08ff9c9342d67e48fd7acda9c8bd98358ccc663058a"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gdb"]
+sha256 = "75f8cf5a3da51b666e62b6a19fcfcf6d7db5b11effce16079e23854a2ff98345"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = false
+soname = ""
+needed = []
+parsed_attrs = {bti = false, pac = false}
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/liblto_plugin.so"]
+sha256 = "77c2590c911b6eddfccd41d14e98112285ea97ec3a0bd3a83c23571800d988db"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "liblto_plugin.so"
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/collect2"]
+sha256 = "7ff39be8a4a3cdd88e383f3d53143dc886c2f4b46aa6eca78f6ee336c0ee2046"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1"]
+sha256 = "81941e89750f1572a98e01ed245d43378ead8c030349d4c9170a175c01606ab1"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ld"]
+sha256 = "82cf781d3b5a6d995099b848720a28cbe635671e5ec706b9649ece31f814f289"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ranlib"]
+sha256 = "8560cc835f0defb58f38cd45c8d60b7b6fc934a47fe2fc46f9e80aa9173c3509"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-strings"]
+sha256 = "8fc01da737ba2862177f4348c2f71b1f286f260636a91321f738074d3d12f151"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1obj"]
+sha256 = "9ab99f12844e12112a094e8d54f48b61e8e953f70bd5e8623b32a5f236d8873f"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-objcopy"]
+sha256 = "a5504c5fb61f86dbeb4e084e16de8d95d73dac15e95eb386a303845f4f59b5c3"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov"]
+sha256 = "a8e0302c5b4bd0cfac15083e3704f0ca329a22ea9561854473d22d9d3d052f5a"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-as"]
+sha256 = "aca18cbba8c1ac86f49ac51fcdfefd216d7f223f0bb3813300e9f3d378e7a88d"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-cpp"]
+sha256 = "cdcaf41749817c6c66bc376ac711f0cfcba5db3edcfb9ee712356bd07b911565"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/f951"]
+sha256 = "cdf51c3b93f0cb9155c1aa5033adc78173c03c4f19bc1dce595e27011ea11d13"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["lib/libcc1.so.0.0.0"]
+sha256 = "d27ca1817d8d9218e5c29e1f72605dc67478a7cf6bf400155f4310dd50bf7610"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcc1.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-aarch64.so.1", "libgcc_s.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4", "GLIBCXX_3.4.20", "GLIBCXX_3.4.21", "GLIBCXX_3.4.9"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1objplus"]
+sha256 = "d3587fbae4b737392bb9606f1c211fc19a6b387f22f9892540ecea354cf48ab5"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["lib/bfd-plugins/libdep.so"]
+sha256 = "da182d648b3ac094f92ead361e1e1cab609468a58afa42887899effbe93474f7"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libdep.so"
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/g++-mapper-server"]
+sha256 = "da5b60c2a00196ee2253ed280bc76638525f22aaac870339e9b6e634889cd258"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-addr2line"]
+sha256 = "dd599c9a227bc1c90fbc83864ec5dc142514773bb63f6890748ddc34398d2969"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov-tool"]
+sha256 = "de2f1b7459ac864df33e9d618a52fffbc6429f923c7588ced49c14c9403d0b3a"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["lib/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/libcp1plugin.so.0.0.0"]
+sha256 = "e66ef4fefd4cc3a37fbd7dfe0ef628ffbd9d95e037256de32e8b4e8fb748da1d"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcp1plugin.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-aarch64.so.1", "libgcc_s.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.38"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-nm"]
+sha256 = "e6bc833c512de88a55463eeb769915c0c6c99755a34b16ed04e93c479fcee137"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc"]
+sha256 = "e7e300ab002a3dd43dca1144d867b4b72ad7ec90d0b4c2b76bd253d965c2cc8c"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gprof"]
+sha256 = "e7ffe6f3acd5dded2be7b95df8396deea120812ebb5f7156c42c8498344a66e6"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/gengtype"]
+sha256 = "e8ab507a6b86cd6f730e6e99fedbcde2116003b3d5e0faf43795ead2006037b5"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-c++filt"]
+sha256 = "f4ddcfd575826c212a0d4a42b03e9db44a0c2a1f3eb164cdfd154841e0f8fcc5"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gfortran"]
+sha256 = "f7ad5bf9567054692bc4e9e95d473b6cdfa32b43f33b70c8d22e1b9f0b7a3611"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.25", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-ranlib"]
+sha256 = "fd09730b9eef0d104a6d0a54ac8e01f206c513ddc9484a9fc0fa4e3763c24fff"
+e_machine = 183
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-aarch64.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-aarch64.so.1"]
+parsed_attrs = {bti = false, pac = false}
+
+[[record.version_needs]]
+soname = "ld-linux-aarch64.so.1"
+versions = ["GLIBC_2.17"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.17", "GLIBC_2.33", "GLIBC_2.34"]

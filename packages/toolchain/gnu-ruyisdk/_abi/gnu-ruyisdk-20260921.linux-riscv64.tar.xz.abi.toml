@@ -1,0 +1,1211 @@
+[summary]
+e_machines = [243]
+needed = ["ld-linux-riscv64-lp64d.so.1", "libc.so.6", "libgcc_s.so.1", "libm.so.6", "libstdc++.so.6"]
+elf_count = 43
+file_count = 2178
+excluded_count = 5478
+
+[summary.well_known_maxima]
+CXXABI = "1.3.9"
+GCC = "3.0"
+GLIBC = "2.38"
+GLIBCXX = "3.4.21"
+
+[summary.parsed_attrs_rollup]
+243 = {isa_strings = ["rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0"]}
+
+[[summary.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[summary.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[summary.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[summary.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[summary.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4", "GLIBCXX_3.4.20", "GLIBCXX_3.4.21", "GLIBCXX_3.4.9"]
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/f951"]
+sha256 = "13c94a7192bfd0221844f62e39122c5947de58079efe5b37aa80788009365658"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc"]
+sha256 = "1af1d0b70ef9bdad734cc3f0f38e407537dcf6c18df80e90640b3286fc50d6ca"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-ar"]
+sha256 = "28cd9c382a2a285472851e42b766aeb26bf59468602f5e4bb980092c515460e1"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-nm"]
+sha256 = "2d25ba1ae3f87d58c2f590a523efebb8c1aaeb792300b2b57b2872d8c3fa46ae"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["lib/libcc1.so.0.0.0"]
+sha256 = "2ed7b851d8f3fe14126ed688c3de9dd8cbef96ce268b0c3ed2d25b7d5c2de283"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcc1.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1", "libgcc_s.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4", "GLIBCXX_3.4.20", "GLIBCXX_3.4.21", "GLIBCXX_3.4.9"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov-dump"]
+sha256 = "33c747ee90625d43d453a1e142f07f9e86aa96b61a588c39c2eff1e353489b47"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-c++filt"]
+sha256 = "36a935c0e5f00bc944a319318309f5233245cbd19a167b491b0f8e83d6331340"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-objdump"]
+sha256 = "37079b6753ef1d21f8e41a1583843c6c427ce0f121429dc87db1cc9087c0a38e"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1plus"]
+sha256 = "375dc49079eb38ba719bec1e97f9cfcd30fedb11584fa0e9a1d907fcc204903f"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-readelf"]
+sha256 = "4a8150cdccf34475490f14732925873039f380a6cab4c3fc529d4d94892905bb"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1obj"]
+sha256 = "4de3e7b11c7928bd022765b5b806314fd0b8aa2123103e3f04c3126cdfd61bfb"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-addr2line"]
+sha256 = "597c27e9ef1deb312b54f691a5f5c083a34ce161b8a145deabb68fef45ef1555"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gdb"]
+sha256 = "5f2796815e507215e54a4db5104cc31a9d9ddd559c79e3d57c4763fde67550a8"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = false
+soname = ""
+needed = []
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-as"]
+sha256 = "6042665e84709253ead400af0fa6eb1cabafb64b4a56e0fa11f8f4c6e684afce"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ar"]
+sha256 = "60b27332d5234d6e49494d1de522f33aefb05755a8afcfd938c0decb5dff9950"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov"]
+sha256 = "67f762ad5914afc5f05a46a765f92e5f62a719b6a621ee30933d05de91d6a109"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-objcopy"]
+sha256 = "68a526f0411c96eca23b89fe08a623b659c1603f97cda0d71158d8e069c6fa5f"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ranlib"]
+sha256 = "69cc29fa4aae4165b726cbb898ea9dfdce45ec26721b976ba8a42d603e3a1bfc"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-c++"]
+sha256 = "6ba6feaeb4fd2d205a4f700566687f05cc73e62d59db9a55f050b70fd82d1277"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/g++-mapper-server"]
+sha256 = "6d4d805800e64853da511c246914a23b78ba6b9a92900bf6840581971894f4fb"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/collect2"]
+sha256 = "7163083fa5e3c805b8642583d437d9cd61470f4deab720fceb6d5d3a2e43d00f"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1"]
+sha256 = "720cec5b8c851e783b97951642c6fccd06947f61429d80b9e109a0dca0b326fb"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-size"]
+sha256 = "754287b0cc34f310741764657467ad82faa1c4636ceafbb469d7b86088cb2e71"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/liblto_plugin.so"]
+sha256 = "7ecf7c093d87888acac38c19529a4caeae097045975f684f24feeed5dd34f22b"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "liblto_plugin.so"
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-strings"]
+sha256 = "829a20b120e5006d776f3ac6da1a4032ff1e84d149e8c3a35a2ec93d4b8117cc"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-cpp"]
+sha256 = "8328c48ee75e401c1f2281110e77fe5b9f3fe41c6ae5dd6ef52e268c360a017a"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gprof"]
+sha256 = "873e2b7316cba379e200cfbdaa33b7656188fba9ed53566ecf3d50bc04959059"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-elfedit"]
+sha256 = "890d343f2714ea0f2c4e08ea04da1d5486a8ef4a51ecf5f3b171b7c5c40bb0e5"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/gengtype"]
+sha256 = "8da88b34978ca04da6ae305e47308c73e2b9add6d70bf30167db593ded4648d4"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-strip"]
+sha256 = "924f0ceacd57e5a965555df5b44a06663de2ccebc381b22a252aed0155b3e056"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/cc1objplus"]
+sha256 = "9fed6b74b56d22cade54fe32fc849b4cb62bbad8fed4dc5a7bba9192a3a28539"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-ld"]
+sha256 = "a012c4357659ab36bad10828c48fc141a8c6c6d755c42fd4f938ca110508f748"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["lib/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/libcp1plugin.so.0.0.0"]
+sha256 = "a07d85b9dabd2d81ba6481e7455c7e271a06b282678be3027b29fc91f468d506"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcp1plugin.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1", "libgcc_s.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.38"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/install-tools/fixincl"]
+sha256 = "af1bd991ac4baafc89d1a209db0abc3d6be2515ff6e7a2ace5ab382ffce3951b"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-lto-dump"]
+sha256 = "b63194ae49df55925ec45d0bb53834b5b63d6c6a5b9d735533c10656a9f7ba07"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-nm"]
+sha256 = "baea043371d18454791cf57faf8f4574c58d34dc40a17264d886a72fca4882d6"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/lto1"]
+sha256 = "bba55a690b1e3fccefc0238882b229aab93380a0f19397ab675d5836b5d6aa45"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["libexec/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/lto-wrapper"]
+sha256 = "c9bc4f771c9fd528186c12f5d90a729808fd905e3cc6bb1f2e9cafb75de1b66a"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["lib/bfd-plugins/libdep.so"]
+sha256 = "d0aacee1e40fef35cf188a900953c51fab1817b7ece567d1fa0501f731a55fd5"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libdep.so"
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["lib/gcc/riscv64-ruyisdk-linux-gnu/16.2.1/plugin/libcc1plugin.so.0.0.0"]
+sha256 = "d1cddf2e0115b820a8fdcbb995ad762807041e46deb27655b5c064d790d45ce4"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = "libcc1plugin.so.0"
+needed = ["libstdc++.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1", "libgcc_s.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libgcc_s.so.1"
+versions = ["GCC_3.0"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.38"]
+
+[[record.version_needs]]
+soname = "libstdc++.so.6"
+versions = ["CXXABI_1.3", "CXXABI_1.3.8", "CXXABI_1.3.9", "GLIBCXX_3.4"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcov-tool"]
+sha256 = "d9ba72b42670edd4a8bc93441af5323c4331abdbf3f037e1b7e0f5b78484b9a4"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gfortran"]
+sha256 = "e80d5f986fed4eba00f89f37d2d6045aa3fadab79a5ce9a9d899804dc8b74b3e"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libm.so.6", "libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "libm.so.6"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.32", "GLIBC_2.33", "GLIBC_2.34", "GLIBC_2.35", "GLIBC_2.36", "GLIBC_2.38"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014c00000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c3170300008010a0b"
+truncated = false
+
+[[record]]
+paths = ["bin/riscv64-ruyisdk-linux-gnu-gcc-ranlib"]
+sha256 = "fa24ff0015c0192749f6920643e7295f1fa77c60914d3fabf6dddf12bb3d1b0e"
+e_machine = 243
+elf_class = 64
+endianness = "little"
+elf_type = "exec"
+is_dynamic = true
+interpreter = "/lib/ld-linux-riscv64-lp64d.so.1"
+soname = ""
+needed = ["libc.so.6", "ld-linux-riscv64-lp64d.so.1"]
+parsed_attrs = {isa = "rv64i2p1_m2p0_a2p1_f2p2_d2p2_c2p0_zicsr2p0_zifencei2p0_zmmul1p0", stack_align = 16}
+
+[[record.version_needs]]
+soname = "ld-linux-riscv64-lp64d.so.1"
+versions = ["GLIBC_2.27"]
+
+[[record.version_needs]]
+soname = "libc.so.6"
+versions = ["GLIBC_2.27", "GLIBC_2.33", "GLIBC_2.34"]
+
+[[record.elf_attributes]]
+vendor = "riscv"
+data_hex = "014800000004100572763634693270315f6d3270305f613270315f663270325f643270325f633270305f7a696373723270305f7a6966656e6365693270305f7a6d6d756c31703000"
+truncated = false
