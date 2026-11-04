@@ -46,4 +46,5 @@ jobs:
 
       - name: Post Install ruyi
         if: ${{ always() && steps.setup.conclusion == 'success' }}
+        continue-on-error: true
         run: ruyi telemetry upload
