@@ -8,7 +8,7 @@ vendor = { name = "Canaan", eula = "" }
 name = "canmv_debian_sdcard_sdk_1.3.img.gz"
 size = 219982403
 urls = [
-  "https://kendryte-download.canaan-creative.com/developer/k230/canmv_debian_sdcard_sdk_1.3.img.gz",
+  "https://download.kendryte.com/developer/k230/canmv_debian_sdcard_sdk_1.3.img.gz",
 ]
 restrict = ["mirror"]
 
