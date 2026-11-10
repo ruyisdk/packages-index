@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Official OpenBSD 8.0 riscv64 live image"
+vendor = { name = "OpenBSD", eula = "" }
+upstream_version = "8.0"
+
+[[distfiles]]
+name = "install80.img"
+size = 528482304
+urls = [
+  "mirror://openbsd/8.0/riscv64/install80.img",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "9965ba533e1d1a4f6204752518480f0e21346b7a3a83a5bf24efc6033fa3e72f"
+sha512 = "b48db49a8dc86d541b3e9d1a40314125a98fc9ef9cf2582e19e684ac629d631a93c6b343cc1edf1465cb1376bf8420a85eac94d1e52ea292267540130e4f7896"
+
+[blob]
+distfiles = [
+  "install80.img",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+live = "install80.img"
