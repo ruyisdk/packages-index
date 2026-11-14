@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian Minimal 26.11.0-trunk.131 image for SpacemiT Muse Pi Pro"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.11.0-trunk.131"
+
+[[distfiles]]
+name = "Armbian_26.11.0-trunk.131_Musepipro_trixie_current_6.18.63_minimal.img.xz"
+size = 326819140
+urls = [
+  "https://github.com/armbian/ci/releases/download/26.11.0-trunk.131/Armbian_26.11.0-trunk.131_Musepipro_trixie_current_6.18.63_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "681509fb03a9d4fdbe6964d3c506c206c56c7518248959bd9f33f2d2baa4ddbe"
+sha512 = "625588097bbbaa83bf5a752a221ca2663c89dfdd990b0840593f7a509c6f9646cb2b6567960c928b18015d21a9c394ab437151544d83e3e82fc71fe20c49627f"
+
+[blob]
+distfiles = [
+  "Armbian_26.11.0-trunk.131_Musepipro_trixie_current_6.18.63_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_26.11.0-trunk.131_Musepipro_trixie_current_6.18.63_minimal.img"
