@@ -1,0 +1,43 @@
+[summary]
+e_machines = [62]
+needed = []
+elf_count = 2
+file_count = 2
+excluded_count = 0
+
+[summary.parsed_attrs_rollup]
+62 = {isa_level = "v1", isa_levels = ["v1"]}
+
+[[record]]
+paths = ["qemu-user-riscv-rvp-11.1.0.ruyi-20261027/bin/qemu-riscv64"]
+sha256 = "5413c9deae8f74757037e76d63af7cb9c7b36945db082e6deebc56ab75a39929"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = ""
+needed = []
+parsed_attrs = {isa_level = "v1"}
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
+
+[[record]]
+paths = ["qemu-user-riscv-rvp-11.1.0.ruyi-20261027/bin/qemu-riscv32"]
+sha256 = "e956a953a32cbf65e834d9aeee2f071db4339591b8a9b510be2804bec72b2277"
+e_machine = 62
+elf_class = 64
+endianness = "little"
+elf_type = "dyn"
+is_dynamic = true
+soname = ""
+needed = []
+parsed_attrs = {isa_level = "v1"}
+
+[[record.gnu_properties]]
+pr_type = 3221258242
+data_hex = "01000000"
+truncated = false
