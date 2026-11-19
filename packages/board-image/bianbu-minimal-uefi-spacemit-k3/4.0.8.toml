@@ -1,0 +1,41 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Minimal UEFI v4.0.8 for SpacemiT K3"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "v4.0.8"
+
+[[distfiles]]
+name = "Bianbu-Minimal-UEFI-K3-v4.0.8-20261016124601.tar.gz"
+size = 473875853
+urls = [
+  "https://archive.spacemit.com/image/k3/version/bianbu/v4.0.8/Bianbu-Minimal-UEFI-K3-v4.0.8-20261016124601.tar.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "0163b5bcbff64135316063890057ace40b72a0c4ce3c3e541bdefd7369bbc88a"
+sha512 = "c2d9d3a27a7953604c98fdd9534f4514763beb595b826e7e717a8aa60ab10eef977a44bfe67116abf7b0a3230486b626b4770fa32a773ad5378cdebf710e29f6"
+
+[blob]
+distfiles = [
+  "Bianbu-Minimal-UEFI-K3-v4.0.8-20261016124601.tar.gz",
+]
+
+[provisionable]
+strategy = "spacemit-k3-v1"
+
+[provisionable.partition_map]
+bootfs = "bootfs.ext4"
+bootinfo = "factory/bootinfo_block.bin"
+bootinfo_mtd = "factory/bootinfo_spinor.bin"
+env = "env.bin"
+esos = "esos.itb"
+esp = "esp.vfat"
+fsbl = "factory/FSBL.bin"
+gpt = "partition_universal.json"
+mtd = "partition_4M.json"
+opensbi = "fw_dynamic.itb"
+rootfs = "rootfs.ext4"
+uboot = "edk2.itb"
+uboot_stage = "u-boot.itb"

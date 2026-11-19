@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Desktop LXQt v4.0.8 for SpacemiT K3, SD image"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "v4.0.8"
+
+[[distfiles]]
+name = "Bianbu-LXQt-K3-sdcard-v4.0.8-20261016130312.img.gz"
+size = 2377459473
+urls = [
+  "https://archive.spacemit.com/image/k3/version/bianbu/v4.0.8/Bianbu-LXQt-K3-sdcard-v4.0.8-20261016130312.img.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "ed489dedc4447613fa923c10d3c4f829187f55226f2c66d4fe60fb57c54089f8"
+sha512 = "eed342d7d8bacfec49453af92fcf22f3c13553f76fe396e9173e1132f799c3d94d76926d096f3495f278d9503443aee562e9ba9f3bef93a1cdca24b28b9fff5f"
+
+[blob]
+distfiles = [
+  "Bianbu-LXQt-K3-sdcard-v4.0.8-20261016130312.img.gz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Bianbu-LXQt-K3-sdcard-v4.0.8-20260521185240.img"
