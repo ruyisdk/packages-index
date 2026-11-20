@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Minimal v4.0.8 for SpacemiT K3, SD image"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "v4.0.8"
+
+[[distfiles]]
+name = "Bianbu-Minimal-K3-sdcard-v4.0.8-20261016124550.img.gz"
+size = 431394157
+urls = [
+  "https://archive.spacemit.com/image/k3/version/bianbu/v4.0.8/Bianbu-Minimal-K3-sdcard-v4.0.8-20261016124550.img.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "df0509626b6ab3f29e2c57f1ac6cf3624e26666fd3a4a4077577f59c8ce6ad86"
+sha512 = "2ed84a76610fab3e813d66a724072f448fa284bcf78226b61e9bb4ac6756c6b23a68ad4b8112e33217da0801fcaa9f58a58c0ebae77b0d5184a555a232870ef5"
+
+[blob]
+distfiles = [
+  "Bianbu-Minimal-K3-sdcard-v4.0.8-20261016124550.img.gz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Bianbu-Minimal-K3-sdcard-v4.0.8-20260521183730.img"
