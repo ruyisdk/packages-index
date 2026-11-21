@@ -1,0 +1,37 @@
+format = "v1"
+
+[metadata]
+desc = "Zhihe Computing A210 EVB Official buildroot SDK v2.9.0"
+vendor = { name = "Zhihe", eula = "" }
+upstream_version = "v2.9.0"
+
+[[distfiles]]
+name = "br2image-v2.9.0-a210_evb.tar.gz"
+size = 188113587
+urls = [
+  "https://developer.zhcomputing.com/downloads/release/zhihesdk/v2.9.0/br2image-v2.9.0-a210_evb.tar.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "3b1a3a0f125091d95214b6afbeeba43a047fb3cc36e6ed7d1d6e0b5dfde09f7c"
+sha512 = "1b095f1892bdb064fc5d2b7d3c746aac2a96ee17a10233a3eeb03e20db4c611e13316f8c8a300d31821ed1eb4d1d612dd99056e44ea8ae2d61b2f8eeef1484ba"
+
+[blob]
+distfiles = [
+  "br2image-v2.9.0-a210_evb.tar.gz",
+]
+
+[provisionable]
+strategy = "zhihe-a210-v1"
+
+[provisionable.partition_map]
+app = "emmc-app_a.img"
+boot = "emmc-boot_a.img"
+bootzero = "bootzero-rvbl.bin"
+data = "emmc-data.img"
+gpt = "emmc-gpt_primary.img"
+mmc0boot0 = "emmc_boot-loader.img"
+spl = "spl-with-fit-rvbl.bin"
+system = "emmc-system_a.img"
+uboot_env = "emmc-uboot_env.img"

@@ -1,0 +1,37 @@
+format = "v1"
+
+[metadata]
+desc = "Zhihe Computing A210 EVB Official Debian Dekstop Image v2.9.0"
+vendor = { name = "Zhihe", eula = "" }
+upstream_version = "v2.9.0"
+
+[[distfiles]]
+name = "diskimage_v2.9.0_a210-evb-release_desktop_debian_public.tar.gz"
+size = 774269211
+urls = [
+  "https://developer.zhcomputing.com/downloads/release/zhihesdk/v2.9.0/diskimage_v2.9.0_a210-evb-release_desktop_debian_public.tar.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "4c4ce855b758500d748f7786f5c08e9b70958321b2ba882d3b2434d08dc764ac"
+sha512 = "102b77460985de12e54a4f39256fd46f959e8acde86e31b5becc41e9e58329cdf0f5a58c2a97ee659a02ae803616138d268b2873134fddc9dde08c178494f01e"
+
+[blob]
+distfiles = [
+  "diskimage_v2.9.0_a210-evb-release_desktop_debian_public.tar.gz",
+]
+
+[provisionable]
+strategy = "zhihe-a210-v1"
+
+[provisionable.partition_map]
+app = "emmc-app_a.img"
+boot = "emmc-boot_a.img"
+bootzero = "bootzero-rvbl.bin"
+data = "emmc-data.img"
+gpt = "emmc-gpt_primary.img"
+mmc0boot0 = "emmc_boot-loader.img"
+spl = "spl-with-fit-rvbl.bin"
+system = "emmc-system_a.img"
+uboot_env = "emmc-uboot_env.img"
