@@ -1,0 +1,29 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Desktop Lite UEFI v2.3.5 for SpacemiT K1, SD image"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "v2.3.5"
+
+[[distfiles]]
+name = "Bianbu-LXQt-K1-sdcard-V2.3.5-UEFI-20260815172052.img.zip"
+size = 2587486396
+urls = [
+  "https://archive.spacemit.com/image/k1/version/bianbu/v2.3.5/Bianbu-LXQt-K1-sdcard-V2.3.5-UEFI-20260815172052.img.zip",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "c43866d61547453112f23839de9cd0389fdee2b55b28cbf4333fb6e57c219ab3"
+sha512 = "4d76cd8dc6c57c3dcd0e1386858750ec8c8620c0c887d7159c7818ab395df72434848bbde7329d5da6338af8215101d8ba4ad59496f54264bc3f51e8b56823ea"
+
+[blob]
+distfiles = [
+  "Bianbu-LXQt-K1-sdcard-V2.3.5-UEFI-20260815172052.img.zip",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Bianbu-LXQt-K1-sdcard-V2.3.5-UEFI-20260815172052.img"
