@@ -1,0 +1,23 @@
+format = "v1"
+
+[metadata]
+desc = "A demo of CyberCAM SDK at RISC-V Summit China 2026, presented by RuyiSDK"
+vendor = { name = "RuyiSDK", eula = "" }
+
+[[distfiles]]
+name = "cyber-energy.tar.gz"
+size = 466853
+urls = [
+  "mirror://ruyi-dist/demos/cyber-energy.tar.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "3397198502ffe4dc059355812301db762f9801bb8fc935d4fd2b921cd41739d6"
+sha512 = "eda33d2c749acc9ead803cf31834f9ed938d869792f88d8791f4dd6e24a021ba2603666bbe04e77088f2e99ef0338606b170dab66442f1da58f04024dc187c4f"
+
+[source]
+distfiles = ["cyber-energy.tar.gz"]
+
+[source.metadata]
+install_size = 774248
