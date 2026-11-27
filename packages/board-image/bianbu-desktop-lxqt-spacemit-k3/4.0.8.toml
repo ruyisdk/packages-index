@@ -1,0 +1,38 @@
+format = "v1"
+
+[metadata]
+desc = "Official Bianbu Desktop LXQt v4.0.8 for SpacemiT K3"
+vendor = { name = "SpacemiT", eula = "" }
+upstream_version = "v4.0.8"
+
+[[distfiles]]
+name = "Bianbu-LXQt-K3-v4.0.8-20261016130312.tar.gz"
+size = 2377571251
+urls = [
+  "https://archive.spacemit.com/image/k3/version/bianbu/v4.0.8/Bianbu-LXQt-K3-v4.0.8-20261016130312.tar.gz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "bfeaa4ab473141bfd6368ac5bba2a2e3b870ffdfa5bd979a79c208b70765b8c6"
+sha512 = "5963551a5674ef809623d550af7150b4706f4e7de3de78d255df080b2c5454450186e726f59a47d94dad3fe4b6d8d76b2b0cbc8266fb6ec4a07ca445bf15ebe1"
+
+[blob]
+distfiles = [
+  "Bianbu-LXQt-K3-v4.0.8-20261016130312.tar.gz",
+]
+
+[provisionable]
+strategy = "spacemit-k3-v1"
+
+[provisionable.partition_map]
+bootfs = "bootfs.ext4"
+bootinfo = "factory/bootinfo_block.bin"
+env = "env.bin"
+esos = "esos.itb"
+esp = "esp.vfat"
+fsbl = "factory/FSBL.bin"
+gpt = "partition_universal.json"
+opensbi = "fw_dynamic.itb"
+rootfs = "rootfs.ext4"
+uboot = "u-boot.itb"
