@@ -1,0 +1,30 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.11.0-trunk.137 image for Orange Pi RV2 (minimal)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.11.0-trunk.137"
+
+[[distfiles]]
+name = "Armbian_community_26.11.0-trunk.137_Orangepirv2_trixie_current_6.18.64_minimal.img.xz"
+size = 434647240
+urls = [
+  "mirror://armbian-archive/cache/community/26.11.0-trunk.137/Armbian_community_26.11.0-trunk.137_Orangepirv2_trixie_current_6.18.64_minimal.img.xz",
+  "https://github.com/armbian/community/releases/download/26.11.0-trunk.137/Armbian_community_26.11.0-trunk.137_Orangepirv2_trixie_current_6.18.64_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "e0c7d1cf3cc43712f8509265d8d6e7a68ef42960120c85a968a9ba59a299691e"
+sha512 = "9af0d04a3bf2ec125d16815929665c13b5d1b7f68fb43cafb8104b6760e7f81245ad081fa47debc7fc2398f16c6c04864c5bc27c347bf4f4c39cb3d7232caf22"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.11.0-trunk.137_Orangepirv2_trixie_current_6.18.64_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.11.0-trunk.137_Orangepirv2_trixie_current_6.18.64_minimal.img"
