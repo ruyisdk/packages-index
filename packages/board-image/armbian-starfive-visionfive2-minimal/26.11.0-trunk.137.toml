@@ -1,0 +1,30 @@
+format = "v1"
+
+[metadata]
+desc = "Armbian 26.11.0-trunk.137 image for StarFive VisionFive 2 (minimal)"
+vendor = { name = "Armbian", eula = "" }
+upstream_version = "26.11.0-trunk.137"
+
+[[distfiles]]
+name = "Armbian_community_26.11.0-trunk.137_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz"
+size = 328960624
+urls = [
+  "mirror://armbian-archive/cache/community/26.11.0-trunk.137/Armbian_community_26.11.0-trunk.137_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz",
+  "https://github.com/armbian/community/releases/download/26.11.0-trunk.137/Armbian_community_26.11.0-trunk.137_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz",
+]
+restrict = ["mirror"]
+
+[distfiles.checksums]
+sha256 = "cfb756cd3f43774f6258c0bbd66df0135f23d3c1b2515cd26f53046ee3f0cb5d"
+sha512 = "7eea27e9277ab516c4ca3cb8319da0629a121ff6f8e0a3ecd341cdfd94890579c444fab9f5714215a6e27159c27ec67cf1d4f4a13e6284960656bf337029bc64"
+
+[blob]
+distfiles = [
+  "Armbian_community_26.11.0-trunk.137_Visionfive2_trixie_vendor_6.6.20_minimal.img.xz",
+]
+
+[provisionable]
+strategy = "dd-v1"
+
+[provisionable.partition_map]
+disk = "Armbian_community_26.11.0-trunk.137_Visionfive2_trixie_vendor_6.6.20_minimal.img"
